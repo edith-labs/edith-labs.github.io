@@ -1,21 +1,54 @@
-import React from "react"
-import { Link } from "gatsby"
+import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
+import React from 'react';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import BlogSection from '../components/BlogSection';
+import Layout from '../components/Layout';
+import Navbar from '../components/Navbar';
+import InvestorSection from '../components/InvestorSection';
+import SEO from '../components/Seo';
+import StudentSection from '../components/StudentSection';
+import './styles.scss';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+function HomePage() {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "logo-white.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
 
-export default IndexPage
+  return (
+    <Layout>
+
+      <SEO title='Home' />
+
+      <section class='hero is-fullheight is-bold'>
+        <Navbar />
+
+        <div class='hero-body'>
+          <div class='container has-text-centered' style={{ maxWidth: '500px'}}>
+              <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+              <h2 class='title'>
+                Connecting students and mentors through investments in human potential.
+              </h2>
+          </div>
+        </div>
+      </section>
+
+      <StudentSection />
+
+      <InvestorSection />
+
+      <BlogSection />
+
+    </Layout>
+  );
+}
+
+export default HomePage;
