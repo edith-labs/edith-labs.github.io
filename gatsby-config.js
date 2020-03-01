@@ -10,8 +10,8 @@ module.exports = {
       options: {
           // threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
           once: true, // Defines if animation needs to be launched once
+      }
     },
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,6 +21,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
