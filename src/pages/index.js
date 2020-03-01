@@ -25,14 +25,18 @@ function HomePage() {
 
   return (
     <Layout>
-
       <SEO title='Home' />
 
-      <section class='hero is-fullheight is-bold'>
+      <section
+        class='hero is-fullheight is-bold'
+        data-sal="fade"
+        data-sal-easing="ease"
+      >
         <Navbar />
 
         <div class='hero-body'>
-          <div class='container has-text-centered' style={{ maxWidth: '500px'}}>
+          <div
+            class='container has-text-centered' style={{ maxWidth: '500px'}}>
               <Img fluid={data.placeholderImage.childImageSharp.fluid} />
               <h2 class='title'>
                 Connecting students and mentors through investments in human potential.

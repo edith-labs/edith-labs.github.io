@@ -11,7 +11,12 @@ function PostTemplate({ data }) {
   return (
     <Layout>
       <Navbar />
-        <section class="hero is-info" style={{ marginBottom: rhythm(1) }}>
+        <section
+          class="hero is-info"
+          style={{ marginBottom: rhythm(1) }}
+          data-sal="fade"
+          data-sal-easing="ease"
+        >
           <div class='hero-body'>
             <div class='container'>
               <h1 class='title'>
@@ -28,7 +33,12 @@ function PostTemplate({ data }) {
           </div>
         </section>
 
-        <div class='container' style={{ marginBottom: rhythm(1) }}>
+        <div
+          class='container'
+          style={{ marginBottom: rhythm(1) }}
+          data-sal="fade"
+          data-sal-easing="ease"
+        >
           <div class='columns is-centered'>
             <div class='column is-8'>
               <section class='content' dangerouslySetInnerHTML={{ __html: post.html }} />

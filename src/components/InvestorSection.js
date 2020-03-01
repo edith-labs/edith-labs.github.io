@@ -38,7 +38,11 @@ function InvestorSection() {
 
   return (
     <section class='hero is-fullheight is-bold is-warning'>
-      <div class='hero-body'>
+      <div
+        class='hero-body'
+        data-sal="slide-up"
+        data-sal-easing="ease"
+      >
         <div class='container'>
           <div class='columns'>
             <div class='column is-3'>

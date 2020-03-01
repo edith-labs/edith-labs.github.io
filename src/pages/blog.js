@@ -34,13 +34,17 @@ function BlogPage() {
       <SEO title='Blog' />
 
         <Navbar />
-        <div class='container'>
+        <div
+          class='container'
+          data-sal="fade"
+          data-sal-easing="ease"
+        >
           <div class='columns is-centered'>
 
             <div class='column is-6'>
               <section class='hero is-child is-info notification' style={{ minHeight: '60vh'}}>
                 <div class='hero-body'>
-                  <p class='title'>Blog</p>
+                  <p class='title'>Edith Blog</p>
                 </div>
               </section>
             </div>
