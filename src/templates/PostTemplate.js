@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/Layout';
@@ -6,8 +6,9 @@ import Navbar from '../components/Navbar';
 import SEO from '../components/Seo';
 import { rhythm } from '../utils/typography';
 
-function PostTemplate({ data }) {
+function PostTemplate({ data, pageContext }) {
   const post = data.markdownRemark;
+  const { previous, next } = pageContext;
 
   return (
     <Layout>
@@ -48,6 +49,42 @@ function PostTemplate({ data }) {
 
               <p>Thanks for reading this post!</p>
 
+            </div>
+          </div>
+        </div>
+
+        <div
+          class='container'
+          style={{ marginBottom: rhythm(1) }}
+        >
+          <div class='columns is-centered'>
+            <div class='column is-8'>
+              <nav>
+                <ul
+                  style={{
+                    display: `flex`,
+                    flexWrap: `wrap`,
+                    justifyContent: `space-between`,
+                    listStyle: `none`,
+                    padding: 0,
+                  }}
+                >
+                  <li>
+                    {previous && (
+                      <Link to={previous.fields.slug} rel="prev">
+                        ← {previous.frontmatter.title}
+                      </Link>
+                    )}
+                  </li>
+                  <li>
+                    {next && (
+                      <Link to={next.fields.slug} rel="next">
+                        {next.frontmatter.title} →
+                      </Link>
+                    )}
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
