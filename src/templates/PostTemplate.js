@@ -3,6 +3,7 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
+import SEO from '../components/Seo';
 import { rhythm } from '../utils/typography';
 
 function PostTemplate({ data }) {
@@ -10,6 +11,8 @@ function PostTemplate({ data }) {
 
   return (
     <Layout>
+      <SEO title={`${post.frontmatter.title}`} />
+
       <Navbar />
         <section
           class="hero is-info"
@@ -36,8 +39,6 @@ function PostTemplate({ data }) {
         <div
           class='container'
           style={{ marginBottom: rhythm(1) }}
-          data-sal="fade"
-          data-sal-easing="ease"
         >
           <div class='columns is-centered'>
             <div class='column is-8'>
