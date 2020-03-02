@@ -1,7 +1,7 @@
 ---
-title: Income Share Agreements
+title: The Income Share Agreement FAQ
 date: "2020-02-18"
-excerpt: "Hello World, these are ISAs"
+excerpt: "Answering the hard questions about income share agreements"
 ---
 
 This is my first post on my new fake blog! How exciting!

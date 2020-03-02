@@ -43,7 +43,10 @@ function PostTemplate({ data, pageContext }) {
         >
           <div class='columns is-centered'>
             <div class='column is-8'>
-              <section class='content' dangerouslySetInnerHTML={{ __html: post.html }} />
+              <section
+                class='content'
+                dangerouslySetInnerHTML={{ __html: post.html }}
+              />
 
               <hr style={{ marginTop: rhythm(1.5), marginBottom: rhythm(1.5) }} />
 
