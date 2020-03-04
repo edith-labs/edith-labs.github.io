@@ -18,7 +18,7 @@ function HomePage() {
       <SEO title='Home' />
 
       <section
-        class='hero is-fullheight is-bold'
+        class='hero is-bold'
         data-sal="fade"
         data-sal-easing="ease"
       >
@@ -38,23 +38,11 @@ function HomePage() {
           </div>
         </div>
 
-        <div class='hero-foot' style={{ margin: rhythm(1)}}>
-          <div class='columns'>
-            <div class='column has-text-centered'>
-              <h3 class='subtitle' style={{ marginBottom: rhythm(0) }}>
-                Learn More
-              </h3>
-              <FaChevronDown />
-            </div>
-          </div>
-        </div>
       </section>
 
       <a name='students' />
 
       <StudentSection />
-
-      <InvestorSection />
 
       <BlogSection />
 

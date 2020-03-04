@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
           }
         }
       }
-      placeholderImage: file(relativePath: { eq: "logo-dark.png" }) {
+      placeholderImage: file(relativePath: { eq: "logo-white.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
     <>
       <Navbar />
       {children}
-      <footer class='hero is-dark'>
+      <footer class='hero is-light'>
         <div class='hero-body'>
         <div class='container'>
           <div class='column is-2' style={{ padding: 0 }}>

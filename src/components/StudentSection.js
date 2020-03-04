@@ -45,7 +45,7 @@ function StudentSection() {
   ];
 
   return (
-    <section class='hero is-fullheight is-bold is-success' >
+    <section class='hero is-light' >
       <div
         class='hero-body'
         data-sal="slide-up"
@@ -53,22 +53,7 @@ function StudentSection() {
       >
         <div class='container'>
           <div class='columns'>
-            <div class='column is-3'>
-              <h1 class='title'>
-                Students
-              </h1>
-              <h2 class='subtitle'>
-                Find financial support and mentorship from mentors directly invested in your future success.
-              </h2>
-            </div>
-
             <div class='column'>
-
-              <div class='columns is-centered'>
-                <div class='column is-8'>
-                  <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-                </div>
-              </div>
 
               <div class='columns'>
                 {descriptions.map(({ title, description }) => (

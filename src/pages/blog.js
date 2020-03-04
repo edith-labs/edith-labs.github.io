@@ -38,12 +38,16 @@ function BlogPage() {
         data-sal-easing="ease"
         style={{ marginTop: rhythm(3) }}
       >
-        <div class='columns is-centered'>
+        <div class='columns is-centered' style={{ marginLeft: rhythm(1), marginRight: rhythm(1)}}>
 
           <div class='column is-6'>
-            <section class='hero is-child is-info notification' style={{ minHeight: '60vh'}}>
+            <section class='hero is-child is-primary is-bold notification' style={{ minHeight: '60vh'}}>
               <div class='hero-body'>
                 <p class='title'>Edith Blog</p>
+                <p class='subtitle'>
+                  Learn about student debt, income share agreements, and investing in
+                  human potential.
+                </p>
               </div>
             </section>
           </div>
@@ -58,7 +62,7 @@ function BlogPage() {
               <Link to={slug}>
                 <section style={{ marginBottom: rhythm(0.5) }}>
                   <p class='text-link'>{date}</p>
-                  <h3 class='title text-link'>{title}</h3>
+                  <h3 class='title text-link is-4'>{title}</h3>
                 </section>
               </Link>
             ))}
@@ -66,26 +70,25 @@ function BlogPage() {
 
         </div>
 
-        <div class='columns is-centered'>
+        <div class='columns is-centered' style={{ marginLeft: rhythm(1), marginRight: rhythm(1)}}>
           <div class='column is-10'>
             <hr />
           </div>
         </div>
 
-        <div class='columns is-centered'>
+        <div class='columns is-centered' style={{ marginLeft: rhythm(1), marginRight: rhythm(1)}}>
 
           <div class='column is-10'>
             <div class='tile is-ancestor is-vertical'>
-                {posts.map(({ node: { fields: { slug }, frontmatter: { title, excerpt } } }) => (
-                  <div class="tile is-parent">
-                    <Link class='tile is-child' to={slug}>
-                      <p class='text-link title'>{title}</p>
-                      <p class='text-link'>{excerpt}</p>
-                      <hr />
-                    </Link>
-                  </div>
-                ))}
-
+              {posts.map(({ node: { fields: { slug }, frontmatter: { title, excerpt } } }) => (
+                <div class="tile is-parent">
+                  <Link class='tile is-child' to={slug}>
+                    <p class='text-link title'>{title}</p>
+                    <p class='text-link'>{excerpt}</p>
+                    <hr />
+                  </Link>
+                </div>
+              ))}
             </div>
           </div>
 
