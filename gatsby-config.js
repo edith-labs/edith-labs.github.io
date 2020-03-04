@@ -34,6 +34,7 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-anchor-links`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -69,6 +70,12 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+          endpoint: 'https://gmail.us3.list-manage.com/subscribe/post?u=be923548dcbeefc0055295a56&amp;id=77ed274972', // add your MC list endpoint here; see instructions below
       },
     },
   ],

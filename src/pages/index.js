@@ -1,30 +1,20 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import React from 'react';
+import { FaChevronDown } from 'react-icons/fa';
 
+import './styles.scss';
 import BlogSection from '../components/BlogSection';
+import InterestForm from '../components/InterestForm';
 import Layout from '../components/Layout';
-import Navbar from '../components/Navbar';
 import InvestorSection from '../components/InvestorSection';
 import SEO from '../components/Seo';
 import StudentSection from '../components/StudentSection';
-import './styles.scss';
+import { rhythm } from '../utils/typography';
 
 function HomePage() {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "logo-white.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
-
   return (
     <Layout>
+
       <SEO title='Home' />
 
       <section
@@ -32,18 +22,35 @@ function HomePage() {
         data-sal="fade"
         data-sal-easing="ease"
       >
-        <Navbar />
-
-        <div class='hero-body'>
-          <div
-            class='container has-text-centered' style={{ maxWidth: '500px'}}>
-              <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+        <div
+          class='hero-head'
+          style={{ margin: rhythm(1.5), marginTop: rhythm(3) }}
+        >
+          <div class='columns'>
+            <div class='column is-three-fifths'>
               <h2 class='title'>
                 Connecting students and mentors through investments in human potential.
               </h2>
+            </div>
+            <div class='column'>
+              <InterestForm />
+            </div>
+          </div>
+        </div>
+
+        <div class='hero-foot' style={{ margin: rhythm(1)}}>
+          <div class='columns'>
+            <div class='column has-text-centered'>
+              <h3 class='subtitle' style={{ marginBottom: rhythm(0) }}>
+                Learn More
+              </h3>
+              <FaChevronDown />
+            </div>
           </div>
         </div>
       </section>
+
+      <a name='students' />
 
       <StudentSection />
 

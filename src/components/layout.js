@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import { rhythm } from '../utils/typography';
+import Navbar from '../components/Navbar';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -41,6 +42,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Navbar />
       {children}
       <footer class='hero is-dark'>
         <div class='hero-body'>

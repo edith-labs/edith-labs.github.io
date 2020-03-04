@@ -45,7 +45,7 @@ function StudentSection() {
   ];
 
   return (
-    <section class='hero is-fullheight is-bold is-success'>
+    <section class='hero is-fullheight is-bold is-success' >
       <div
         class='hero-body'
         data-sal="slide-up"

@@ -1,34 +1,17 @@
-import { graphql, Link, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import { Link } from 'gatsby';
 import React from 'react';
 
-function Navbar() {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "logo-white.png" }) {
-        childImageSharp {
-          fixed(width: 200, height: 36) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
+import logo from '../images/logo-white.png';
 
+function Navbar() {
   return (
-    <div class='hero-head'>
-      <nav class='navbar'>
+      <nav class='navbar is-fixed-top has-shadow'>
         <div class='container'>
-          {/* <div class='navbar-brand'>
-            <Link class='navbar-item'>
-              <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+          <div class='navbar-brand'>
+            <Link class='navbar-item' activeClassName='navbar-item'>
+              <img src={logo} style={{ maxWidth: 400, marginTop: 'auto', marginBottom: 'auto', display: 'flex', alignItems: 'center' }} />
             </Link>
-            <span class='navbar-burger burger' data-target='navbarMenuHeroA'>
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div> */}
+          </div>
           <div id='navbarMenuHeroA' class='navbar-menu'>
             <div class='navbar-end'>
 
@@ -44,7 +27,6 @@ function Navbar() {
           </div>
         </div>
       </nav>
-    </div>
   );
 }
 

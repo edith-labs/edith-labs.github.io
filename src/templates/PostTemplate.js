@@ -14,10 +14,9 @@ function PostTemplate({ data, pageContext }) {
     <Layout>
       <SEO title={`${post.frontmatter.title}`} />
 
-      <Navbar />
         <section
           class="hero is-info"
-          style={{ marginBottom: rhythm(1) }}
+          style={{ marginBottom: rhythm(1), marginTop: rhythm(3) }}
           data-sal="fade"
           data-sal-easing="ease"
         >
