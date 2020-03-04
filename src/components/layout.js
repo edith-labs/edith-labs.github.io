@@ -56,14 +56,16 @@ const Layout = ({ children }) => {
           <div class='columns' style={{ marginTop: rhythm(1.5), marginBottom: rhythm(1.5) }}>
 
             <div class='column is-4'>
-              <Link>
+              <Link to='/'>
                 <h4 class='subtitle'>Home</h4>
               </Link>
             </div>
 
             <div class='column is-4'>
 
-              <h4 class='subtitle'>Blog</h4>
+              <Link to='/blog' >
+                <h4 class='subtitle' style={{ marginBottom: rhythm(1) }}>Blog</h4>
+              </Link>
 
               {posts.map(({ node: { fields: { slug }, frontmatter: { title } } }) => (
                 <Link to={slug}><p class='footer-link'>{title}</p></Link>
@@ -73,7 +75,7 @@ const Layout = ({ children }) => {
 
             <div class='column is-4'>
 
-              <h4 class='subtitle'>Social</h4>
+              <h4 class='subtitle' style={{ marginBottom: rhythm(1) }}>Social</h4>
 
               <Link to={'/'}><p class='footer-link'>Twitter</p></Link>
               <Link to={'/'}><p class='footer-link'>Mail</p></Link>

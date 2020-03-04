@@ -44,6 +44,7 @@ function PostTemplate({ data, pageContext }) {
             <div class='column is-8'>
               <section
                 class='content'
+                style={{ marginLeft: rhythm(0.5), marginRight: rhythm(0.5) }}
                 dangerouslySetInnerHTML={{ __html: post.html }}
               />
 

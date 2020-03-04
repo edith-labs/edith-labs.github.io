@@ -1,12 +1,9 @@
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import React from 'react';
-import { FaChevronDown } from 'react-icons/fa';
 
 import './styles.scss';
 import BlogSection from '../components/BlogSection';
 import InterestForm from '../components/InterestForm';
 import Layout from '../components/Layout';
-import InvestorSection from '../components/InvestorSection';
 import SEO from '../components/Seo';
 import StudentSection from '../components/StudentSection';
 import { rhythm } from '../utils/typography';

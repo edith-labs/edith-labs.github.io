@@ -32,6 +32,7 @@ function InterestForm() {
             class="input"
             id="mce-EMAIL"
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
 
           <button

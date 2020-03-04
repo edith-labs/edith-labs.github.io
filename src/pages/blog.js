@@ -1,5 +1,6 @@
+import addToMailchimp from 'gatsby-plugin-mailchimp'
 import { graphql, Link, useStaticQuery } from 'gatsby';
-import React from 'react';
+import React, { useState } from 'react';
 
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
@@ -7,6 +8,9 @@ import { rhythm } from '../utils/typography';
 import './styles.scss';
 
 function BlogPage() {
+  const [email, setEmail] = useState('');
+  const [isEmailSubmitted, setIsEmailSubmitted] = useState(false);
+
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
@@ -26,6 +30,15 @@ function BlogPage() {
     }
   `);
   const posts = data.allMarkdownRemark.edges;
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addToMailchimp(email)
+      .then(() => {
+        setEmail('');
+        setIsEmailSubmitted(true);
+      });
+  }
 
   return (
     <Layout>
@@ -93,6 +106,45 @@ function BlogPage() {
           </div>
 
         </div>
+
+        <div class='columns is-centered' style={{ marginLeft: rhythm(1), marginRight: rhythm(1), marginBottom: rhythm(1) }}>
+          <div class='column is-8 has-text-centered'>
+            <h3 class='title is-4'>Keep up with the Edith blog</h3>
+            <h3 class='subtitle is-5'>Get updates about our new blog posts and progress we've made as a company</h3>
+
+
+          </div>
+        </div>
+
+        <div class='columns is-centered' style={{ marginLeft: rhythm(1), marginRight: rhythm(1), marginBottom: rhythm(1) }}>
+          <div class='column is-4'>
+            <form onSubmit={handleSubmit}>
+
+              <input
+                style={{ marginBottom: rhythm(1) }}
+                placeholder='Email'
+                type="email"
+                value={email}
+                name="EMAIL"
+                class="input"
+                id="mce-EMAIL"
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+
+              <button
+                class='button is-fullwidth is-primary'
+                type='submit'
+                style={{ marginBottom: rhythm(0.5) }}
+              >
+                Learn more
+              </button>
+
+              {isEmailSubmitted && <h3 class='subtitle'>Thank you!</h3>}
+            </form>
+          </div>
+        </div>
+
       </div>
     </Layout>
   );
