@@ -19,7 +19,7 @@ function StudentSection() {
 
   const descriptions = [
     {
-      title: 'An alternative to student debt',
+      title: 'Find a mentor and pay for college',
       description: `
         Paying for college is hard. With loans, you owe a set amount after graduation
         no matter how much you earn. Edith helps you raise money with an income share agreement (ISA).
@@ -27,7 +27,7 @@ function StudentSection() {
       `,
     },
     {
-      title: 'Access to mentorship',
+      title: 'Invest in the next generation',
       description: `
         It's hard facing life's challenges alone. Connect with the network of Edith investors to find
         a mentor personally invested in your success. Because mentors share in your future success,
@@ -35,7 +35,7 @@ function StudentSection() {
       `,
     },
     {
-      title: 'Empowering entrepreneurs',
+      title: 'We handle the rest',
       description: `
         Starting a company is hard, and it's even harder with the financial stress of
         supporting yourself. Raise money to support yourself as you pursue your passion,
