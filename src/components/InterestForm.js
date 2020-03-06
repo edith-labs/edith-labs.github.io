@@ -1,7 +1,21 @@
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import React, { useState } from 'react';
+import { Transition, SwitchTransition } from 'react-transition-group';
+import styled from "styled-components";
 
 import { rhythm } from '../utils/typography';
+
+const FadeDiv = styled.div`
+  transition: 0.25s;
+  opacity: ${({ state }) => (state === "entered" ? 1 : 0)};
+  display: ${({ state }) => (state === "exited" ? "none" : "block")};
+`;
+
+const FadeTransition = ({ children, ...rest }) => (
+  <Transition {...rest}>
+    {state => <FadeDiv state={state}>{children}</FadeDiv>}
+  </Transition>
+);
 
 function InterestForm() {
   const [email, setEmail] = useState('');
@@ -23,11 +37,19 @@ function InterestForm() {
   return (
     <div class='card'>
       <div class='card-content'>
-        <h2 class='title'>
-          {isStudent ?
-            'Get started with finding a mentor to pay for school' :
-            'Learn how you can partner with students as a mentor'}
-        </h2>
+
+        <SwitchTransition mode='out-in' >
+          <FadeTransition
+            key={isStudent ? "student" : "mentor"}
+            timeout={150}
+            unmountOnExit
+            mountOnEnter
+          >
+            {isStudent ?
+              <h2 class='title' style={{ marginBottom: rhythm(1) }}>Get started with finding a mentor to pay for school</h2>:
+              <h2 class='title' style={{ marginBottom: rhythm(1) }}>Learn how you can partner with students as a mentor</h2>}
+          </FadeTransition>
+        </SwitchTransition>
 
         <form onSubmit={handleSubmit}>
 
@@ -76,3 +98,5 @@ function InterestForm() {
 }
 
 export default InterestForm;
+
+

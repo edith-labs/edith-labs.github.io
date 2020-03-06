@@ -2,7 +2,6 @@ import { graphql, Link } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/Layout';
-import Navbar from '../components/Navbar';
 import SEO from '../components/Seo';
 import { rhythm } from '../utils/typography';
 
