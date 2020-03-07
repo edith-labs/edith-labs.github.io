@@ -1,3 +1,5 @@
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from "gatsby-image"
 import React, { useState } from 'react';
 
 import './styles.scss';
@@ -10,6 +12,18 @@ import StudentSection from '../components/StudentSection';
 import { rhythm } from '../utils/typography';
 
 function HomePage() {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "logo-white.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <Layout>
 
@@ -24,10 +38,15 @@ function HomePage() {
           class='hero-head'
           style={{ margin: rhythm(1.5), marginTop: rhythm(3) }}
         >
-          <div class='columns'>
-            <div class='column is-three-fifths'>
+          <div class='columns is-vcentered'>
+            <div class='column is-three-fifths has-text-centered'>
+              <div class='columns is-centered'>
+                <div class='column is-three-fifths'>
+                  <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                </div>
+              </div>
               <h2 class='title'>
-                Connecting students and mentors through investments in human potential.
+                Partnering students with mentors through investments income share agreements.
               </h2>
             </div>
             <div class='column'>

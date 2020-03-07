@@ -5,6 +5,7 @@ import logo from '../images/logo-white.png';
 
 function Navbar() {
   const [isActive, setIsActive] =  useState(false);
+
   return (
     <nav class='navbar is-fixed-top has-shadow'>
       <div class='container'>
