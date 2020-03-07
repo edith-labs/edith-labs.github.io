@@ -1,21 +1,8 @@
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import React, { useState } from 'react';
-import { Transition, SwitchTransition } from 'react-transition-group';
-import styled from "styled-components";
 
 import { rhythm } from '../utils/typography';
-
-const FadeDiv = styled.div`
-  transition: 0.25s;
-  opacity: ${({ state }) => (state === "entered" ? 1 : 0)};
-  display: ${({ state }) => (state === "exited" ? "none" : "block")};
-`;
-
-const FadeTransition = ({ children, ...rest }) => (
-  <Transition {...rest}>
-    {state => <FadeDiv state={state}>{children}</FadeDiv>}
-  </Transition>
-);
+import SwapTransition from './SwapTransition';
 
 function InterestForm() {
   const [email, setEmail] = useState('');
@@ -38,18 +25,13 @@ function InterestForm() {
     <div class='card'>
       <div class='card-content'>
 
-        <SwitchTransition mode='out-in' >
-          <FadeTransition
-            key={isStudent ? "student" : "mentor"}
-            timeout={150}
-            unmountOnExit
-            mountOnEnter
-          >
+        <SwapTransition activeKey={isStudent ? "student" : "mentor"}>
+          <h2 class='title' style={{ marginBottom: rhythm(1) }}>
             {isStudent ?
-              <h2 class='title' style={{ marginBottom: rhythm(1) }}>Get started with finding a mentor to pay for school</h2>:
-              <h2 class='title' style={{ marginBottom: rhythm(1) }}>Learn how you can partner with students as a mentor</h2>}
-          </FadeTransition>
-        </SwitchTransition>
+              `Get started with finding a mentor to pay for school` :
+              `Learn how you can partner with students as a mentor`}
+          </h2>
+        </SwapTransition>
 
         <form onSubmit={handleSubmit}>
 

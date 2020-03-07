@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import './styles.scss';
+import BannerSection from '../components/BannerSection';
 import BlogSection from '../components/BlogSection';
 import InterestForm from '../components/InterestForm';
 import Layout from '../components/Layout';
@@ -40,6 +41,8 @@ function HomePage() {
       <a name='students' />
 
       <StudentSection />
+
+      <BannerSection />
 
       <BlogSection />
 
