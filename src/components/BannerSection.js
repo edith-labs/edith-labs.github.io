@@ -1,9 +1,30 @@
+import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
 import React, { useState } from 'react';
 import Dropdown from './Dropdown';
 
 import SwapTransition from './SwapTransition';
 
 function BannerSection() {
+  const data = useStaticQuery(graphql`
+    query {
+      student: file(relativePath: { eq: "student-banner.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 2000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      mentor: file(relativePath: { eq: "mentor-banner.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 2000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
   const [option, setOption] = useState('Student');
   const dropdownOptions = ['Student', 'Mentor'];
 
@@ -25,11 +46,13 @@ function BannerSection() {
           </h1>
 
           <SwapTransition activeKey={option}>
-            <h1 class='title'>
-            {option === 'Student' ?
-              'Your Student Banner Here' :
-              'Your Investor Banner Here'}
-            </h1>
+            <div class='columns is-centered'>
+              <div class='column is-three-fifths'>
+                {option === 'Student' ?
+                  <Img fluid={data.student.childImageSharp.fluid} /> :
+                  <Img fluid={data.mentor.childImageSharp.fluid} />}
+              </div>
+            </div>
           </SwapTransition>
         </div>
       </div>

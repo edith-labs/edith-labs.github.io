@@ -26,7 +26,7 @@ function BlogSection() {
   const posts = data.allMarkdownRemark.edges;
 
   return (
-    <section class='hero' style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
+    <section class='hero' style={{ marginBottom: rhythm(2) }}>
       <div class='hero-body'>
         <div class='container'>
           <div class='columns'>

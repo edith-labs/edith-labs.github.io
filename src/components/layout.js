@@ -1,8 +1,7 @@
-import { Link } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from "gatsby-image"
 import React from 'react';
-import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import { FaEnvelope, FaTwitter } from 'react-icons/fa';
 
 import { rhythm } from '../utils/typography';
 import Navbar from '../components/Navbar';
@@ -61,7 +60,7 @@ const Layout = ({ children }) => {
               </Link>
             </div>
 
-            <div class='column is-4'>
+            {/* <div class='column is-4'>
 
               <Link to='/blog' >
                 <h4 class='subtitle' style={{ marginBottom: rhythm(1) }}>Blog</h4>
@@ -71,14 +70,21 @@ const Layout = ({ children }) => {
                 <Link to={slug}><p class='footer-link'>{title}</p></Link>
               ))}
 
-            </div>
+            </div> */}
 
             <div class='column is-4'>
 
               <h4 class='subtitle' style={{ marginBottom: rhythm(1) }}>Social</h4>
 
-              <Link to={'/'}><p class='footer-link'>Twitter</p></Link>
-              <Link to={'/'}><p class='footer-link'>Mail</p></Link>
+              <a
+                href={'https://twitter.com/edith_labs'}
+                target='_blank'
+              >
+                <p class='footer-link'><FaTwitter /></p>
+              </a>
+              <a href={'mailto:hello@edithlabs.com'}>
+                <p class='footer-link'><FaEnvelope /></p>
+              </a>
 
             </div>
 
@@ -93,10 +99,6 @@ const Layout = ({ children }) => {
       </footer>
     </>
   );
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

@@ -1,6 +1,4 @@
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from "gatsby-image"
-import React, { useState } from 'react';
+import React from 'react';
 
 import './styles.scss';
 import BannerSection from '../components/BannerSection';
@@ -8,22 +6,11 @@ import BlogSection from '../components/BlogSection';
 import InterestForm from '../components/InterestForm';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
-import StudentSection from '../components/StudentSection';
+import InfoSection from '../components/InfoSection';
+import logo from '../images/logo-white.png';
 import { rhythm } from '../utils/typography';
 
 function HomePage() {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "logo-white.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
-
   return (
     <Layout>
 
@@ -36,17 +23,17 @@ function HomePage() {
       >
         <div
           class='hero-head'
-          style={{ margin: rhythm(1.5), marginTop: rhythm(3) }}
+          style={{ margin: rhythm(1.5), marginTop: rhythm(3), marginBottom: rhythm(0.5) }}
         >
           <div class='columns is-vcentered'>
             <div class='column is-three-fifths has-text-centered'>
               <div class='columns is-centered'>
                 <div class='column is-three-fifths'>
-                  <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                  <img src={logo} style={{ marginTop: 'auto', marginBottom: 'auto', display: 'flex', alignItems: 'center' }} />
                 </div>
               </div>
               <h2 class='title'>
-                Partnering students with mentors through investments income share agreements.
+                Partnering students with mentors through investments income share agreements
               </h2>
             </div>
             <div class='column'>
@@ -57,13 +44,11 @@ function HomePage() {
 
       </section>
 
-      <a name='students' />
-
-      <StudentSection />
+      <InfoSection />
 
       <BannerSection />
 
-      <BlogSection />
+      {/* <BlogSection /> */}
 
     </Layout>
   );

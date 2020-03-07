@@ -47,8 +47,6 @@ function BlogPage() {
 
       <div
         class='container'
-        data-sal="fade"
-        data-sal-easing="ease"
         style={{ marginTop: rhythm(3) }}
       >
         <div class='columns is-centered' style={{ marginLeft: rhythm(1), marginRight: rhythm(1)}}>
