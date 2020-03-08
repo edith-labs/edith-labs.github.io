@@ -32,7 +32,7 @@ function HomePage() {
                   <img src={logo} style={{ marginTop: 'auto', marginBottom: 'auto', display: 'flex', alignItems: 'center' }} />
                 </div>
               </div>
-              <h2 class='title is-hidden-mobile'>
+              <h2 class='title is-hidden-touch'>
                 Partnering students with mentors through investments income share agreements
               </h2>
 
