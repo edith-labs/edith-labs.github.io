@@ -6,6 +6,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-145675331-1",
+        head: true,
+      }
+    },
+    {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
           once: true, // Defines if animation needs to be launched once
