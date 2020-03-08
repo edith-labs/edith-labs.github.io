@@ -13,7 +13,7 @@ function Navbar() {
           <Link class='navbar-item' activeClassName='navbar-item'>
             <img src={logo} style={{ maxWidth: 400, marginTop: 'auto', marginBottom: 'auto', display: 'flex', alignItems: 'center' }} />
           </Link>
-          <a
+          {/* <a
             class={`navbar-burger burger ${isActive ? 'is-active' : ''}`}
             aria-label="menu"
             aria-expanded="false"
@@ -23,7 +23,7 @@ function Navbar() {
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </a>
+          </a> */}
         </div>
         <div id='navbarMenuHeroA' class={`navbar-menu ${isActive ? 'is-active' : ''}`}>
           <div class='navbar-end'>

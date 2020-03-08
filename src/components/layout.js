@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
       }
       placeholderImage: file(relativePath: { eq: "logo-white.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 100) {
             ...GatsbyImageSharpFluid
           }
         }
