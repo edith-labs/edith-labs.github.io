@@ -21,29 +21,23 @@ function InfoSection() {
 
   const descriptions = [
     {
-      title: 'Find a mentor to help elevate your career',
+      title: 'Find a mentor',
       description: `
-        Some lines about this. Some lines about this.Some lines about this.Some lines about this.
-        Some lines about this.Some lines about this.Some lines about this. Some lines about this.
-        Some lines about this.Some lines about this.Some lines about this.
+      Partner with mentors from companies like Apple, Amazon, Citadel, and Adobe to help you pay for college and jumpstart your career. Sign up to learn more.
       `,
       icon: <FaRocket size={32} style={{ marginBottom: rhythm(0.25) }} />,
     },
     {
-      title: 'Partner with the next generation of students',
+      title: 'Partner with students',
       description: `
-        Some lines about this. Some lines about this.Some lines about this.Some lines about this.
-        Some lines about this.Some lines about this.Some lines about this. Some lines about this.
-        Some lines about this.Some lines about this.Some lines about this.
+      Help the next generation succeed by teaming up with motivated students. Because you’re partnered through an income share agreement, you directly share in their future success.
       `,
       icon: <FaUserFriends size={32} style={{ marginBottom: rhythm(0.25) }} />
     },
     {
-      title: 'Edith takes care of the hard parts',
+      title: 'We do the rest',
       description: `
-        Some lines about this. Some lines about this.Some lines about this.Some lines about this.
-        Some lines about this.Some lines about this.Some lines about this. Some lines about this.
-        Some lines about this.Some lines about this.Some lines about this.
+      We take care of the details like issuing the ISAs and transferring funds so students and mentors can focus on what’s really important – doing well in college and preparing for a successful career.
       `,
       icon: <FaLink size={32} style={{ marginBottom: rhythm(0.25) }} />,
     },
