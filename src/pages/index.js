@@ -27,14 +27,19 @@ function HomePage() {
         >
           <div class='columns is-vcentered'>
             <div class='column is-three-fifths has-text-centered'>
-              <div class='columns is-centered'>
+              <div class='columns is-centered is-mobile'>
                 <div class='column is-three-fifths'>
                   <img src={logo} style={{ marginTop: 'auto', marginBottom: 'auto', display: 'flex', alignItems: 'center' }} />
                 </div>
               </div>
-              <h2 class='title'>
+              <h2 class='subtitle is-hidden-mobile'>
                 Partnering students with mentors through investments income share agreements
               </h2>
+
+              <h2 class='subtitle is-hidden-desktop'>
+                Partnering students with mentors through investments income share agreements
+              </h2>
+
             </div>
             <div class='column'>
               <InterestForm />
