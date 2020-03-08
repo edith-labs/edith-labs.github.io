@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
       }
       placeholderImage: file(relativePath: { eq: "logo-white.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
       <footer class='hero is-light'>
         <div class='hero-body'>
         <div class='container'>
-          <div class='column' style={{ padding: 0 }}>
+          <div class='column is-2 is-hidden-mobile' style={{ padding: 0 }}>
             <Link to='/'>
               <Img fluid={data.placeholderImage.childImageSharp.fluid} />
             </Link>
