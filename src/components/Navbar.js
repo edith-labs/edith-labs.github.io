@@ -29,9 +29,9 @@ function Navbar() {
         <div id='navbarMenuHeroA' class={`navbar-menu ${isActive ? 'is-active' : ''}`}>
           <div class='navbar-end'>
 
-            {/* <Link class='navbar-item' to='/blog' activeClassName='navbar-item is-active'>
+            <Link class='navbar-item' to='/blog' activeClassName='navbar-item is-active'>
               Blog
-            </Link> */}
+            </Link>
 
             <div class="buttons" style={{ marginLeft: rhythm(0.25)}}>
               <a class="button is-primary" href='https://app.edithlabs.com' target='_blank'>

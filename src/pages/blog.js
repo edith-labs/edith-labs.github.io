@@ -52,7 +52,7 @@ function BlogPage() {
         <div class='columns is-centered' style={{ marginLeft: rhythm(1), marginRight: rhythm(1)}}>
 
           <div class='column is-6'>
-            <section class='hero is-child is-primary is-bold notification' style={{ minHeight: '60vh'}}>
+            <section class='hero is-child is-primary is-bold notification' style={{ minHeight: '40vh'}}>
               <div class='hero-body'>
                 <p class='title'>Edith Blog</p>
                 <p class='subtitle'>

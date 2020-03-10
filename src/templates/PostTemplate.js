@@ -2,6 +2,7 @@ import { graphql, Link } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/Layout';
+import PostDefinition from '../components/PostDefinition';
 import SEO from '../components/Seo';
 import { rhythm } from '../utils/typography';
 
@@ -14,19 +15,22 @@ function PostTemplate({ data, pageContext }) {
       <SEO title={`${post.frontmatter.title}`} />
 
         <section
-          class="hero is-info"
-          style={{ marginBottom: rhythm(1), marginTop: rhythm(3) }}
+          class="columns is-centered"
+          style={{
+            marginLeft: rhythm(2.5), marginRight: rhythm(2.5),
+            marginTop: rhythm(3)
+          }}
           data-sal="fade"
           data-sal-easing="ease"
         >
-          <div class='hero-body'>
+          <div class='column is-8'>
             <div class='container'>
-              <h1 class='title'>
+              <h1 class='title is-2'>
                 {post.frontmatter.title}
               </h1>
 
               <h2 class='subtitle'>
-                {post.frontmatter.excerpt}
+                {!post.frontmatter.definition && post.frontmatter.excerpt}
               </h2>
 
               <p>{post.frontmatter.date}</p>
@@ -41,6 +45,9 @@ function PostTemplate({ data, pageContext }) {
         >
           <div class='columns is-centered'>
             <div class='column is-8'>
+
+              {post.frontmatter.definition && <PostDefinition definition={post.frontmatter.definition} />}
+
               <section
                 class='content'
                 style={{ marginLeft: rhythm(0.5), marginRight: rhythm(0.5) }}
@@ -107,6 +114,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM D, YYYY")
         excerpt
+        definition
       }
     }
   }`

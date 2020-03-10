@@ -1,7 +1,8 @@
 ---
-title: Financing Education in Today's World
+title: What are Student Loans?
 date: '2020-03-06'
 excerpt: 'How student loans work today and why (and when) income share agreements make sense.'
+definition: 'How student loans work today and why (and when) income share agreements make sense.'
 ---
 
 Paying for school is hard. With a mix of public student loans, private student loans, grants, and financial aid, there is a lot of information to navigate and a lot of hoops to jump through to determine just how much help you need, and how much help these services will give you.
