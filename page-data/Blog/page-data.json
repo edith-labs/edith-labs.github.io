@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-blog-js","path":"/blog/","result":{"pageContext":{"isCreatedByStatefulCreatePages":true}}}
+{"componentChunkName":"component---src-pages-blog-js","path":"/blog/","result":{"data":{"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/intro-to-isa/"},"frontmatter":{"title":"What are Income Share Agreements?","date":"March 9, 2020","excerpt":"Learn about the history of ISAs, how they can be applied to student debt, and how Edith can help you"}}}]}},"pageContext":{"isCreatedByStatefulCreatePages":true}}}
