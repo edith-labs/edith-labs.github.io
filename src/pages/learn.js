@@ -23,6 +23,7 @@ function BlogPage() {
             frontmatter {
               title
               date(formatString: "MMMM D, YYYY")
+              author
               excerpt
             }
           }
@@ -93,10 +94,15 @@ function BlogPage() {
 
           <div class='column is-10'>
             <div class='tile is-ancestor is-vertical'>
-              {posts.map(({ node: { fields: { slug }, frontmatter: { title, excerpt } } }) => (
+              {posts.map(({ node: { fields: { slug }, frontmatter: { title, excerpt, date, author } } }) => (
                 <div class="tile is-parent">
                   <Link class='tile is-child' to={slug}>
                     <p class='text-link title'>{title}</p>
+                    <p class='text-link subtitle is-6'>
+                      {`Updated ${date}`}
+                      <br />
+                      {`by ${author}`}
+                    </p>
                     <p class='text-link'>{excerpt}</p>
                     <hr />
                   </Link>

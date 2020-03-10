@@ -3,16 +3,19 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import PostDefinition from '../components/PostDefinition';
+import PostSubheader from '../components/PostSubheader';
 import SEO from '../components/Seo';
 import { rhythm } from '../utils/typography';
 
 function PostTemplate({ data, pageContext }) {
-  const post = data.markdownRemark;
+  const { frontmatter, html } = data.markdownRemark;
+  const { title, date, definition, excerpt, author } = frontmatter;
+
   const { previous, next } = pageContext;
 
   return (
     <Layout>
-      <SEO title={`${post.frontmatter.title}`} />
+      <SEO title={`${title}`} />
 
         <section
           class="columns is-centered"
@@ -26,16 +29,16 @@ function PostTemplate({ data, pageContext }) {
           <div class='column is-8'>
             <div class='container'>
               <h1 class='title is-2'>
-                {post.frontmatter.title}
+                {title}
               </h1>
 
               <h2 class='subtitle'>
-                {!post.frontmatter.definition && post.frontmatter.excerpt}
+                {!definition && excerpt}
               </h2>
 
-              <p>{post.frontmatter.date}</p>
-            </div>
+              <PostSubheader date={date} author={author} />
 
+            </div>
           </div>
         </section>
 
@@ -46,12 +49,12 @@ function PostTemplate({ data, pageContext }) {
           <div class='columns is-centered'>
             <div class='column is-8'>
 
-              {post.frontmatter.definition && <PostDefinition definition={post.frontmatter.definition} />}
+              {definition && <PostDefinition definition={definition} />}
 
               <section
                 class='content'
                 style={{ marginLeft: rhythm(0.5), marginRight: rhythm(0.5) }}
-                dangerouslySetInnerHTML={{ __html: post.html }}
+                dangerouslySetInnerHTML={{ __html: html }}
               />
 
               <hr style={{ marginTop: rhythm(1.5), marginBottom: rhythm(1.5) }} />
@@ -115,6 +118,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM D, YYYY")
         excerpt
         definition
+        author
       }
     }
   }`

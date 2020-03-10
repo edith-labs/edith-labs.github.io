@@ -23,12 +23,12 @@ function InterestForm() {
 
   return (
     <div class='card'>
-      <div class='card-content'>
+      <div class='card-content' style={{ padding: rhythm(0.8)}}>
 
         <SwapTransition activeKey={isStudent ? "student" : "mentor"}>
           <h2 class='title' style={{ marginBottom: rhythm(1) }}>
             {isStudent ?
-              `Get started with finding a mentor to pay for school` :
+              `Find mentorship and capital to help you succeed` :
               `Learn how you can partner with students as a mentor`}
           </h2>
         </SwapTransition>
