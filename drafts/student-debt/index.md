@@ -1,6 +1,6 @@
 ---
 title: What are Student Loans?
-date: '2020-03-06'
+date: '2020-03-24'
 excerpt: 'How student loans work today and why (and when) income share agreements make sense.'
 definition: 'How student loans work today and why (and when) income share agreements make sense.'
 ---

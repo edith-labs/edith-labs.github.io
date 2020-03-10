@@ -1,16 +1,19 @@
 ---
-title: Intro to Income Share Agreements
-date: "2020-02-24"
+title: What are Income Share Agreements?
+date: "2020-03-09"
 excerpt: "Learn about the history of ISAs, how they can be applied to student debt, and how Edith can help you"
+definition: An income share agreement (ISA) is a simple agreement between two parties where the borrower repays the lender with a portion of their income for a predetermined time.
 ---
 
-### What is an Income Share Agreement (ISA)?
+### 🤔 Understanding Income Share Agreements
 
-An ISA is a simple agreement between two parties, but instead of repaying the original amount (the principal) the borrower repays a portion of their income for a predetermined time.
+ISAs are a new type of financial instrument that aligns the incentives between the borrower and lender. In our case, it connects students with mentors. Incentives are aligned because the mentor only gets paid if the student does. There are also typically salary minimums with ISAs - if the student gets paid less than the minimum, they don’t make any ISA payments until they make above the minimum. Because the borrower is only paying a percentage of their income, they can never be overburdened.
 
-For instance, say a college student needs $15,000 to pay for college so they take on an ISA. If the ISA is $15,000 for 5% of their salary for 5 years after graduation, their payments would look like this. 
+#### Example
 
-| Year | Salary             | ISA Payment  | 
+Say a college student needs $15,000 to pay for college and they decide to take on an ISA. A sample ISA could look like this: $15,000 upfront and 5% of their salary for 5 years after graduation. Their payments would look like this:
+
+| Year | Salary             | ISA Payment  |
 | ---- |:------------------:|:------------:|
 | 2021 | $70,000            | $3,500       |
 | 2022 | $73,500            | $3,675       |
@@ -18,41 +21,73 @@ For instance, say a college student needs $15,000 to pay for college so they tak
 | 2024 | $81,031            | $4,052       |
 | 2025 | $85,085            | $4,254       |
 
+#### Takeaway
 
-### Why are they better than traditional loans? 
+ISAs are a new tool that can be used to finance a variety of endeavors, including education. However, because they are so new, there are many common misconceptions of ISAs which we explain below. Fundamentally, they are powerful tools because they truly align incentives between borrowers and lenders. Unlike student debt where it can feel like the student vs. the bank, mentors and students form a team through income share agreements.
 
-With traditional loans, the lender has no incentive to help the borrower. If a borrower is unable to repay the loan, lenders can typically collect the borrower’s assets (their collateral) in order to recoup their loan. Lenders make most of their money off of interest, which actually increases if the borrower is unable to pay on time. Therefore, lenders have every incentive to see the borrower fail to pay off their loans on time. The interest will grow, and they can collect the borrower’s collateral if they can’t afford the interest.
+### Tell me more…
 
-With an ISA on Edith, mentors actually want to see the borrowers succeed. There are no interest payments tied to the principal, so the mentor only gets paid if the borrower does. Typically, the ISA includes a minimum salary as well - if the borrower makes less than the minimum, they pay nothing until they make more. Because the borrower is only paying a percentage of their income, they can never be overburdened. 
+[Are there any historical precedents for ISAs?](#q1)
 
-### Are there any historical precedents for ISAs?
+[What ISA Programs Exist Today?](#q2)
+
+[What are some concerns regarding ISAs?](#q3)
+
+<div class='anchor'><a name='q1'></a></div>
+
+#### Are there any historical precedents for ISAs?
 
 Milton Friedman was the first to propose human equity investments in his 1955 paper The Role of Government in Education[^1]. In his paper, he argues that investing in human beings cannot be financed using debt because they are fundamentally different than physical capital. The productivity of physical capital (like a machine, or a car) is pretty fixed, but the productivity of human beings is highly variable. On one hand, people can be hampered by sickness or physical incapacitation, but on the other people can get extremely lucky. This makes it really hard to set interest rates for humans.
 
-Therefore, fixed money loans (like student debt currently) secured by expected future earnings must set a sufficiently high nominal interest rate on all loans. They have to set high rates because some students will fail to repay their loans, so the rates for successful students must be sufficiently high enough to subsidize their failure to repay. This is why all students are charged high interest rates on student debt regardless of ability, school, or major. 
+Therefore, fixed money loans (like student debt currently) secured by expected future earnings must set a sufficiently high nominal interest rate on all loans. They have to set high rates because some students will fail to repay their loans, so the rates for successful students must be sufficiently high enough to subsidize their failure to repay. This is why all students are charged high interest rates on student debt regardless of ability, school, or major.
 
 Instead of taking on debt, Friedman proposed that investors could purchase a share of an individual’s earning prospects. This allows for variable pricing for students based on ability and expected earnings.
 
 Yale attempted a modified version of Friedman’s proposal in the 1970s[^2]. However, instead of repaying a portion of their income for a specified number of years, all participants were required to repay a portion of their income until the entire group’s balance was repaid. This experiment ended in failure because successful programs felt like they had to pay more than their fair share as they subsidized others who were unsuccessful or refused to pay. It took decades before another school gave ISAs a chance.
 
-### What ISA Programs Exist Today?
+<div class='anchor'><a name='q2'></a></div>
 
-In 2016, Purdue launched their ‘Back a Boiler’ ISA program. Because Federal loans are offered at low interest rates, Purdue’s program aims to replace the more expensive private and PLUS loans[^3]. The program is available to sophomores, juniors, and seniors of any major. The pricing of each student’s ISA depends on their expected income, which is calculated through a mix of their year and major. It does not take into account individual ability. 
+#### What ISA Programs Exist Today?
+
+In 2016, Purdue launched their ‘Back a Boiler’ ISA program. Because Federal loans are offered at low interest rates, Purdue’s program aims to replace the more expensive private and PLUS loans[^3]. The program is available to sophomores, juniors, and seniors of any major. The pricing of each student’s ISA depends on their expected income, which is calculated through a mix of their year and major. It does not take into account individual ability.
 
 Lambda School is another educational institution launched in 2016 which utilizes ISAs. Lambda is a nine month coding boot camp where students pay nothing until they find a tech job that pays more than $50,000 annually. Once employed, students pay 17% of their income for 24 months or until they pay $30,000. Lambda School is the first example of using ISAs to align incentives with students because they only get paid when their students do.
 
-Edith is taking both of these approaches to the next level. Students on Edith are paired with mentors who both have had relevant work experience and are willing to finance the student’s education. Each ISA is personalized based on the student’s background, and mentors are financially incentivized to help their student succeed. Unlike Yale’s program, each mentor will only have a few students and each student will have an individual ISA, so students don’t have to worry about subsidizing others. 
+Edith is taking both of these approaches to the next level. Students on Edith are paired with mentors who both have had relevant work experience and are willing to finance the student’s education. Each ISA is personalized based on the student’s background, and mentors are financially incentivized to help their student succeed. Unlike Yale’s program, each mentor will only have a few students and each student will have an individual ISA, so students don’t have to worry about subsidizing others.
 
-## What are some concerns regarding ISAs?
+<div class='anchor'><a name='q3'></a></div>
 
-### Adverse Selection
+#### What are some concerns regarding ISAs?
+##### Excessive Payback
 
-Because students only pay when they make money, there are some concerns that only unsuccessful students would want to take on an ISA. 
+If I sign an ISA and I end up making a lot of money, could it come back to bite me?
+
+All ISAs on Edith will have a payback cap of 2.0x, and the maximum repayment can be negotiated on a case-by-case basis. This means if you raised $15,000 on Edith, you can never repay more than $30,000.
+
+##### Payment Enforcement
+
+Don’t students have every incentive to underreport their income if they’re paying a percentage of it?
+
+We hope that Edith and the student’s mentor will have provided enough value that a student would be happy to pay their ISA in full. And while there aren’t many precedents of ISA programs, our research has shown that students in ISA programs generally repay. Furthermore, as Edith will be involved with helping students find jobs, we will have employment verification and use the student’s W2 to calculate payments.
+
+##### Disincentives
+
+If a student signs away too much of their income, are they put in a situation similar to indentured servitude?
+
+Unlike indentured servitude, students who participate in ISAs are not forced to work. Rather, we want students to partner up with professionals who have relevant work experience who can help them. The ISA is not an obligation to repay an owed debt, rather it’s an instrument to create a partnership between two individuals. Additionally, Edith caps the total income pledged by any student at 15% to prevent disincentives.
+
+##### Adverse Selection
+
+Because students only pay when they make money, there are some concerns that only unsuccessful students would want to take on an ISA.
 
 Kevin Mumford, an associate professor of economics at Purdue University, wanted to test these concerns. He studied 431 students that decided to participate in the Back a Boiler program at Purdue and 319 students that were selected to participate but chose not to. He found no evidence of adverse selection amongst these students. In fact, students who chose to participate on average had higher prior-year GPAs than those who chose not to participate[^4].
+
+We believe participating in Edith actually represents the opposite of adverse selection. By leveraging a portion of their future earnings in order to partner with a mentor who can take their career to the next level, students are actually taking a bet on themselves. Mentors are also taking a bet on the student, which is not what you’d see in the case of adverse selection.
+
+Ultimately, this is what we’re trying to build with Edith. We believe that there are millions of students with untapped potential, and that there are just as many potential mentors who can help them. On Edith, we want students to be able to take bets on themselves, and we want to match them with mentors willing to support them. Income Share Agreements are merely the financial tool to align incentives between the parties.
 
 
 [^1]: [The Role of Government in Education, Milton Friedman 1955](http://la.utexas.edu/users/hcleaver/330T/350kPEEFriedmanRoleOfGovttable.pdf)
 [^2]: [Yale’s ISA Experiment](https://incomeshareagreements.org/income-share-agreements-isas/)
 [^3]: [FAQ on Purdue’s ISA Program](https://www.purdue.edu/backaboiler/FAQ/index.html)
-[^4[: [Kevin Mumford, Student Selection into an Income Share Agreement, 2018]{https://krannert.purdue.edu/faculty/kjmumfor/papers/Mumford%20Income%20Share%20Agreement%20Selection.pdf)
+[^4]: [Kevin Mumford, Student Selection into an Income Share Agreement, 2018](https://krannert.purdue.edu/faculty/kjmumfor/papers/Mumford%20Income%20Share%20Agreement%20Selection.pdf)

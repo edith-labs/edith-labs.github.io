@@ -10,6 +10,7 @@ import './styles.scss';
 function BlogPage() {
   const [email, setEmail] = useState('');
   const [isEmailSubmitted, setIsEmailSubmitted] = useState(false);
+  const [isStudent, setIsStudent] = useState(true);
 
   const data = useStaticQuery(graphql`
     query {
@@ -33,7 +34,8 @@ function BlogPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addToMailchimp(email)
+    const group = isStudent ? { 'group[26469][4]': '4' } : { 'group[26469][1]': '1' };
+    addToMailchimp(email, group)
       .then(() => {
         setEmail('');
         setIsEmailSubmitted(true);
@@ -117,6 +119,23 @@ function BlogPage() {
         <div class='columns is-centered' style={{ marginLeft: rhythm(1), marginRight: rhythm(1), marginBottom: rhythm(1) }}>
           <div class='column is-4'>
             <form onSubmit={handleSubmit}>
+
+              <div class="buttons has-addons is-centered">
+                <button
+                  class={`button is-outline ${isStudent ? 'is-primary' : ''}`}
+                  onClick={() => setIsStudent(true)}
+                  type='button'
+                >
+                  Student
+                </button>
+                <button
+                  class={`button is-outline ${!isStudent ? 'is-primary' : ''}`}
+                  onClick={() => setIsStudent(false)}
+                  type='button'
+                >
+                  Mentor
+                </button>
+              </div>
 
               <input
                 style={{ marginBottom: rhythm(1) }}

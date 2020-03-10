@@ -10,6 +10,10 @@ $light: rgb(246, 249, 252);
 
 @import "~bulma/bulma.sass";
 
+html {
+    scroll-behavior: smooth;
+}
+
 .footer-link {
     color: $footer;
     font-weight: bold;
@@ -20,7 +24,7 @@ $light: rgb(246, 249, 252);
 }
 
 .tile-link:hover {
-    background-color: rgb(234, 234, 252);
+    background-color: rgb(238, 242, 245);
 }
 
 .text-link {
@@ -29,4 +33,12 @@ $light: rgb(246, 249, 252);
 
 blockquote {
     background-color: blue,
+}
+.anchor a {
+    position: absolute;
+    left: 0px;
+    top: -60px;
+}
+.anchor {
+    position: relative;
 }

@@ -53,7 +53,7 @@ function HomePage() {
 
       <BannerSection />
 
-      {/* <BlogSection /> */}
+      <BlogSection />
 
     </Layout>
   );

@@ -60,7 +60,7 @@ const Layout = ({ children }) => {
               </Link>
             </div>
 
-            {/* <div class='column is-4'>
+            <div class='column is-4'>
 
               <Link to='/blog' >
                 <h4 class='subtitle' style={{ marginBottom: rhythm(1) }}>Blog</h4>
@@ -70,7 +70,7 @@ const Layout = ({ children }) => {
                 <Link to={slug}><p class='footer-link'>{title}</p></Link>
               ))}
 
-            </div> */}
+            </div>
 
             <div class='column is-4'>
 
