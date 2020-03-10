@@ -1,7 +1,7 @@
 ---
 title: What are Income Share Agreements?
 date: "2020-03-09"
-excerpt: "Learn about the history of ISAs, how they can be applied to student debt, and how Edith can help you"
+excerpt: "They are agreements between two parties - but instead of the borrower repaying the original amount (the principal) with interest, they repay with a portion of their income for a certain amount of time. In our case, the borrower is the student and the lender is the mentor."
 definition: An income share agreement (ISA) is a simple agreement between two parties where the borrower repays the lender with a portion of their income for a predetermined time.
 author: Nick Chua
 ---
