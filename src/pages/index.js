@@ -33,11 +33,11 @@ function HomePage() {
                 </div>
               </div>
               <h2 class='title is-hidden-touch'>
-                Partnering students with mentors through investments income share agreements
+                Partnering students with mentors through income share agreements
               </h2>
 
               <h2 class='subtitle is-hidden-desktop'>
-                Partnering students with mentors through investments income share agreements
+                Partnering students with mentors through income share agreements
               </h2>
 
             </div>

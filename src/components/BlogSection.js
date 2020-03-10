@@ -43,7 +43,7 @@ function BlogSection() {
           </div>
 
           <div class='tile is-ancestor'>
-            {posts.map(({ node: { fields: { slug }, frontmatter: { title, excerpt } } }) => (
+            {posts.slice(0, 3).map(({ node: { fields: { slug }, frontmatter: { title, excerpt } } }) => (
               <div class="tile is-parent is-4">
                 <BlogTile title={title} excerpt={excerpt} permalink={slug} />
               </div>

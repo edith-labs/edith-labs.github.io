@@ -60,6 +60,12 @@ module.exports = {
               footnoteBackRefDisplay: "inline",
               useFootnoteMarkerText: false // Defaults to false
             }
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            }
           }
         ]
       }
