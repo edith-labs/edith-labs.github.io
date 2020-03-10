@@ -6,11 +6,11 @@ definition: An income share agreement (ISA) is a simple agreement between two pa
 author: Nick Chua
 ---
 
-### 🤔 Understanding Income Share Agreements
+## 🤔 Understanding Income Share Agreements
 
 ISAs are a new type of financial instrument that aligns the incentives between the borrower and lender. In our case, it connects students with mentors. Incentives are aligned because the mentor only gets paid if the student does. There are also typically salary minimums with ISAs - if the student gets paid less than the minimum, they don’t make any ISA payments until they make above the minimum. Because the borrower is only paying a percentage of their income, they can never be overburdened.
 
-#### Example
+### Example
 
 Say a college student needs $15,000 to pay for college and they decide to take on an ISA. A sample ISA could look like this: $15,000 upfront and 5% of their salary for 5 years after graduation. Their payments would look like this:
 
@@ -22,11 +22,11 @@ Say a college student needs $15,000 to pay for college and they decide to take o
 | 2024 | $81,031            | $4,052       |
 | 2025 | $85,085            | $4,254       |
 
-#### Takeaway
+### Takeaway
 
 ISAs are a new tool that can be used to finance a variety of endeavors, including education. However, because they are so new, there are many common misconceptions of ISAs which we explain below. Fundamentally, they are powerful tools because they truly align incentives between borrowers and lenders. Unlike student debt where it can feel like the student vs. the bank, mentors and students form a team through income share agreements.
 
-### Tell me more…
+## Tell me more…
 
 [Are there any historical precedents for ISAs?](#q1)
 
@@ -36,7 +36,7 @@ ISAs are a new tool that can be used to finance a variety of endeavors, includin
 
 <div class='anchor'><a name='q1'></a></div>
 
-#### Are there any historical precedents for ISAs?
+### Are there any historical precedents for ISAs?
 
 Milton Friedman was the first to propose human equity investments in his 1955 paper The Role of Government in Education[^1]. In his paper, he argues that investing in human beings cannot be financed using debt because they are fundamentally different than physical capital. The productivity of physical capital (like a machine, or a car) is pretty fixed, but the productivity of human beings is highly variable. On one hand, people can be hampered by sickness or physical incapacitation, but on the other people can get extremely lucky. This makes it really hard to set interest rates for humans.
 
@@ -48,7 +48,7 @@ Yale attempted a modified version of Friedman’s proposal in the 1970s[^2]. How
 
 <div class='anchor'><a name='q2'></a></div>
 
-#### What ISA Programs Exist Today?
+### What ISA Programs Exist Today?
 
 In 2016, Purdue launched their ‘Back a Boiler’ ISA program. Because Federal loans are offered at low interest rates, Purdue’s program aims to replace the more expensive private and PLUS loans[^3]. The program is available to sophomores, juniors, and seniors of any major. The pricing of each student’s ISA depends on their expected income, which is calculated through a mix of their year and major. It does not take into account individual ability.
 
@@ -58,26 +58,26 @@ Edith is taking both of these approaches to the next level. Students on Edith ar
 
 <div class='anchor'><a name='q3'></a></div>
 
-#### What are some concerns regarding ISAs?
-##### Excessive Payback
+### What are some concerns regarding ISAs?
+#### Excessive Payback
 
 If I sign an ISA and I end up making a lot of money, could it come back to bite me?
 
 All ISAs on Edith will have a payback cap of 2.0x, and the maximum repayment can be negotiated on a case-by-case basis. This means if you raised $15,000 on Edith, you can never repay more than $30,000.
 
-##### Payment Enforcement
+#### Payment Enforcement
 
 Don’t students have every incentive to underreport their income if they’re paying a percentage of it?
 
 We hope that Edith and the student’s mentor will have provided enough value that a student would be happy to pay their ISA in full. And while there aren’t many precedents of ISA programs, our research has shown that students in ISA programs generally repay. Furthermore, as Edith will be involved with helping students find jobs, we will have employment verification and use the student’s W2 to calculate payments.
 
-##### Disincentives
+#### Disincentives
 
 If a student signs away too much of their income, are they put in a situation similar to indentured servitude?
 
 Unlike indentured servitude, students who participate in ISAs are not forced to work. Rather, we want students to partner up with professionals who have relevant work experience who can help them. The ISA is not an obligation to repay an owed debt, rather it’s an instrument to create a partnership between two individuals. Additionally, Edith caps the total income pledged by any student at 15% to prevent disincentives.
 
-##### Adverse Selection
+#### Adverse Selection
 
 Because students only pay when they make money, there are some concerns that only unsuccessful students would want to take on an ISA.
 

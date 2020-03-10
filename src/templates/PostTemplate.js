@@ -57,9 +57,7 @@ function PostTemplate({ data, pageContext }) {
                 dangerouslySetInnerHTML={{ __html: html }}
               />
 
-              <hr style={{ marginTop: rhythm(1.5), marginBottom: rhythm(1.5) }} />
-
-              <p>Thanks for reading this post!</p>
+              <hr style={{ marginTop: rhythm(1.5) }} />
 
             </div>
           </div>
