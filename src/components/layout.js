@@ -62,7 +62,7 @@ const Layout = ({ children }) => {
 
             <div class='column is-4'>
 
-              <Link to='/blog' >
+              <Link to='/learn' >
                 <h4 class='subtitle' style={{ marginBottom: rhythm(1) }}>Blog</h4>
               </Link>
 
