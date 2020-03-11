@@ -171,7 +171,7 @@ From a purely financial sense, ISAs make sense. You will owe a similar amount or
 
 You only pay more if you make more (which we believe a partnership with a mentor and the aligned incentives of an ISA help increase your earnings potential).
 
-The true power of ISAs is not a replacement to debt, but rather as a tool to create a team with a mentor. We believe mentors provide value through their network, career advice, and recruiting help, which will ultimately lead to better career outcomes for the student.
+The true power of ISAs is not as a replacement to debt, but rather as a tool to create a team with a mentor. We believe mentors provide value through their network, career advice, and recruiting help, which will ultimately lead to better career outcomes for the student.
 
 If there was no mentor involved and you were merely using the ISA as a replacement for debt, it would almost be a bet against yourself. It’s giving up some of the upside of your earnings potential in exchange for downside financial protection in the case that you fail - you pay much less or nothing if you have a low income.
 
