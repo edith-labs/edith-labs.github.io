@@ -1,6 +1,6 @@
 ---
 title: Edith's ISA Sandbox
-date: '2020-03-10'
+date: '2020-03-11'
 excerpt: Showcasing our tool to evaluate ISAs, determine the value that could potentially be created for a student, and compare an ISA to student loans. Check out the post for a walkthrough of the tool, what it means, and how we envision growing the tool in the future.
 author: Kevin Arifin
 ---
@@ -47,11 +47,13 @@ The ISA tool allows you to model the value created for different student outcome
 
 ![](./advanced-settings.png)
 
-Because ISAs can get complicated fast, we hide some toggleable parameters under "Advanced Settings". For now, the only advanced settings are **Estimated Interest Rate** and **Years Until Graduation**.
+Because ISAs can get complicated fast, we hide some toggleable parameters under "Advanced Settings". These are the currently available settings:
 
 * **Estimated Interest Rate:** If you were to take out debt, the estimate interest rate for your loan payments. The interest rate for public student loans is 4.53% while the average interest rate for private student loans is 7.64%. For more details on student loan interest rates, check out our post [What are student loans?](/what-are-student-loans)
 
 * **Years Until Graduation:** Number of years until student graduates. For example, a senior would be 1 year from graduation and a sophomore would be 3 years from graduations. This determines how long it will take for the mentor to start seeing repayments on the ISA principal.
+
+* **Interest Payments During School:** Depending on the type of student loan, the student may owe interest payments during school. Toggling this setting on indicates the interest payments you would have to make during your time in school. Generally, the only types of loans that defer interest payments until after graduation are subsidized public loans and specific private loans where this condition is agreed upon when issuing the loan.
 
 We plan on expanding the flexibility of the tool by expanding the set of advanced settings over time to better model different student situations and types of ISAs.
 
@@ -68,7 +70,7 @@ For student loans with high interest rates, it is easy to construct an ISA with 
 The ISA Sandbox is still in it's infancy and we'll continue to iterate and build out features as we go along.
 
 Some upcoming features:
-* More advanced settings (subsidized vs. unsubsidized loans, ISA payment cap)
+* More advanced settings (ISA payment cap, ISA payment floor)
 * Visualizations/charts
 * Ability to save scenarios and import to Edith platform
 * Export sandbox as a PDF report
