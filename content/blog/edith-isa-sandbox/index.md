@@ -1,6 +1,6 @@
 ---
 title: Edith's ISA Sandbox
-date: '2020-03-11'
+date: '2020-03-13'
 excerpt: Showcasing our tool to evaluate ISAs, determine the value that could potentially be created for a student, and compare an ISA to student loans. Check out the post for a walkthrough of the tool, what it means, and how we envision growing the tool in the future.
 author: Kevin Arifin
 ---
