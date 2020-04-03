@@ -34,7 +34,8 @@ function Navbar() {
             </Link>
 
             <div class="buttons" style={{ marginLeft: rhythm(0.25)}}>
-              <a class="button is-primary" href='https://app.edithlabs.com' target='_blank'>
+
+              <a class="button is-primary" href='/waitlist'>
                 Log in
               </a>
             </div>
