@@ -1,10 +1,9 @@
 import addToMailchimp from 'gatsby-plugin-mailchimp'
-import { graphql, useStaticQuery, Link } from 'gatsby';
 import React, { useState } from 'react';
 
 import logo from '../images/logo-text.png';
 import Layout from '../components/Layout';
-import SEO from '../components/Seo';
+import SEO from '../components/SEO';
 import { rhythm } from '../utils/typography';
 import './styles.scss';
 

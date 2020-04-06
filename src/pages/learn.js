@@ -2,9 +2,9 @@ import addToMailchimp from 'gatsby-plugin-mailchimp'
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import React, { useState } from 'react';
 
-import Layout from '../components/Layout';
-import SEO from '../components/Seo';
-import { rhythm } from '../utils/typography';
+import Layout from 'components/Layout';
+import SEO from 'components/SEO';
+import { rhythm } from 'utils/typography';
 import './styles.scss';
 
 function BlogPage() {
@@ -43,6 +43,8 @@ function BlogPage() {
       });
   }
 
+  console.log(posts);
+
   return (
     <Layout>
 
@@ -72,7 +74,7 @@ function BlogPage() {
 
             <hr style={{ marginTop: rhythm(-0.5), }} />
 
-            {posts.map(({ node: { fields: { slug }, frontmatter: { title, date } } }) => (
+            {posts.slice(0, 3).map(({ node: { fields: { slug }, frontmatter: { title, date } } }) => (
               <Link to={slug}>
                 <section style={{ marginBottom: rhythm(0.5) }}>
                   <p class='text-link'>{date}</p>

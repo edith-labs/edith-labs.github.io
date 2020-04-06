@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Layout from '../components/Layout';
-import SEO from '../components/seo';
-import { rhythm } from '../utils/typography';
-import PostDefinition from '../components/PostDefinition';
+import Layout from 'components/Layout';
+import SEO from 'components/SEO';
+import { rhythm } from 'utils/typography';
+import PostDefinition from 'components/PostDefinition';
 
 function dictionary() {
   const contents = [

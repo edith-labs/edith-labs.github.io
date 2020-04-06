@@ -4,7 +4,7 @@ import React from 'react';
 import { FaEnvelope, FaTwitter } from 'react-icons/fa';
 
 import { rhythm } from '../utils/typography';
-import Navbar from '../components/Navbar';
+import Navbar from './Navbar';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

@@ -31,9 +31,6 @@ html {
     color: black;
 }
 
-blockquote {
-    background-color: blue,
-}
 .anchor a {
     position: absolute;
     left: 0px;
@@ -41,4 +38,40 @@ blockquote {
 }
 .anchor {
     position: relative;
+}
+
+.wave-container {
+  position: relative;
+  background: $light;
+  max-width: unset;
+}
+
+.wave {
+  position: absolute;
+  height: 109px;
+  width: 100%;
+  background: $light;
+  bottom: 0;
+}
+
+.wave::before, .wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+}
+
+.wave::before {
+  width: 53.5%;
+  height: 110%;
+  background-color: $primary;
+  right: 0;
+  top: 60%;
+}
+.wave::after {
+  width: 53.5%;
+  height: 100%;
+  background-color: $light;
+  left: 0;
+  top: 40%;
 }
