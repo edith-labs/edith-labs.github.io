@@ -37,7 +37,8 @@ html {
     top: -60px;
 }
 .anchor {
-    position: relative;
+  position: relative;
+  visibility: hidden;
 }
 
 .wave-container {

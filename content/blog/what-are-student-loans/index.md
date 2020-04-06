@@ -55,7 +55,7 @@ No matter how much money you make post-graduation, you need to make your loan pa
 
 [When are income share agreements better than student loans?](#q5)
 
-<div class='anchor'><a name='q1'></a></div>
+<div className='anchor'><a name='q1'></a></div>
 
 ### What is the difference between public and private student loans?
 
@@ -79,7 +79,7 @@ While you only pay about $20.00 more per month because of the higher interest ra
 
 Compared to the $2,453.97 in interest you would pay with the public student loan, you would pay $4,332.05 (assuming you make all of your payments on time).
 
-<div class='anchor'><a name='q2'></a></div>
+<div className='anchor'><a name='q2'></a></div>
 
 ### Why would I ever have to take out private student loans?
 
@@ -93,7 +93,7 @@ Even if you max out government loans, it is likely you will still have to find a
 
 Even though private student loans are generally much more costly than public student loans, they still make up a large chunk of student loan debt because there really aren't any other alternatives. Private student loan debt volume hit an estimated $13.1 billion[^1] in the 2018-2019 academic year, making up 11% of the student loans issued.
 
-<div class='anchor'><a name='q3'></a></div>
+<div className='anchor'><a name='q3'></a></div>
 
 ### When do I start making my monthly loan payments?
 
@@ -105,7 +105,7 @@ There are specific types of public student loans where your interest payments ar
 
 For private student loans, some lenders offer deferred interest payments, but this is likely going to result in a higher interest payment.
 
-<div class='anchor'><a name='q4'></a></div>
+<div className='anchor'><a name='q4'></a></div>
 
 ### What is the difference between subsidized and unsubsidized student loans?
 
@@ -140,7 +140,7 @@ For independent students:
 
 Thus, if it takes you longer than 4 years to finish school, you will likely hit the maximum amount, regardless if you are just taking subsidized loans, or a combination of subsidized and unsubsidized loans. This means you have to find alternative sources for funding your education, which usually means private student loans.
 
-<div class='anchor'><a name='q5'></a></div>
+<div className='anchor'><a name='q5'></a></div>
 
 ### When are income share agreements better than student loans?
 

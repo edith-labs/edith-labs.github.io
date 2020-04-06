@@ -34,7 +34,7 @@ ISAs are a new tool that can be used to finance a variety of endeavors, includin
 
 [What are some concerns regarding ISAs?](#q3)
 
-<div class='anchor'><a name='q1'></a></div>
+<div className='anchor'><a name='q1'></a></div>
 
 ### Are there any historical precedents for ISAs?
 
@@ -46,7 +46,7 @@ Instead of taking on debt, Friedman proposed that investors could purchase a sha
 
 Yale attempted a modified version of Friedman’s proposal in the 1970s[^2]. However, instead of repaying a portion of their income for a specified number of years, all participants were required to repay a portion of their income until the entire group’s balance was repaid. This experiment ended in failure because successful programs felt like they had to pay more than their fair share as they subsidized others who were unsuccessful or refused to pay. It took decades before another school gave ISAs a chance.
 
-<div class='anchor'><a name='q2'></a></div>
+<div className='anchor'><a name='q2'></a></div>
 
 ### What ISA Programs Exist Today?
 
@@ -56,7 +56,7 @@ Lambda School is another educational institution launched in 2016 which utilizes
 
 Edith is taking both of these approaches to the next level. Students on Edith are paired with mentors who both have had relevant work experience and are willing to finance the student’s education. Each ISA is personalized based on the student’s background, and mentors are financially incentivized to help their student succeed. Unlike Yale’s program, each mentor will only have a few students and each student will have an individual ISA, so students don’t have to worry about subsidizing others.
 
-<div class='anchor'><a name='q3'></a></div>
+<div className='anchor'><a name='q3'></a></div>
 
 ### What are some concerns regarding ISAs?
 #### Excessive Payback

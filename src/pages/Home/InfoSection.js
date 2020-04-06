@@ -2,8 +2,8 @@ import React from 'react';
 import { FaLink, FaRocket, FaUserFriends } from 'react-icons/fa';
 
 
-import ProductDescription from './ProductDescription';
 import { rhythm } from 'utils/typography';
+import ProductDescription from './ProductDescription';
 
 function InfoSection() {
   const descriptions = [
@@ -19,7 +19,7 @@ function InfoSection() {
       description: `
       Help the next generation succeed by teaming up with motivated students. Because you’re partnered through an income share agreement, you directly share in their future success.
       `,
-      icon: <FaUserFriends size={32} style={{ marginBottom: rhythm(0.25) }} />
+      icon: <FaUserFriends size={32} style={{ marginBottom: rhythm(0.25) }} />,
     },
     {
       title: 'We do the rest',
@@ -31,17 +31,17 @@ function InfoSection() {
   ];
 
   return (
-    <section class='hero is-primary'>
+    <section className="hero is-primary">
       <div
-        class='hero-body'
+        className="hero-body"
         data-sal="slide-up"
         data-sal-easing="ease"
       >
-        <div class='container' style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
-          <div class='columns'>
-            <div class='column'>
+        <div className="container" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
+          <div className="columns">
+            <div className="column">
 
-              <div class='columns'>
+              <div className="columns">
                 {descriptions.map(({ title, description, icon }) => (
                   <ProductDescription
                     title={title}

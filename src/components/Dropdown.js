@@ -5,30 +5,35 @@ function Dropdown({ selectedOption, dropdownOptions, onSelect }) {
   const [isActive, setIsActive] = useState(false);
 
   const handleSelect = (option) => {
-    onSelect(option)
+    onSelect(option);
     setIsActive(false);
-  }
+  };
 
   return (
-    <div class={`dropdown  ${isActive ? 'is-active' : ''}`}>
-      <div class="dropdown-trigger">
+    <div className={`dropdown  ${isActive ? 'is-active' : ''}`}>
+      <div className="dropdown-trigger">
         <button
-          class="button"
+          type="button"
+          className="button"
           onClick={() => setIsActive(!isActive)}
         >
           <span>{selectedOption}</span>
-          <span class="icon is-small">
+          <span className="icon is-small">
             <FaChevronDown />
           </span>
         </button>
       </div>
-      <div class="dropdown-menu" id="dropdown-menu" role="menu" >
-        <div class="dropdown-content">
+      <div className="dropdown-menu" id="dropdown-menu" role="menu">
+        <div className="dropdown-content">
           {
             dropdownOptions.map((option) => (
-              <a class="dropdown-item" onClick={() => handleSelect(option)}>
+              <button
+                type="button"
+                className="dropdown-item"
+                onClick={() => handleSelect(option)}
+              >
                 {option}
-              </a>
+              </button>
             ))
           }
         </div>

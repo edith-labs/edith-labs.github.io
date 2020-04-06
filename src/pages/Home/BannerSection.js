@@ -29,28 +29,28 @@ function BannerSection() {
   const dropdownOptions = ['Student', 'Mentor'];
 
   return (
-    <section class='hero' >
+    <section className="hero">
       <div
-        class='hero-body'
+        className="hero-body"
         data-sal="slide-up"
         data-sal-easing="ease"
       >
-        <div class='container has-text-centered'>
-          <h1 class='title'>
-            {`How Edith works as a `}
+        <div className="container has-text-centered">
+          <h1 className="title">
+            {'How Edith works as a '}
             <Dropdown
               selectedOption={option}
               dropdownOptions={dropdownOptions}
-              onSelect={(option) => setOption(option)}
+              onSelect={(selectedOption) => setOption(selectedOption)}
             />
           </h1>
 
           <SwapTransition activeKey={option}>
-            <div class='columns is-centered'>
-              <div class='column is-three-fifths'>
-                {option === 'Student' ?
-                  <Img fluid={data.student.childImageSharp.fluid} /> :
-                  <Img fluid={data.mentor.childImageSharp.fluid} />}
+            <div className="columns is-centered">
+              <div className="column is-three-fifths">
+                {option === 'Student'
+                  ? <Img fluid={data.student.childImageSharp.fluid} />
+                  : <Img fluid={data.mentor.childImageSharp.fluid} />}
               </div>
             </div>
           </SwapTransition>

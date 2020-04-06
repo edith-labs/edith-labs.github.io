@@ -1,41 +1,48 @@
 import { Link } from 'gatsby';
 import React, { useState } from 'react';
 
-import logo from '../images/logo-white.png';
-import { rhythm } from '../utils/typography';
+import logo from 'images/logo-white.png';
+import { rhythm } from 'utils/typography';
 
 function Navbar() {
-  const [isActive, setIsActive] =  useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   return (
-    <nav class='navbar is-fixed-top has-shadow'>
-      <div class='container'>
-        <div class='navbar-brand'>
-          <Link class='navbar-item' activeClassName='navbar-item'>
-            <img src={logo} style={{ maxWidth: 400, marginTop: 'auto', marginBottom: 'auto', display: 'flex', alignItems: 'center' }} />
+    <nav className="navbar is-fixed-top has-shadow">
+      <div className="container">
+        <div className="navbar-brand">
+          <Link className="navbar-item" activeClassName="navbar-item" to="/">
+            <img
+              alt="logo"
+              src={logo}
+              style={{
+                maxWidth: 400, marginTop: 'auto', marginBottom: 'auto', display: 'flex', alignItems: 'center',
+              }}
+            />
           </Link>
-          <a
-            class={`navbar-burger burger ${isActive ? 'is-active' : ''}`}
+          <button
+            type="button"
+            className={`navbar-burger burger ${isActive ? 'is-active' : ''}`}
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
             onClick={() => setIsActive(!isActive)}
           >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+          </button>
         </div>
-        <div id='navbarMenuHeroA' class={`navbar-menu ${isActive ? 'is-active' : ''}`}>
-          <div class='navbar-end'>
+        <div id="navbarMenuHeroA" className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
+          <div className="navbar-end">
 
-            <Link class='navbar-item' to='/learn' activeClassName='navbar-item is-active'>
+            <Link className="navbar-item" to="/learn" activeClassName="navbar-item is-active">
               Blog
             </Link>
 
-            <div class="buttons" style={{ marginLeft: rhythm(0.25)}}>
+            <div className="buttons" style={{ marginLeft: rhythm(0.25) }}>
 
-              <a class="button is-primary" href='/waitlist'>
+              <a className="button is-primary" href="/waitlist">
                 Log in
               </a>
             </div>

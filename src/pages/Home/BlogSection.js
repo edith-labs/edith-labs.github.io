@@ -1,8 +1,8 @@
 import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
 
-import BlogTile from './BlogTile';
 import { rhythm } from 'utils/typography';
+import BlogTile from './BlogTile';
 
 function BlogSection() {
   const data = useStaticQuery(graphql`
@@ -26,25 +26,27 @@ function BlogSection() {
   const posts = data.allMarkdownRemark.edges;
 
   return (
-    <section class='hero' style={{ marginBottom: rhythm(2) }}>
-      <div class='hero-body'>
-        <div class='container'>
-          <div class='columns'>
-            <div class='column is-6'>
-              <h1 class='title'>
+    <section className="hero" style={{ marginBottom: rhythm(2) }}>
+      <div className="hero-body">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-6">
+              <h1 className="title">
                 Blog
               </h1>
 
-              <h2 class='subtitle'>
-                The best resources to learn about student debt, income share agreements, and investing in
-                human potential.
+              <h2 className="subtitle">
+                The best resources to learn about student debt, income share agreements,
+                and investing in human potential.
               </h2>
             </div>
           </div>
 
-          <div class='tile is-ancestor'>
-            {posts.slice(0, 3).map(({ node: { fields: { slug }, frontmatter: { title, excerpt } } }) => (
-              <div class="tile is-parent is-4">
+          <div className="tile is-ancestor">
+            {posts.slice(0, 3).map(({
+              node: { fields: { slug }, frontmatter: { title, excerpt } },
+            }) => (
+              <div className="tile is-parent is-4">
                 <BlogTile title={title} excerpt={excerpt} permalink={slug} />
               </div>
             ))}

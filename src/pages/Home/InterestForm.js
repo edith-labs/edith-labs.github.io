@@ -1,4 +1,4 @@
-import addToMailchimp from 'gatsby-plugin-mailchimp'
+import addToMailchimp from 'gatsby-plugin-mailchimp';
 import React, { useState } from 'react';
 
 import { rhythm } from 'utils/typography';
@@ -19,34 +19,34 @@ function InterestForm() {
         setEmail('');
         setIsEmailSubmitted(true);
       });
-  }
+  };
 
   return (
-    <div class='card'>
-      <div class='card-content' style={{ padding: rhythm(0.8)}}>
+    <div className="card">
+      <div className="card-content" style={{ padding: rhythm(0.8) }}>
 
-        <SwapTransition activeKey={isStudent ? "student" : "mentor"}>
-          <h2 class='title' style={{ marginBottom: rhythm(1) }}>
-            {isStudent ?
-              `Find mentorship and capital to help you succeed` :
-              `Learn how you can partner with students as a mentor`}
+        <SwapTransition activeKey={isStudent ? 'student' : 'mentor'}>
+          <h2 className="title" style={{ marginBottom: rhythm(1) }}>
+            {isStudent
+              ? 'Find mentorship and capital to help you succeed'
+              : 'Learn how you can partner with students as a mentor'}
           </h2>
         </SwapTransition>
 
         <form onSubmit={handleSubmit}>
 
-          <div class="buttons has-addons is-centered">
+          <div className="buttons has-addons is-centered">
             <button
-              class={`button is-outline ${isStudent ? 'is-primary' : ''}`}
+              className={`button is-outline ${isStudent ? 'is-primary' : ''}`}
               onClick={() => setIsStudent(true)}
-              type='button'
+              type="button"
             >
               Student
             </button>
             <button
-              class={`button is-outline ${!isStudent ? 'is-primary' : ''}`}
+              className={`button is-outline ${!isStudent ? 'is-primary' : ''}`}
               onClick={() => setIsStudent(false)}
-              type='button'
+              type="button"
             >
               Mentor
             </button>
@@ -54,25 +54,26 @@ function InterestForm() {
 
           <input
             style={{ marginBottom: rhythm(1) }}
-            placeholder='Email'
+            placeholder="Email"
             type="email"
             value={email}
             name="EMAIL"
-            class="input"
+            className="input"
             id="mce-EMAIL"
             onChange={(e) => setEmail(e.target.value)}
             required
           />
 
           <button
-            class='button is-fullwidth is-primary'
-            type='submit'
+            className="button is-fullwidth is-primary"
+            type="submit"
             style={{ marginBottom: rhythm(0.5) }}
           >
             Learn more
           </button>
 
-          {isEmailSubmitted && <h3 class='subtitle'>Thank you! We'll be reaching out shortly</h3>}
+          {isEmailSubmitted
+            && <h3 className="subtitle">Thank you! We&apos;ll be reaching out shortly</h3>}
         </form>
       </div>
     </div>
@@ -80,5 +81,3 @@ function InterestForm() {
 }
 
 export default InterestForm;
-
-

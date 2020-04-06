@@ -6,7 +6,7 @@ import { rhythm } from '../utils/typography';
 
 function PostSubheader({ author, date }) {
   const getMetadata = () => {
-    switch(author) {
+    switch (author) {
       case 'Kevin Arifin':
         return { src: kevin };
       case 'Nick Chua':
@@ -14,24 +14,26 @@ function PostSubheader({ author, date }) {
       default:
         return {};
     }
-  }
+  };
 
   const { src } = getMetadata();
 
   return (
-    <article class="media" style={{ marginTop: rhythm(2) }}>
+    <article className="media" style={{ marginTop: rhythm(2) }}>
 
-      <figure class="media-left">
-        <p class="image is-64x64">
-          <img class='is-rounded' src={src} />
+      <figure className="media-left">
+        <p className="image is-64x64">
+          <img alt="avatar" className="is-rounded" src={src} />
         </p>
       </figure>
 
-      <div class="media-content">
-        <div class="content">
+      <div className="media-content">
+        <div className="content">
           <p>
-            <strong>{author}</strong> <small>{date}</small>
-            <br/>
+            <strong>{author}</strong>
+            {' '}
+            <small>{date}</small>
+            <br />
             Edith Co-founder
           </p>
         </div>
