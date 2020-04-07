@@ -1,0 +1,6 @@
+repos:
+-   repo: local
+    -   id: eslinter
+        name:  ESLint
+        entry: scripts/run_eslint.sh
+        language: system
