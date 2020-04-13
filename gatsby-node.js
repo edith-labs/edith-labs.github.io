@@ -5,6 +5,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const blogPost = path.resolve(`./src/templates/PostTemplate.js`)
+  const page = path.resolve(`./src/templates/PageTemplate.js`)
   const result = await graphql(
     `
       {
@@ -19,6 +20,8 @@ exports.createPages = async ({ graphql, actions }) => {
               }
               frontmatter {
                 title
+                type
+                path
               }
             }
           }
@@ -35,18 +38,36 @@ exports.createPages = async ({ graphql, actions }) => {
   const posts = result.data.allMarkdownRemark.edges
 
   posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node
-    const next = index === 0 ? null : posts[index - 1].node
+    switch (post.node.frontmatter.type) {
+      case 'post':
+        console.log(`Making post ${post.node.frontmatter.title}`)
+        const previous = index === posts.length - 1 ? null : posts[index + 1].node
+        const next = index === 0 ? null : posts[index - 1].node
 
-    createPage({
-      path: post.node.fields.slug,
-      component: blogPost,
-      context: {
-        slug: post.node.fields.slug,
-        previous,
-        next,
-      },
-    })
+        createPage({
+          path: post.node.fields.slug,
+          component: blogPost,
+          context: {
+            slug: post.node.fields.slug,
+            previous,
+            next,
+          },
+        })
+        return;
+
+      case 'page':
+        console.log(`Making page ${post.node.frontmatter.title}`)
+        console.log(post);
+
+        createPage({
+          path: post.node.frontmatter.path,
+          component: page,
+        })
+        return;
+
+      default:
+        return;
+    }
   })
 }
 

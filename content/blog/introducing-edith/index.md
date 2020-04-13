@@ -3,6 +3,7 @@ title: Introducing Edith
 date: '2020-04-03'
 excerpt: We’re excited to launch the first part of the Edith platform. This post talks about what we’re launching, why we’re launching, and how we can help you.
 author: Nick Chua
+type: post
 ---
 ![](./welcome3.png)
 

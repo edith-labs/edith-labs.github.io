@@ -5,7 +5,7 @@ module.exports = {
     author: `Kevin Arifin`,
   },
   plugins: [
-    'gatsby-plugin-resolve-src',
+    `gatsby-plugin-resolve-src`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -28,6 +28,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/markdown-pages`,
+        name: `markdown-pages`,
       },
     },
     {

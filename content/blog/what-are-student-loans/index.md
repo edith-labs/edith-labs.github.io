@@ -4,6 +4,7 @@ date: '2020-03-10'
 excerpt: How do you pay for school when you exhaust financial aid, scholarships, and grants? Student loans cover unmet financial need to pay for tuition and/or living expenses. The lender is generally the government or bank and the student pays back the amount they borrowed plus interest.
 definition: Student loans allow people pursuing higher education to pay tuition and living expenses by borrowing money from a lender (typically the government or a bank) and paying back the amount borrowed plus interest in the future.
 author: Kevin Arifin
+type: post
 ---
 
 ## 🤔 Understanding Student Loans

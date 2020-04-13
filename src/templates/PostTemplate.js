@@ -1,11 +1,11 @@
 import { graphql, Link } from 'gatsby';
 import React from 'react';
 
-import Layout from '../components/Layout';
-import PostDefinition from '../components/PostDefinition';
-import PostSubheader from '../components/PostSubheader';
-import SEO from '../components/SEO';
-import { rhythm } from '../utils/typography';
+import Layout from 'components/Layout';
+import PostDefinition from 'components/PostDefinition';
+import PostSubheader from 'components/PostSubheader';
+import SEO from 'components/SEO';
+import { rhythm } from 'utils/typography';
 
 function PostTemplate({ data, pageContext }) {
   const { frontmatter, html } = data.markdownRemark;
