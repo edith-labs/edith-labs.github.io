@@ -28,7 +28,7 @@ then
     exit 1
 fi
 
-mkdir content/drafts/$path
+mkdir -p content/drafts/$path
 
 echo "Created directory content/drafts/$path for your blog post"
 
