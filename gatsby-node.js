@@ -57,7 +57,6 @@ exports.createPages = async ({ graphql, actions }) => {
 
       case 'page':
         console.log(`Making page ${post.node.frontmatter.title}`)
-        console.log(post);
 
         createPage({
           path: post.node.frontmatter.path,
