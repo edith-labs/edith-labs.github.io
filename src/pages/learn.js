@@ -14,7 +14,10 @@ function BlogPage() {
 
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: DESC },
+        filter: {frontmatter: {type: {eq: "post"}}},
+      ) {
         edges {
           node {
             fields {
@@ -23,8 +26,8 @@ function BlogPage() {
             frontmatter {
               title
               date(formatString: "MMMM D, YYYY")
-              author
               excerpt
+              type
             }
           }
         }

@@ -7,7 +7,11 @@ import BlogTile from './BlogTile';
 function BlogSection() {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(sort: { fields: [frontmatter___title], order: DESC }) {
+      allMarkdownRemark(
+        limit: 3,
+        sort: { fields: [frontmatter___title], order: DESC },
+        filter: {frontmatter: {type: {eq: "post"}}},
+      ) {
         edges {
           node {
             fields {
@@ -17,6 +21,7 @@ function BlogSection() {
               title
               date(formatString: "MMMM D, YYYY")
               excerpt
+              type
             }
           }
         }
@@ -43,7 +48,7 @@ function BlogSection() {
           </div>
 
           <div className="tile is-ancestor">
-            {posts.slice(0, 3).map(({
+            {posts.map(({
               node: { fields: { slug }, frontmatter: { title, excerpt } },
             }) => (
               <div className="tile is-parent is-4">

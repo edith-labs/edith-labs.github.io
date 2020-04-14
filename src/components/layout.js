@@ -14,7 +14,11 @@ const Layout = ({ children }) => {
           title
         }
       }
-      allMarkdownRemark(sort: { fields: [frontmatter___title], order: DESC }) {
+      allMarkdownRemark(
+        limit: 3,
+        sort: { fields: [frontmatter___date], order: DESC },
+        filter: {frontmatter: {type: {eq: "post"}}},
+      ) {
         edges {
           node {
             fields {
@@ -24,6 +28,7 @@ const Layout = ({ children }) => {
               title
               date(formatString: "MMMM D, YYYY")
               excerpt
+              type
             }
           }
         }
