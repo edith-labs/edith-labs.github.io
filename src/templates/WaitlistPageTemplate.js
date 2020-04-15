@@ -51,8 +51,9 @@ function WaitlistPageTemplate({ data }) {
             />
 
             <form onSubmit={handleSubmit}>
+              <span className="form-label">First Name</span>
               <input
-                style={{ marginBottom: rhythm(1) }}
+                style={{ marginBottom: rhythm(0.5) }}
                 placeholder="First Name"
                 value={firstName}
                 name="FNAME"
@@ -61,8 +62,10 @@ function WaitlistPageTemplate({ data }) {
                 onChange={(e) => setFirstName(e.target.value)}
                 required
               />
+
+              <span className="form-label">Email</span>
               <input
-                style={{ marginBottom: rhythm(1) }}
+                style={{ marginBottom: rhythm(0.5) }}
                 placeholder="Email"
                 type="email"
                 value={email}
@@ -72,6 +75,8 @@ function WaitlistPageTemplate({ data }) {
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
+
+              <span className="form-label">School</span>
               <input
                 style={{ marginBottom: rhythm(1) }}
                 placeholder="School"
