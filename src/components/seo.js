@@ -43,6 +43,10 @@ function SEO({
           content: metaDescription,
         },
         {
+          property: 'og:image',
+          content: 'https://app.edithlabs.com/static/logo-text.png',
+        },
+        {
           property: 'og:type',
           content: 'website',
         },

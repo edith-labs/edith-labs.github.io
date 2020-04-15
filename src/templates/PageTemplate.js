@@ -6,7 +6,6 @@ import SEO from 'components/SEO';
 import { rhythm } from 'utils/typography';
 
 function PageTemplate({ data }) {
-  console.log(data);
   const { frontmatter, html } = data.markdownRemark;
   const { title } = frontmatter;
 

@@ -26,7 +26,7 @@ echo "Created directory $pagefile for your new page"
 echo "---" >> $pagefile
 echo "title: $title" >> $pagefile
 echo "type: page" >> $pagefile
-echo "path: $path" >> $pagefile
+echo "path: /$path" >> $pagefile
 echo "---" >> $pagefile
 
 echo "SUCCESS"

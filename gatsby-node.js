@@ -6,6 +6,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const blogPost = path.resolve(`./src/templates/PostTemplate.js`)
   const page = path.resolve(`./src/templates/PageTemplate.js`)
+  const waitlist = path.resolve(`./src/templates/WaitlistPageTemplate.js`)
   const result = await graphql(
     `
       {
@@ -61,6 +62,15 @@ exports.createPages = async ({ graphql, actions }) => {
         createPage({
           path: post.node.frontmatter.path,
           component: page,
+        })
+        return;
+
+      case 'waitlist':
+        console.log(`Making waitlist page`)
+
+        createPage({
+          path: post.node.frontmatter.path,
+          component: waitlist,
         })
         return;
 

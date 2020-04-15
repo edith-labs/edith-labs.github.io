@@ -18,7 +18,7 @@ Today, we’re excited to announce the first launch of Edith – a place where s
 * Referrals
 * Warm introductions
 
-![](./home.png)
+![](./home2.png)
 
 Our Edith experience is built to foster active relationships and conversations between individual students and mentors. We want to maximize the quality of interactions, not the quantity. We know you can post requests for help on places like Reddit or Quora, but you can never be sure of the quality of responses you’ll receive. Our mentors can help answer questions from a variety of industries – they come from companies like Apple, Citadel, Morgan Stanley, and McKinsey. If you have school-specific questions, our mentors come from schools like UChicago, UC Berkeley, UCLA, and Stanford Med School.
 
@@ -28,6 +28,8 @@ Not only will each mentor be verified before being allowed on the platform, we�
 
 While our goal of launching a platform to help students pay for college by connecting them to mentors through income share agreements (ISAs) hasn’t changed, we’ve decided to start with this platform in particular because of the lower barrier of entry. Students don’t need to sign ISAs, and mentors don’t need to pledge capital to start. We’re totally focused on cultivating productive relationships, and will take what we learn from this platform to help inform the launch of the next platform.
 
-We’re really excited for this launch, and hope you join us on Edith. We’re limiting the number of students in the beginning to ensure quality, but if you’re a student interested in using our platform please sign up for the waitlist [here](/waitlist). If you’re an interested potential mentor, please email us at [mentor@edithlabs.com](mailto:mentor@edithlabs.com) and we’ll follow up within a day. See you soon!
+We’re really excited for this launch, and hope you join us on Edith. We’re limiting the number of students in the beginning to ensure quality, but if you’re a student interested in using our platform please sign up for the waitlist [here](/waitlist).
+
+If you’re an interested potential mentor, please email us at [mentor@edithlabs.com](mailto:mentor@edithlabs.com) and we’ll follow up within a day. See you soon!
 
 
