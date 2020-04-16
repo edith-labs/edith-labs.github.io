@@ -1,55 +1,36 @@
 import { Link } from 'gatsby';
-import React, { useState } from 'react';
+import React from 'react';
 
 import logo from 'images/logo-white.png';
 import { rhythm } from 'utils/typography';
 
-function Navbar() {
-  const [isActive, setIsActive] = useState(false);
-
+function Navbar({ showLogin = false }) {
   return (
-    <nav className="navbar is-fixed-top has-shadow">
-      <div className="container">
-        <div className="navbar-brand">
-          <Link className="navbar-item" activeClassName="navbar-item" to="/">
-            <img
-              alt="logo"
-              src={logo}
-              style={{
-                maxWidth: 400, marginTop: 'auto', marginBottom: 'auto', display: 'flex', alignItems: 'center',
-              }}
-            />
-          </Link>
-          <button
-            type="button"
-            className={`navbar-burger burger ${isActive ? 'is-active' : ''}`}
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-            onClick={() => setIsActive(!isActive)}
-          >
-            <span aria-hidden="true" />
-            <span aria-hidden="true" />
-            <span aria-hidden="true" />
-          </button>
-        </div>
-        <div id="navbarMenuHeroA" className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
-          <div className="navbar-end">
+    <div className="nav-grid">
+      <Link to="/" className="nav-child">
+        <img
+          alt="logo"
+          src={logo}
+          style={{
+            maxWidth: 250, display: 'flex', alignItems: 'center', margin: rhythm(0.5),
+          }}
+        />
+      </Link>
 
-            <Link className="navbar-item" to="/learn" activeClassName="navbar-item is-active">
-              Blog
-            </Link>
+      {showLogin
+        && (
+        <a
+          href="https://app.edithlabs.com"
+          className="button is-primary nav-child"
+          style={{ marginRight: rhythm(1) }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Log In
+        </a>
+        )}
 
-            <div className="buttons" style={{ marginLeft: rhythm(0.25) }}>
-
-              <a className="button is-primary" href="https://app.edithlabs.com">
-                Log in
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+    </div>
   );
 }
 

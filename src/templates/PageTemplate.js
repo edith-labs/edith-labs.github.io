@@ -4,6 +4,7 @@ import React from 'react';
 import Layout from 'components/Layout';
 import SEO from 'components/SEO';
 import { rhythm } from 'utils/typography';
+import Navbar from 'components/Navbar';
 
 function PageTemplate({ data }) {
   const { frontmatter, html } = data.markdownRemark;
@@ -13,9 +14,11 @@ function PageTemplate({ data }) {
     <Layout>
       <SEO title={`${title}`} />
 
+      <Navbar />
+
       <div
         className="container"
-        style={{ marginTop: rhythm(3), marginBottom: rhythm(1) }}
+        style={{ marginBottom: rhythm(1) }}
       >
         <div className="columns is-centered">
           <div className="column is-8">

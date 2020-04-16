@@ -1,63 +1,47 @@
-import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
 
 import { rhythm } from 'utils/typography';
-import BlogTile from './BlogTile';
 
 function BlogSection() {
-  const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(
-        limit: 3,
-        sort: { fields: [frontmatter___title], order: DESC },
-        filter: {frontmatter: {type: {eq: "post"}}},
-      ) {
-        edges {
-          node {
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              date(formatString: "MMMM D, YYYY")
-              excerpt
-              type
-            }
-          }
-        }
-      }
-    }
-  `);
-  const posts = data.allMarkdownRemark.edges;
-
   return (
-    <section className="hero" style={{ marginBottom: rhythm(2) }}>
-      <div className="hero-body">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-6">
-              <h1 className="title">
-                Blog
-              </h1>
+    <section className="hero">
+      <div className="columns is-centered" style={{ minHeight: '500px' }}>
 
-              <h2 className="subtitle">
-                The best resources to learn about student debt, income share agreements,
-                and investing in human potential.
-              </h2>
-            </div>
+        <div
+          className="column is-one-third"
+          style={{
+            textAlign: 'center',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: 0,
+            margin: rhythm(2),
+          }}
+        >
+          <div
+            data-sal="slide-up"
+            data-sal-duration="500"
+            data-sal-delay="200"
+            data-sal-easing="ease"
+          >
+            <h1 className="title is-4">
+              The Edith Blog
+            </h1>
+            <p style={{ textAlign: 'left', marginBottom: rhythm(1) }}>
+              Learn more about what we’re building at Edith, our research on the future of
+              financing education, and how to be an effective student or mentor on our platform.
+            </p>
           </div>
 
-          <div className="tile is-ancestor">
-            {posts.map(({
-              node: { fields: { slug }, frontmatter: { title, excerpt } },
-            }) => (
-              <div className="tile is-parent is-4">
-                <BlogTile title={title} excerpt={excerpt} permalink={slug} />
-              </div>
-            ))}
-          </div>
+          <a className="button is-primary" href="/learn">Read More</a>
 
         </div>
+
+        <div className="column is-two-third" style={{ overflow: 'hidden', marginBottom: '0.75em' }}>
+          <div className="skewedImageBlog" />
+        </div>
+
       </div>
     </section>
   );

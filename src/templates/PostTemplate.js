@@ -6,6 +6,7 @@ import PostDefinition from 'components/PostDefinition';
 import PostSubheader from 'components/PostSubheader';
 import SEO from 'components/SEO';
 import { rhythm } from 'utils/typography';
+import Navbar from 'components/Navbar';
 
 function PostTemplate({ data, pageContext }) {
   const { frontmatter, html } = data.markdownRemark;
@@ -19,12 +20,13 @@ function PostTemplate({ data, pageContext }) {
     <Layout>
       <SEO title={`${title}`} />
 
+      <Navbar />
+
       <section
         className="columns is-centered"
         style={{
           marginLeft: rhythm(2.5),
           marginRight: rhythm(2.5),
-          marginTop: rhythm(3),
         }}
         data-sal="fade"
         data-sal-easing="ease"

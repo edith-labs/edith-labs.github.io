@@ -2,10 +2,11 @@ import { graphql } from 'gatsby';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 import React, { useState } from 'react';
 
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-import { rhythm } from '../utils/typography';
-import '../pages/styles.scss';
+import Layout from 'components/Layout';
+import SEO from 'components/SEO';
+import 'pages/styles.scss';
+import { rhythm } from 'utils/typography';
+import Navbar from 'components/Navbar';
 
 function WaitlistPageTemplate({ data }) {
   const [email, setEmail] = useState('');
@@ -37,10 +38,9 @@ function WaitlistPageTemplate({ data }) {
 
       <SEO title="Waitlist" />
 
-      <div
-        className="container"
-        style={{ marginTop: rhythm(3) }}
-      >
+      <Navbar />
+
+      <div className="container">
         <div className="columns is-centered">
           <div className="column is-8" style={{ maxWidth: 500 }}>
 
@@ -50,7 +50,10 @@ function WaitlistPageTemplate({ data }) {
               dangerouslySetInnerHTML={{ __html: html }}
             />
 
-            <form onSubmit={handleSubmit}>
+            <form
+              onSubmit={handleSubmit}
+              style={{ marginLeft: rhythm(0.5), marginRight: rhythm(0.5) }}
+            >
               <span className="form-label">First Name</span>
               <input
                 style={{ marginBottom: rhythm(0.5) }}

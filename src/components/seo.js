@@ -3,6 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
+import linkPreview from 'images/link-preview.png';
+
 function SEO({
   description, lang, meta, title,
 }) {
@@ -44,7 +46,7 @@ function SEO({
         },
         {
           property: 'og:image',
-          content: 'https://app.edithlabs.com/static/logo-text.png',
+          content: linkPreview,
         },
         {
           property: 'og:type',

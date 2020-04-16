@@ -4,7 +4,6 @@ import React from 'react';
 import { FaEnvelope, FaTwitter } from 'react-icons/fa';
 
 import { rhythm } from '../utils/typography';
-import Navbar from './Navbar';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -15,7 +14,6 @@ const Layout = ({ children }) => {
         }
       }
       allMarkdownRemark(
-        limit: 3,
         sort: { fields: [frontmatter___date], order: DESC },
         filter: {frontmatter: {type: {eq: "post"}}},
       ) {
@@ -33,7 +31,7 @@ const Layout = ({ children }) => {
           }
         }
       }
-      placeholderImage: file(relativePath: { eq: "logo-white.png" }) {
+      placeholderImage: file(relativePath: { eq: "logo-dark.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -46,9 +44,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Navbar />
       {children}
-      <footer className="hero is-light">
+      <footer className="hero is-dark" style={{ padding: 0, margin: 0 }}>
         <div className="hero-body">
           <div className="container">
             <div className="column is-2 is-hidden-mobile" style={{ padding: 0 }}>
@@ -67,9 +64,9 @@ const Layout = ({ children }) => {
 
               <div className="column is-4">
 
-                <Link to="/learn">
-                  <h4 className="subtitle" style={{ marginBottom: rhythm(1) }}>Blog</h4>
-                </Link>
+                {/* <Link to="/learn"> */}
+                <h4 className="subtitle" style={{ marginBottom: rhythm(1) }}>Blog</h4>
+                {/* </Link> */}
 
                 {posts.map(({ node: { fields: { slug }, frontmatter: { title } } }) => (
                   <Link to={slug}><p className="footer-link">{title}</p></Link>
