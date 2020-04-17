@@ -52,10 +52,7 @@ function StudentInterestFormModal({
               ? (
                 <div style={{ margin: rhythm(1.5), fontSize: '125%' }}>
                   <p>
-                    Hi
-                    {firstName}
-                    {' '}
-                    👋!
+                    {`Hi ${firstName} 👋!`}
                   </p>
                   <br />
                   <p>
