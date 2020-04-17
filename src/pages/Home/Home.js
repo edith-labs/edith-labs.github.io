@@ -58,14 +58,21 @@ function Home() {
         </div>
 
         <div className="columns is-hidden-desktop">
-          <div className="column" style={{ padding: 0, marginLeft: rhythm(0.5), marginRight: rhythm(0.5) }}>
+          <div className="column" style={{ padding: 0, margin: rhythm(0.5) }}>
             <div style={{ textAlign: 'left', marginBottom: rhythm(3) }}>
-              <p className="title is-4" style={{ whiteSpace: 'nowrap', overflow: 'hidden' }}>
-                One conversation with a mentor
-              </p>
-              <p className="title is-4">
-                can change your career
-              </p>
+              <div
+                data-sal="slide-up"
+                data-sal-duration="500"
+                data-sal-delay="200"
+                data-sal-easing="ease"
+              >
+                <p className="title is-4" style={{ whiteSpace: 'nowrap', overflow: 'hidden' }}>
+                  One conversation with a mentor
+                </p>
+                <p className="title is-4">
+                  can change your career
+                </p>
+              </div>
               <StudentInterestInlineForm />
             </div>
 
