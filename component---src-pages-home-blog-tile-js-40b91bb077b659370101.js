@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{OStr:function(e,t,i){"use strict";i.r(t);var n=i("Wbzz"),a=i("q1tI"),l=i.n(a);t.default=function(e){var t=e.title,i=e.excerpt,a=e.permalink;return l.a.createElement(n.Link,{to:a,className:"tile is-child is-info is-bold notification tile-link"},l.a.createElement("p",{className:"title"},t),l.a.createElement("p",null,i))}}}]);
+//# sourceMappingURL=component---src-pages-home-blog-tile-js-40b91bb077b659370101.js.map
