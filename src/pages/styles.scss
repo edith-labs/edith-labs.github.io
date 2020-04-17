@@ -160,4 +160,17 @@ $primary-gradient: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
   align-self: center;
 }
 
+.modal-input {
+  font-size: 150%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid;
+  border-color: rgb(229, 229, 229);
+  border-radius: 0;
+  width: 100%;
+}
+
+.modal-input:focus {
+  outline: none;
+}
 

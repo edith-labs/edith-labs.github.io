@@ -6,11 +6,12 @@ import SEO from 'components/SEO';
 import mockup from 'images/mockup.png';
 import isaMockup from 'images/isa-mockup.png';
 import { rhythm } from 'utils/typography';
-import StudentInterestInlineForm from 'components/StudentInterestInlineForm';
+import StudentInterestInlineForm from 'components/StudentInterestInlineForm/StudentInterestInlineForm';
 import Navbar from 'components/Navbar';
 import MentorWorkSection from './MentorWorkSection';
 import MentorSchoolSection from './MentorSchoolSection';
 import BlogSection from './BlogSection';
+import MentorFormModal from './MentorFormModal';
 
 function Home() {
   return (
@@ -45,6 +46,7 @@ function Home() {
                 </h1>
               </div>
               <StudentInterestInlineForm />
+              <MentorFormModal />
             </div>
 
           </div>
@@ -74,6 +76,7 @@ function Home() {
                 </p>
               </div>
               <StudentInterestInlineForm />
+              <MentorFormModal />
             </div>
 
           </div>
