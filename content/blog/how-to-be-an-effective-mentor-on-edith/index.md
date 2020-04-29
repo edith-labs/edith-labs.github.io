@@ -5,7 +5,7 @@ date: '2020-04-16'
 excerpt: Our top tips for being a mentor on Edith - how to use tags, set up your profile, and schedule meetings with students.
 type: post
 ---
-
+There are two types of student requests for help on Edith - a public request that all mentors can see, and a private request from one student to a specific mentor. As a mentor on the platform, you can choose to answer any requests on your own time. If a student sends you a private request, you'll have the option to decline or accept it. We, and the students, appreciate any help you can give. 
 
 There are many ways to be a great mentor on Edith, but there are steps you can take to be more effective. We’ve compiled our five top tips below - they range from making more approachable profiles to easier methods of setting up meetings. 
 
