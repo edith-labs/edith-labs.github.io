@@ -3,8 +3,6 @@ title: Waitlist
 type: waitlist
 path: /waitlist
 ---
-![](../images/logo-text.png)
-
 Hi there! Our mission at Edith Labs is to connect students with people who will invest in their future and help them succeed. As COVID-19 continues to impact universities around the world, we believe access to mentorship is more important than ever.
 
 We posted about Edith on [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6655666409177255936/) and received over 1500+ responses. We've also published a [blog post](https://edithlabs.com/introducing-edith/) about our launch if you'd like to read more.
