@@ -18,7 +18,7 @@ Today, we’re excited to announce the first launch of Edith – a place where s
 * Referrals
 * Warm introductions
 
-![](./home2.png)
+![](./home3.png)
 
 Our Edith experience is built to foster active relationships and conversations between individual students and mentors. We want to maximize the quality of interactions, not the quantity. We know you can post requests for help on places like Reddit or Quora, but you can never be sure of the quality of responses you’ll receive. Our mentors can help answer questions from a variety of industries – they come from companies like Apple, Citadel, Morgan Stanley, and McKinsey. If you have school-specific questions, our mentors come from schools like UChicago, UC Berkeley, UCLA, and Stanford Med School.
 

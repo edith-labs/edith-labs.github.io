@@ -42,7 +42,7 @@ We implement a variety of security measures to help keep your information secure
 
 ## Accessing, changing, or deleting information
 
-You can us at [support@edithlabs.com](mailto:support@edithlabs.com) if you would like all your account information deleted.
+You can contact us at [support@edithlabs.com](mailto:support@edithlabs.com) if you would like all your account information deleted.
 
 
 ## California Online Privacy Protection Act Compliance
