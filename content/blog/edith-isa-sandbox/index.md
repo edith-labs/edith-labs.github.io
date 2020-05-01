@@ -11,7 +11,7 @@ type: post
 
 As a new way of funding education, income share agreements (ISAs) are not well understood by the general public, especially with how they compare to traditional student loans.
 
-We built the ISA sandbox so mentors and students could better understand how an ISA works and transparently understand what payments they could expect to make and receive.
+We [built the ISA sandbox](https://app.edithlabs.com/sandbox) so mentors and students could better understand how an ISA works and transparently understand what payments they could expect to make and receive.
 
 An ISA has four basic parameters necessary to calculate these cash flows.
 * **Expected Income:** The best approximation of a student's income post-graduation given the information that you know. As we build out the platform and gather more data points, we'll work closely with students to best approximate this number so they have an estimate of how much they could owe by opting to fund their education with an ISA.
@@ -50,7 +50,9 @@ The ISA tool allows you to model the value created for different student outcome
 
 Because ISAs can get complicated fast, we hide some toggleable parameters under "Advanced Settings". These are the currently available settings:
 
-* **Estimated Interest Rate:** If you were to take out debt, the estimate interest rate for your loan payments. The interest rate for public student loans is 4.53% while the average interest rate for private student loans is 7.64%. For more details on student loan interest rates, check out our post [What are student loans?](/what-are-student-loans)
+* **ISA Payment Cap:** This is the maximum amount of money a student could repay on their ISA. It doesn't matter if you make $200,000 a year, if your payback cap is 2.0x for a $10,000 ISA the most you would have to repay is $20,000.
+
+* **Estimated Interest Rate:** If you were to take out debt, the estimate interest rate for your loan payments. The interest rate for public student loans is 4.53% while the average interest rate for private student loans is 7.64%. For more details on student loan interest rates, check out our post [What are Student Loans?](/what-are-student-loans)
 
 * **Years Until Graduation:** Number of years until student graduates. For example, a senior would be 1 year from graduation and a sophomore would be 3 years from graduations. This determines how long it will take for the mentor to start seeing repayments on the ISA principal.
 
@@ -66,14 +68,23 @@ The ISA sandbox allows you to directly compare the cost of an ISA to the cost of
 
 For student loans with high interest rates, it is easy to construct an ISA with favorable terms for the student. Because the ISA is more than just a transfer of capital, Edith believes that ISAs make sense for students that need to take on private student loans with higher interest rates.
 
+## Visualizations/charts
+
+We've included charts to help visualize the payments at the bottom of the sandbox.
+
+![](./sandbox.png)
+
+We come up with an expected salary by taking into consideration a student's personal experiences, school, and intended career path. We consider any improvement above this expected outcome as value created for the student. Part of this value is shared with the mentor. 
+
+This breakdown varies based on the ISA percentage, which you can adjust in the tool.
+
 ## Future Development
 
 The ISA Sandbox is still in it's infancy and we'll continue to iterate and build out features as we go along.
 
 Some upcoming features:
-* More advanced settings (ISA payment cap, ISA payment floor)
-* Visualizations/charts
+* More advanced settings (minimum salary)
 * Ability to save scenarios and import to Edith platform
 * Export sandbox as a PDF report
 
-If you have any bugs to report or feature suggestions, please contact me at [kevin@edithlabs.com](mailto:kevin@edithlabs.com).
+If you have any bugs to report or feature suggestions, please contact me at [kevin@edithlabs.com](mailto:kevin@edithlabs.com). You can find a [link to the sandbox here](https://app.edithlabs.com/sandbox).
