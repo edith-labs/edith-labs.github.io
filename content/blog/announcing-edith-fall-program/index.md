@@ -60,5 +60,7 @@ If a student cannot find a job immediately after graduation beyond the grace per
 
 This is exactly what the payback cap is for. We want everyone to be incentivized to shoot for the best possible outcome, and we want to make sure the student isn’t unduly harmed for succeeding. Students will never pay more than the agreed-upon payback cap, which is 2.0x the amount the student borrows. 
 
+__If you are interested in applying to this program, please email us at [apply@edithlabs.com](mailto:apply@edithlabs.com).__
+
 [^1]: [What are Student Loans](https://edithlabs.com/what-are-student-loans/)
 [^2]: Assuming the student acts in good faith with respect to the ISA
