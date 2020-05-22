@@ -17,6 +17,8 @@ For too long, the only outside funding option available to students was student 
 
 We believe college students want more than access to money. College is a time of intense change for most students, and it can be extremely beneficial to have a mentor. Edith mentors partner with a student their junior year and stay with them through the first few years of their professional careers. This continuity, combined with the mentor’s experience, allows mentors to help students make and execute a plan.  
 
+**Application Deadline:** Our applications close May 31st and we'll get back to you by June 8th. If you're already on the platform, you can find our application [here](https://app.edithlabs.com/apply). You need an account to apply, so if you're not already on the platform but you're interested in our program reach out to us directly at nick@edithlabs.com.
+
 ## Benefits of the Program
 
 In addition to receiving funds through the ISA, there are two primary benefits for joining the cohort. 

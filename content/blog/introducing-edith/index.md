@@ -9,16 +9,32 @@ type: post
 
 Getting through college is difficult. For years, students have turned to classmates, teammates, clubs, and others for advice. But as more and more colleges go remote, many of these resources disappear. We’re committed to helping students receive the guidance and mentorship necessary to succeed.
 
-Today, we’re excited to announce the first launch of Edith – a place where students can connect with mentors online. Students on the platform can either make requests to the general population of mentors or they can make one-on-one requests to specific mentors. Right now, we support the following requests on the platform:
+Today, we’re excited to announce the first launch of Edith – a place where students can connect with mentors online. Students on the platform can ask questions three ways: the Edith Connect, the Edith Forum, or through a direct message.
+
+### Edith Connect
+
+![](./econnect1.png)
+
+Students can submit questions for the Edith Connect Mondays-Wednesdays, and we match them with a mentor that can best help them on Thursdays. 
+
+### Edith Forum
+
+![](./forum1.png)
+
+There are two sections of the Edith Forum - a general forum and a mentor forum. In the general forum, students or mentors can make posts that anyone can comment on. As the name would suggest, the mentor forum contains posts that only mentors can see/comment on. 
+
+Students on the platform can either make requests to the general population of mentors or they can make one-on-one requests to specific mentors. Right now, we support the following requests on the platform:
+
+### Direct Messages
+
+![](./DM1.png)
+
+Students can also search for mentors by experience, education, or company in our mentor search portal. Once there, they can click into any mentor's profile and send a direct request. We support the following requests:
 
 * General questions
 * Resume help
 * 30 minute chats
 * Mock interviews
-* Referrals
-* Warm introductions
-
-![](./home3.png)
 
 Our Edith experience is built to foster active relationships and conversations between individual students and mentors. We want to maximize the quality of interactions, not the quantity. We know you can post requests for help on places like Reddit or Quora, but you can never be sure of the quality of responses you’ll receive. Our mentors can help answer questions from a variety of industries – they come from companies like Apple, Citadel, Morgan Stanley, and McKinsey. If you have school-specific questions, our mentors come from schools like UChicago, UC Berkeley, UCLA, and Stanford Med School.
 
