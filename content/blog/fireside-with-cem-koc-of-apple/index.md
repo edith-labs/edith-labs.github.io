@@ -47,3 +47,7 @@ Cem believes it's important to work somewhere that you can believe in the missio
 
 - Apple has a highly secretive work culture that is intimidating to new employees and presents a unique challenge in its cross-team and inter-team communication
 - The emphasis that Apple places on respecting their user's privacy means that Apple engineers face a more daunting task than many engineers at other companies, but the work produced as a product of this challenge is all the more satisfying
+
+**Who's Next**
+
+Tune in next week for more Fireside Chats with Edith Labs. We're speaking to David Liu, a mentor on the platform who currently works at Morgan Stanley's tech banking office in Menlo Park. Hope to see you there!
