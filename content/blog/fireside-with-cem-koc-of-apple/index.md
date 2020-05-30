@@ -1,9 +1,9 @@
 ---
-title: Fireside w/ Cem Koc of Apple
+title: Fireside with Cem Koc of Apple
 author: Ethan Ding
 date: '2020-05-30'
 type: post
-excerpt: Kevin and Cem talk a bout research, recruiting, and the unique work culture an Apple engineer experiences
+excerpt: Kevin and Cem talk about research, recruiting, and the unique work culture an Apple engineer experiences
 ---
 
 [Cem's LinkedIn](https://www.linkedin.com/in/cemkocdev/)
