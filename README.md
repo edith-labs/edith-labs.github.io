@@ -46,9 +46,9 @@ The script will prompt for the following inputs:
 * This will create a new directory under `content/drafts` with the title of your blog post.
 * You can make changes to your post in the `index.md` file.
 * If you need to add any images to your blog, put them in `contents/drafts/your-blog-title` directory. You can reference them in markdown like so: `![](./your-image-here.png)`
-* Once you are ready to test the blog post on the site, move the directory to `content/blog`. Start up a local development server
+* Once you are ready to test the blog post on the site, move the directory to `content/blog`. Start up a local development server and you should be able to view the blog post.
 
-## Creating a New Post
+## Creating a New Page
 
 To create a new page, run teh script and it will prompt you with a few questions:
 ```

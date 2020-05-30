@@ -3,13 +3,14 @@
 echo "You are making a new blog post"
 
 echo "Who is writing this post?"
-echo "1 for Kevin, 2 for Nick, 3 for Nick & Kevin"
+echo "1 for Kevin, 2 for Nick, 3 for Ethan, 4 for Nick & Kevin"
 while true; do
     read -p "Your selection: " author_code
     case $author_code in
         [1]* ) author="Kevin Arifin"; break;;
         [2]* ) author="Nick Chua"; break;;
-        [3]* ) author="Nick Chua & Kevin Arifin"; break;;
+        [3]* ) author="Ethan Ding"; break;;
+        [4]* ) author="Nick & Kevin"; break;;
         * ) echo "You didn't select a valid option"; exit;;
     esac
 done

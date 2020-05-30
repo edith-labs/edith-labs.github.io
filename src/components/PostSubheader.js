@@ -2,21 +2,24 @@ import React from 'react';
 
 import nick from '../images/nick.jpg';
 import kevin from '../images/kevin.jpg';
+import ethan from '../images/ethan.jpg';
 import { rhythm } from '../utils/typography';
 
 function PostSubheader({ author, date }) {
   const getMetadata = () => {
     switch (author) {
       case 'Kevin Arifin':
-        return { src: kevin };
+        return { src: kevin, role: 'Edith Co-Founder' };
       case 'Nick Chua':
-        return { src: nick };
+        return { src: nick, role: 'Edith Co-Founder' };
+      case 'Ethan Ding':
+        return { src: ethan, role: 'Founding Engineer' };
       default:
         return {};
     }
   };
 
-  const { src } = getMetadata();
+  const { src, role } = getMetadata();
 
   return (
     <article className="media" style={{ marginTop: rhythm(2) }}>
@@ -34,7 +37,7 @@ function PostSubheader({ author, date }) {
             {' '}
             <small>{date}</small>
             <br />
-            Edith Co-founder
+            {role}
           </p>
         </div>
       </div>
