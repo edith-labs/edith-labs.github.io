@@ -1,0 +1,44 @@
+---
+title: Fireside w/ Cem Koc of Apple
+author: Ethan Ding
+date: '2020-05-30'
+type: post
+excerpt: Kevin and Cem talk a bout research, recruiting, and the unique work culture an Apple engineer experiences
+---
+
+[Cem's LinkedIn](https://www.linkedin.com/in/cemkocdev/)
+
+Cem is a data engineer at Apple, graduating in 2017 from UC Berkeley. Cem grew up in Istanbul, Turkey, before traveling to the US for university. He did two internships during his sophomore and junior summers, first TubeMogul (acquired by Adobe) and then at Apple; this Apple internship transformed into a full-time offer which he accepted and is still working at today.
+
+**Research**
+
+Cem's professional experience in the fields of machine learning and big data analytics began in one of Berkeley's many research labs; he started getting experience in his first semester, working in a lab working on robotics, then NLP and research. During the chat, Cem described how he didn't find as much fulfillment in the first two labs he worked in, and ultimately he found the research that he actually enjoyed when he came together with his brother to come up with a research topic to pitch to his professor. It was during this time that machine learning blew up, "a little too much", and his field of expertise and experience became incredibly valuable. Cem and his brother would continue this research until eventually circling back to his professor post-graduation to get his paper published. 
+
+**Advice:** 
+
+- Coming up with your own research topics to explore, and asking professors to guide you is more likely to help you find a field to learn about that you actually enjoy
+- Always keep your connections to faculty warm, as you'll never know when they might have opportunities and knowledge that you'll draw in on the future (also because they're amazing people)
+
+**Recruiting**
+
+Of course, the current pandemic makes the situation different for current students, but Cem advises current students to always surround yourself with peers who are always aspiring for success. As a freshman international student, it was his friends who showed him the pathway to learn about recruitment. Cem advises that instead of applying for roles, titles, and clout, you should always communicate to recruiter your interest in specific fields that you're genuinely interested in.
+
+Having personal projects that you came up with yourself and didn't copy off an online tutorial is the best way to demonstrate genuine interest in a particular field of work. Also Cem warns against the pitfall of being obsessed with compensation, especially with early jobs. When going into fields like tech, as long as you work hard you'll make more than you need; focus on finding a job that you enjoy in a field that you genuinely appreciate.
+
+**Advice:** 
+
+- Surround yourself with friends who are high achieving, who are willing to go the extra mile, and lift you up alongside them
+- Differentiate yourself from the competition by finding a topic you're passionate about, and applying to jobs based on that passion
+- Pursue personal projects to develop that interest so you can demonstrate your passion when asked to show it
+- Don't get hung up on compensation - early on, it's the experience that matters
+
+**Experience at Apple**
+
+Before wrapping up, Cem went over his experience working in machine learning at Apple. Initially, the secretive environment of the company was a culture shock, but eventually developed into a topic of pride. One thing that separates Apple's approach to machine learning from Amazon or Google is their emphasis on protecting user data. Because of this mission, machine learning engineers at Apple have to be very creative in their approach to building models and products in a way that doesn't infringe on their users' privacy.  
+
+A distinct tone of pride can be felt in Cem's voice as he identifies the feeling of satisfaction he feels when he is able to go over his work, knowing that it was uniquely hard to accomplish because Apple is committed to taking the high road and honor the trust their users provide them.
+
+**Takeaways** 
+
+- Apple has a highly secretive work culture that is intimidating to new employees and presents a unique challenge in its cross-team and inter-team communication
+- The emphasis that Apple places on respecting their user's privacy means that Apple engineers face a more daunting task than many engineers at other companies, but the work produced as a product of this challenge is all the more satisfying
