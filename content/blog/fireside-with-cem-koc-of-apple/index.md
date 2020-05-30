@@ -6,22 +6,27 @@ type: post
 excerpt: Kevin and Cem talk about research, recruiting, and the unique work culture an Apple engineer experiences
 ---
 
+**A Quick Bio**
+
 [Cem's LinkedIn](https://www.linkedin.com/in/cemkocdev/)
 
-Cem is a data engineer at Apple, graduating in 2017 from UC Berkeley. Cem grew up in Istanbul, Turkey, before traveling to the US for university. He did two internships during his sophomore and junior summers, first TubeMogul (acquired by Adobe) and then at Apple; this Apple internship transformed into a full-time offer which he accepted and is still working at today.
+Cem grew up in Istanbul, Turkey before coming to the US to attend UC Berkeley. He graduated in 2017 with a degree in EECS, and is currently working as a data engineer for Apple. Cem participated in two internships while at Berkeley: a sophomore summer internship at TubeMogul (acq. by Adobe) and a junior year internship at Apple where he received his full-time offer.
 
 **Research**
 
-Cem's professional experience in the fields of machine learning and big data analytics began in one of Berkeley's many research labs; he started getting experience in his first semester, working in a lab working on robotics, then NLP and research. During the chat, Cem described how he didn't find as much fulfillment in the first two labs he worked in, and ultimately he found the research that he actually enjoyed when he came together with his brother to come up with a research topic to pitch to his professor. It was during this time that machine learning blew up, "a little too much", and his field of expertise and experience became incredibly valuable. Cem and his brother would continue this research until eventually circling back to his professor post-graduation to get his paper published. 
+Cem currently works on the data analytics and machine learning team at Apple, but his interest in these fields began long before he stepped on the Infinite Loop campus. During his freshman year, Cem started doing research at the Nanostructures and Nanoelectronics Research Group doing ultrafast spintronics research for new memory devices. He then transitioned into NLP (natural language processing) research and joined the robotics lab under Berkeley AI Research initiative. He continued this research through graduation. 
+
+While machine learning is a hot topic today, it was just beginning to take roots when Cem started his research. Cem and his brother would continue their research before circling back to their professor post-graduation to publish their paper. This discussion led to his first few pieces of advice for undergrads.
+
 
 **Advice:** 
 
-- Coming up with your own research topics to explore, and asking professors to guide you is more likely to help you find a field to learn about that you actually enjoy
-- Always keep your connections to faculty warm, as you'll never know when they might have opportunities and knowledge that you'll draw in on the future (also because they're amazing people)
+- Understanding what you're truly interested in will give you research topics to explore, and talking to professors is a great way to find more guidance. Down the line, you'll end up learning more about fields that you actually enjoy rather than what's hot at the moment.
+- Asking for advice is the first step, but make sure to follow up and stay in contact with those who have helped you. You never know what opportunities or knowledge can come in the future from them. Also, your professors are amazing people who were once in your shoes, it's a pretty good idea to listen to them.
 
 **Recruiting**
 
-Of course, the current pandemic makes the situation different for current students, but Cem advises current students to always surround yourself with peers who are always aspiring for success. As a freshman international student, it was his friends who showed him the pathway to learn about recruitment. Cem advises that instead of applying for roles, titles, and clout, you should always communicate to recruiter your interest in specific fields that you're genuinely interested in.
+The current pandemic has created a unique environment, but Cem stressed the importance of surrounding yourself with equally ambitious peers. As an international student, his friends were the ones who taught him the different pathways to recruiting. There are always specific roles and titles that come with a form of social clout, but Cem advises communicating to recruiters your interest in specific fields that you're genuinely interested in. Not only will you actually enjoy your work moving forward, but being genuine will separate you from the pack.
 
 Having personal projects that you came up with yourself and didn't copy off an online tutorial is the best way to demonstrate genuine interest in a particular field of work. Also Cem warns against the pitfall of being obsessed with compensation, especially with early jobs. When going into fields like tech, as long as you work hard you'll make more than you need; focus on finding a job that you enjoy in a field that you genuinely appreciate.
 
@@ -30,13 +35,13 @@ Having personal projects that you came up with yourself and didn't copy off an o
 - Surround yourself with friends who are high achieving, who are willing to go the extra mile, and lift you up alongside them
 - Differentiate yourself from the competition by finding a topic you're passionate about, and applying to jobs based on that passion
 - Pursue personal projects to develop that interest so you can demonstrate your passion when asked to show it
-- Don't get hung up on compensation - early on, it's the experience that matters
+- Don't get hung up on compensation - it's the experience that matters early on
 
 **Experience at Apple**
 
-Before wrapping up, Cem went over his experience working in machine learning at Apple. Initially, the secretive environment of the company was a culture shock, but eventually developed into a topic of pride. One thing that separates Apple's approach to machine learning from Amazon or Google is their emphasis on protecting user data. Because of this mission, machine learning engineers at Apple have to be very creative in their approach to building models and products in a way that doesn't infringe on their users' privacy.  
+Before wrapping up, Cem went over his experience working in machine learning at Apple. Initially, the secretive environment of the company was a culture shock, but eventually developed into a topic of pride. One thing that separates Apple's approach to machine learning from Amazon or Google is their emphasis on protecting user data. Because of this mission, machine learning engineers at Apple have to be very creative in their approach to building models and products in a way that doesn't infringe on their users' privacy.
 
-A distinct tone of pride can be felt in Cem's voice as he identifies the feeling of satisfaction he feels when he is able to go over his work, knowing that it was uniquely hard to accomplish because Apple is committed to taking the high road and honor the trust their users provide them.
+Cem believes it's important to work somewhere that you can believe in the mission. There's a certain sense of satisfaction you feel when reviewing your work when you know you're creating something of value. At Apple, it's the pride in honoring the trust their users provide them.
 
 **Takeaways** 
 
