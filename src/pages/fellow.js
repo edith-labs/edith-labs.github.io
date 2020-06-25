@@ -26,7 +26,7 @@ function fellow() {
     },
     {
       name: 'David Liu',
-      company: 'Tech Investment Banker @ Morgan Stanley',
+      company: 'Investment Banker @ Morgan Stanley',
       profilePic: david,
       bio: 'Some stuff about David',
     },
@@ -37,7 +37,7 @@ function fellow() {
       <SEO title="Home" />
       <section className="hero is-info" style={{ position: 'relative' }}>
 
-        <Navbar />
+        <Navbar path='/fellow' />
 
         <div className="columns is-centered" style={{ marginTop: rhythm(5), marginBottom: rhythm(5) }}>
           <div className="column is-four-fifths">
@@ -87,7 +87,7 @@ function fellow() {
 
         <div className="columns is-centered" style={{ marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters">
-            <div className="tile is-ancestor">
+            <div className="columns">
               {gps.map((gpProps, i) => <ProfileTile {...gpProps} delay={i * 100} />)}
             </div>
           </div>

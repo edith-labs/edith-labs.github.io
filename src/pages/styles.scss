@@ -146,17 +146,56 @@ $primary-gradient: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
 
 .nav-grid {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  justify-items: center;
+  grid-template-columns: 1fr repeat(3, 120px);
 }
 
-.nav-child:nth-child(1) {
-  grid-column-start: 2;
+.nav-grid-mobile {
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
-.nav-child:nth-child(2) {
-  margin-left: auto;
+.nav-child-mobile {
   align-self: center;
+  justify-self: end;
+  margin: 1em;
+}
+
+.nav-dropdown {
+  display: grid;
+}
+
+.nav-child {
+  align-self: center;
+  font-size: 125%;
+  color: black;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link:hover {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 69px;
+    height: 3px;
+    right: 0px;
+    bottom: -3px;
+    left: 0px;
+    background-color: $grey-darker;
+  }
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  width: 69px;
+  height: 3px;
+  right: 0px;
+  bottom: -3px;
+  left: 0px;
+  background-color: $black;
 }
 
 .modal-input {

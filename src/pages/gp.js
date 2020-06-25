@@ -37,7 +37,7 @@ function gp() {
       <SEO title="Home" />
       <section className="hero is-info" style={{ position: 'relative' }}>
 
-        <Navbar />
+        <Navbar path='/gp' />
 
         <div className="columns is-centered" style={{ marginTop: rhythm(5), marginBottom: rhythm(5) }}>
           <div className="column is-four-fifths">
@@ -87,7 +87,7 @@ function gp() {
 
         <div className="columns is-centered" style={{ marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters">
-            <div className="tile is-ancestor">
+            <div className="columns">
               {fellows.map((fellowProps, i) => <ProfileTile {...fellowProps} delay={i * 100} />)}
             </div>
           </div>

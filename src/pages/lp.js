@@ -75,26 +75,7 @@ function lp() {
       </section>
 
       <section className="hero is-info">
-
         <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
-          <div className="column is-three-quarters">
-            <h1 className="subtitle is-3">
-              Some of Our Edith Fellows
-            </h1>
-          </div>
-        </div>
-
-        <div className="columns is-centered" style={{ marginBottom: rhythm(2) }}>
-          <div className="column is-three-quarters">
-            <div className="tile is-ancestor">
-              {fellows.map((gpProps, i) => <ProfileTile {...gpProps} delay={i * 100} />)}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="hero" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
-        <div className="columns is-centered">
           <div className="column is-three-quarters">
             <h1 className="subtitle is-3">
               FAQ
