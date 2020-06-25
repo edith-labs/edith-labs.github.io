@@ -10,7 +10,7 @@ function ProfileTile({
       data-sal-delay={200 + delay}
       data-sal-easing="ease"
     >
-      <article className="tile is-child notification is-success">
+      <article className="tile is-child notification gradient-background">
         <div className="content">
           <p>{bio}</p>
         </div>

@@ -1,7 +1,9 @@
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import React from 'react';
-import { FaEnvelope, FaTwitter, FaLinkedin, FaLinkedinIn } from 'react-icons/fa';
+import {
+  FaEnvelope, FaTwitter, FaLinkedin,
+} from 'react-icons/fa';
 
 import { rhythm } from '../utils/typography';
 
@@ -83,7 +85,11 @@ const Layout = ({ children }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p className="footer-link"><FaTwitter /> Twitter</p>
+                  <p className="footer-link">
+                    <FaTwitter />
+                    {' '}
+                    Twitter
+                  </p>
                 </a>
 
                 <a
@@ -91,11 +97,19 @@ const Layout = ({ children }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p className="footer-link"><FaLinkedin /> LinkedIn</p>
+                  <p className="footer-link">
+                    <FaLinkedin />
+                    {' '}
+                    LinkedIn
+                  </p>
                 </a>
 
                 <a href="mailto:hello@edithlabs.com">
-                  <p className="footer-link"><FaEnvelope /> Email</p>
+                  <p className="footer-link">
+                    <FaEnvelope />
+                    {' '}
+                    Email
+                  </p>
                 </a>
 
 
