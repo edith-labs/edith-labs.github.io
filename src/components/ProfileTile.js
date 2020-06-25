@@ -10,7 +10,7 @@ function ProfileTile({
       data-sal="slide-up"
       data-sal-delay={200 + delay}
       data-sal-easing="ease"
-      style={{ textAlign: "center" }}
+      style={{ textAlign: 'center' }}
     >
       <div
         className="circular-portrait"
@@ -20,7 +20,7 @@ function ProfileTile({
           height: '100px',
           overflow: 'hidden',
           borderRadius: '50%',
-          marginBottom: rhythm(0.25)
+          marginBottom: rhythm(0.25),
         }}
       >
         <img

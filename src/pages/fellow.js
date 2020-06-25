@@ -37,7 +37,7 @@ function fellow() {
       <SEO title="Home" />
       <section className="hero is-info" style={{ position: 'relative' }}>
 
-        <Navbar path='/fellow' />
+        <Navbar path="/fellow" />
 
         <div className="columns is-centered" style={{ marginTop: rhythm(5), marginBottom: rhythm(5) }}>
           <div className="column is-four-fifths">

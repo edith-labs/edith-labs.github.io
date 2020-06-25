@@ -50,7 +50,8 @@ function Navbar({ path }) {
           <FaBars style={{ fontSize: '120%' }} onClick={() => setIsDropdownVisible(!isDropdownVisible)} />
         </div>
 
-        {isDropdownVisible &&
+        {isDropdownVisible
+          && (
           <div className="nav-dropdown">
             <Link to="/fellow" className="nav-child nav-link" style={{ margin: '0.5em' }}>Students</Link>
             <Link to="/gp" className="nav-child nav-link" style={{ margin: '0.5em' }}>Mentors</Link>
@@ -64,7 +65,8 @@ function Navbar({ path }) {
             >
               Log In
             </a>
-          </div>}
+          </div>
+          )}
 
       </div>
     </>
