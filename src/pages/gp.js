@@ -6,6 +6,7 @@ import Navbar from 'components/Navbar';
 import ThreeColumns from 'components/ThreeColumns';
 import { rhythm } from 'utils/typography';
 import ProfileTile from 'components/ProfileTile';
+import GeneralPartnerFormModal from 'components/GeneralPartnerFormModal';
 import sarah from 'images/sarah.jpeg';
 import david from 'images/david.png';
 import cem from 'images/cem.jpeg';
@@ -57,12 +58,7 @@ function gp() {
               One paragraph on what it means to be an Edith General Partner
             </h1>
 
-            <a
-              href="/lp"
-              className="button is-primary nav-child"
-            >
-              Get In Touch
-            </a>
+            <GeneralPartnerFormModal />
           </div>
         </div>
 

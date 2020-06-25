@@ -4,34 +4,10 @@ import SEO from 'components/SEO';
 import Layout from 'components/Layout';
 import Navbar from 'components/Navbar';
 import ThreeColumns from 'components/ThreeColumns';
+import LimitedPartnerFormModal from 'components/LimitedPartnerFormModal';
 import { rhythm } from 'utils/typography';
-import ProfileTile from 'components/ProfileTile';
-import sarah from 'images/sarah.jpeg';
-import david from 'images/david.png';
-import cem from 'images/cem.jpeg';
 
 function lp() {
-  const fellows = [
-    {
-      name: 'Cem Koc',
-      company: 'Data Engineer @ Apple',
-      profilePic: cem,
-      bio: 'Some stuff about Cem',
-    },
-    {
-      name: 'Sarah Choi',
-      company: 'Product Manager @ ServiceNow',
-      profilePic: sarah,
-      bio: 'Some stuff about Sarah',
-    },
-    {
-      name: 'David Liu',
-      company: 'Tech Investment Banker @ Morgan Stanley',
-      profilePic: david,
-      bio: 'Some stuff about David',
-    },
-  ];
-
   return (
     <Layout>
       <SEO title="Home" />
@@ -42,7 +18,7 @@ function lp() {
         <div className="columns is-centered" style={{ marginTop: rhythm(5), marginBottom: rhythm(5) }}>
           <div className="column is-four-fifths">
             <h1 className="title is-1">
-              Edith General Partners (GPs) are really important
+              Edith Limited Partners (LPs) are really important
             </h1>
           </div>
         </div>
@@ -59,8 +35,10 @@ function lp() {
               data-sal-delay="200"
               data-sal-easing="ease"
             >
-              One paragraph on what it means to be an Edith General Partner
+              One paragraph on what it means to be an Edith Limited Partner
             </h1>
+
+            <LimitedPartnerFormModal />
           </div>
         </div>
 

@@ -6,6 +6,7 @@ import Navbar from 'components/Navbar';
 import { rhythm } from 'utils/typography';
 import ProfileTile from 'components/ProfileTile';
 import ThreeColumns from 'components/ThreeColumns';
+import FellowFormModal from 'components/FellowFormModal';
 import sarah from 'images/sarah.jpeg';
 import david from 'images/david.png';
 import cem from 'images/cem.jpeg';
@@ -57,12 +58,7 @@ function fellow() {
               One paragraph on what the Edith fellow program is
 
             </h1>
-            <a
-              href="/lp"
-              className="button is-primary nav-child"
-            >
-              Get In Touch
-            </a>
+            <FellowFormModal />
           </div>
         </div>
         <ThreeColumns
