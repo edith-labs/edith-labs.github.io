@@ -1,10 +1,15 @@
 import React from 'react';
 
 function ProfileTile({
-  bio, profilePic, name, company,
+  bio, profilePic, name, company, delay,
 }) {
   return (
-    <div className="tile is-parent">
+    <div
+      className="tile is-parent"
+      data-sal="slide-up"
+      data-sal-delay={200 + delay}
+      data-sal-easing="ease"
+    >
       <article className="tile is-child notification is-success">
         <div className="content">
           <p>{bio}</p>

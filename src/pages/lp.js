@@ -3,6 +3,7 @@ import React from 'react';
 import SEO from 'components/SEO';
 import Layout from 'components/Layout';
 import Navbar from 'components/Navbar';
+import ThreeColumns from 'components/ThreeColumns';
 import { rhythm } from 'utils/typography';
 import ProfileTile from 'components/ProfileTile';
 import sarah from 'images/sarah.jpeg';
@@ -36,7 +37,7 @@ function lp() {
       <SEO title="Home" />
       <section className="hero is-info" style={{ position: 'relative' }}>
 
-        <Navbar showLogin />
+        <Navbar />
 
         <div className="columns is-centered" style={{ marginTop: rhythm(5), marginBottom: rhythm(5) }}>
           <div className="column is-four-fifths">
@@ -52,40 +53,24 @@ function lp() {
 
         <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
           <div className="column is-three-quarters" style={{ textAlign: 'center' }}>
-            <h1 className="subtitle is-4">
+            <h1
+              className="subtitle is-4"
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+            >
               One paragraph on what it means to be an Edith General Partner
             </h1>
           </div>
         </div>
 
-        <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
-
-          <div className="column is-three-quarters">
-            <h1 className="subtitle is-3">
-              How It Works
-            </h1>
-          </div>
-        </div>
-
-        <div className="columns is-centered" style={{ marginBottom: rhythm(2) }}>
-          <div className="column is-one-quarter">
-            <p>
-              Something about financing the student for a small amount of capital
-            </p>
-          </div>
-
-          <div className="column is-one-quarter">
-            <p>
-              Something about checking in bi-weekly with a student
-            </p>
-          </div>
-
-          <div className="column is-one-quarter">
-            <p>
-              Something about joining a community of LP, GP, Edith fellows from other cohorts
-            </p>
-          </div>
-        </div>
+        <ThreeColumns
+          descriptions={[
+            'something about joining community of edith lp, gp, fellow',
+            'something about accountability through weekly update',
+            'something about partering 1-1 with a mentor',
+          ]}
+        />
 
       </section>
 
@@ -102,7 +87,7 @@ function lp() {
         <div className="columns is-centered" style={{ marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters">
             <div className="tile is-ancestor">
-              {fellows.map((gpProps) => <ProfileTile {...gpProps} />)}
+              {fellows.map((gpProps, i) => <ProfileTile {...gpProps} delay={i * 100} />)}
             </div>
           </div>
         </div>

@@ -62,7 +62,7 @@ function MentorWorkSection() {
   ];
 
   return (
-    <LogoSection title="Where Our Mentors Worked" logos={companies} />
+    <LogoSection title="Where Edith GPs Worked" logos={companies} />
   );
 }
 

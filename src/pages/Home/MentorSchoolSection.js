@@ -43,7 +43,7 @@ function MentorSchoolSection() {
   ];
 
   return (
-    <LogoSection title="Where Our Mentors Studied" logos={schools} />
+    <LogoSection title="Where Edith GPs Studied" logos={schools} />
   );
 }
 

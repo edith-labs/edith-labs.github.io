@@ -5,6 +5,7 @@ import Layout from 'components/Layout';
 import Navbar from 'components/Navbar';
 import { rhythm } from 'utils/typography';
 import ProfileTile from 'components/ProfileTile';
+import ThreeColumns from 'components/ThreeColumns';
 import sarah from 'images/sarah.jpeg';
 import david from 'images/david.png';
 import cem from 'images/cem.jpeg';
@@ -52,41 +53,25 @@ function fellow() {
 
         <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
           <div className="column is-three-quarters" style={{ textAlign: 'center' }}>
-            <h1 className="subtitle is-4">
+            <h1 className="subtitle is-4" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease">
               One paragraph on what the Edith fellow program is
 
             </h1>
+            <a
+              href="/lp"
+              className="button is-primary nav-child"
+            >
+              Get In Touch
+            </a>
           </div>
         </div>
-
-        <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
-
-          <div className="column is-three-quarters">
-            <h1 className="subtitle is-3">
-              How It Works
-            </h1>
-          </div>
-        </div>
-
-        <div className="columns is-centered" style={{ marginBottom: rhythm(2) }}>
-          <div className="column is-one-quarter">
-            <p>
-              Something about joining a community of LP, GP, Edith fellows from other cohorts
-            </p>
-          </div>
-
-          <div className="column is-one-quarter">
-            <p>
-              Something about accountability through a weekly update
-            </p>
-          </div>
-
-          <div className="column is-one-quarter">
-            <p>
-              Bi-weekly calls with mentors or something like that
-            </p>
-          </div>
-        </div>
+        <ThreeColumns
+          descriptions={[
+            'something about joining community of edith lp, gp, fellow',
+            'something about accountability through weekly update',
+            'something about partering 1-1 with a mentor',
+          ]}
+        />
 
       </section>
 
@@ -103,7 +88,7 @@ function fellow() {
         <div className="columns is-centered" style={{ marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters">
             <div className="tile is-ancestor">
-              {gps.map((gpProps) => <ProfileTile {...gpProps} />)}
+              {gps.map((gpProps, i) => <ProfileTile {...gpProps} delay={i * 100} />)}
             </div>
           </div>
         </div>
