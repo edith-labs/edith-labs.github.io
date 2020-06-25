@@ -1,5 +1,5 @@
 ---
-title: Fireside with Cem Koc of Apple
+title: Fireside with Apple Data Engineer Cem Koc
 author: Ethan Ding
 date: '2020-05-30'
 type: post
