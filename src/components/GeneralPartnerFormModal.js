@@ -13,6 +13,7 @@ function LimitPartnerFormModal() {
 
   const handleClose = () => {
     setFirstName('');
+    setLastName('');
     setEmail('');
     setIsVisible(false);
     setIsSubmitted(false);

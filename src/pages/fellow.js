@@ -18,7 +18,7 @@ function fellow() {
       name: 'Cem Koc',
       company: 'Data Engineer @ Apple',
       profilePic: cem,
-      bio: 'Cem is a former Berkeley EECS grad who works on ML problems in the Apple Maps division.',
+      bio: 'Cem is a Berkeley EECS grad who works on ML problems in the Apple Maps division.',
     },
     {
       name: 'Sarah Choi',
@@ -30,11 +30,19 @@ function fellow() {
       name: 'David Liu',
       company: 'Investment Banker @ Morgan Stanley',
       profilePic: david,
-      bio: 'David is a tech investment banker and former UChicago tennis player where studied Economics.',
+      bio: 'David is a tech investment banker and former UChicago tennis player where he studied Economics.',
     },
   ];
 
   const faqs = [
+    {
+      title: "What's the time commitment to be an Edith Fellow?",
+      content: "We expect students to send a weekly update with any big wins and any \
+      questions/big deadlines that we should be aware of. This shouldn't take more than 5 \
+      minutes to fill out and helps keep us all on track. You'd also meet with your mentor on a \
+      bi-weekly basis. We'll also host community events that will be optional to attend, but we \
+      think we will be really fun for you!"
+    },
     {
       title: 'What are the terms of your ISA?',
       content: "Depending on what industry a student is interested in, Edith ISAs range from 2-3% \
@@ -92,26 +100,21 @@ function fellow() {
         <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
           <div className="column is-three-quarters" style={{ textAlign: 'center' }}>
             <h1 className="subtitle is-4" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease">
-              The Edith Fellowship is about building relationships with mentors working in fields you
-              want to go into. It's easy to get an answer to your question on a forum, but it takes
-              time for someone to understand the context of your aspirations and give you an answer
-              that truly helps you. Edith Fellows are partnered one-on-one with a mentor
-              (our Edith General Partners). In addition to this partnership, you join a community
-              of ambitious students from diverse backgrounds.
+              You want a mentor who's walked in your shoes before. The Edith Fellowship is all
+              about partnering you with a mentor (our Edith General Partners) who is already
+              working in the field you want to go into after graduation. In addition to
+              working with one mentor for a longer period of time, as a Fellow, you'll join a
+              community of ambitious students and mentors from diverse backgrounds.
             </h1>
             <FellowFormModal />
           </div>
         </div>
         <ThreeColumns
           descriptions={[
-            'Join the community of Edith Fellows, GPs, and LPs. Our Fellows are pursuing careers \
-            in product management, data science, software engineering, banking, and consulting.',
-            "We keep you accountable to your goals. As an Edith Fellow, you'd send us a weekly \
-            update of your big wins and how we can help so mentors celebrate in your successes and \
-            be can proactive with their advice.",
-            "Your designated mentor will check-in over Zoom with you on a bi-weekly basis. We \
-            want this to be more than a one-time connection - it's a relationship built over a \
-            long period of time.",
+            'Receive funding for your education and join our community of Edith Fellows, GPs, and LPs.',
+            "Meet with your mentor on a bi-weekly basis and participate in Fellowship events to \
+            build relationships and advance your career",
+            "After graduation, use what you learned to become a mentor yourself.",
           ]}
         />
 

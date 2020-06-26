@@ -106,11 +106,9 @@ function gp() {
 
         <ThreeColumns
           descriptions={[
-            'We find top students eager to partner with mentors in their dream careers. You invest \
-            in their success and build a life-long relationship with them.',
-            'We expect our GPs to check-in with their Fellow on a bi-weekly basis. W',
-            "Once the Edith Fellow graduates and gets a job, you get repaid. You're along for the \
-            ride when the student succeeds.",
+            'Partner with an Edith Fellow with similar career interests and invest in their success.',
+            "GPs check-in with their Fellow on a bi-weekly basis to build a relationship.",
+            'Share in the success of your Edith Fellow once they graduate.',
           ]}
         />
       </section>

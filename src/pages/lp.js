@@ -87,10 +87,8 @@ function lp() {
         <ThreeColumns
           descriptions={[
             'We find talented and undercapitalized students and partner them with mentors.',
-            'LPs invest in the pool of students through an SPV. Once the students graduate, \
-            they repay a portion of their income.',
-            'LPs are repaid quarterly after students graduate. If you prefer to keep profits \
-            reinvested we can do so with our Evergreen Fund',
+            'We send you monthly updates on student progress.',
+            'LPs are repaid quarterly through the Edith SPV.',
           ]}
         />
 

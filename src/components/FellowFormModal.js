@@ -62,7 +62,7 @@ function LimitPartnerFormModal() {
                     <br />
                     <p>
                       {`
-                        Thanks for your interest in being an Edith General Partner! You should
+                        Thanks for your interest in being an Edith Fellow! You should
                         receive an email at ${email} to schedule some time to chat so we can get
                         to know you better. See you soon!
                       `}
