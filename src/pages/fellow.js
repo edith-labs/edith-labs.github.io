@@ -95,8 +95,8 @@ function fellow() {
               The Edith Fellowship is about building relationships with mentors working in fields you
               want to go into. It's easy to get an answer to your question on a forum, but it takes
               time for someone to understand the context of your aspirations and give you an answer
-              that truly helps you. Edith Fellows are partnered one-on-one with a mentor (which we
-              call our Edith General Partners). In addition to this partnership, you join a community
+              that truly helps you. Edith Fellows are partnered one-on-one with a mentor
+              (our Edith General Partners). In addition to this partnership, you join a community
               of ambitious students from diverse backgrounds.
             </h1>
             <FellowFormModal />

@@ -36,32 +36,37 @@ function gp() {
 
   const faqs = [
     {
-      title: 'What kind of returns should LPs look for?',
-      content: 'Default answer about this',
+      title: "What's the time commitment to be an Edith GP?",
+      content: "We expect Edith GPs to be available on a bi-weekly basis to meet with their \
+      Edith Fellow. There will be times where this isn't feasible, but we believe a regular \
+      cadence is important for building strong relationships.",
     },
     {
-      title: 'What does the risk profile look like?',
-      content: 'Default answer about this',
+      title: "Does it cost me anything to be a GP?",
+      content: "We want our GPs to be invested along with the LPs and expect them to invest \
+      $500 - $1,000 into the pool, although they're welcome to put in more. Because GPs spend \
+      time mentoring students, they get a 10% premium on invested capital. For instance, if the \
+      pool of capital was $100 and GPs invested $10, they would receive 11% of the repayments."
     },
     {
-      title: 'What type of careers are Edith fellows pursuing?',
-      content: 'Default answer about this',
+      title: 'What happens if I don’t want to be a GP anymore?',
+      content: 'While we would hate to see a GP leave the program, as long as we could facilitate \
+      an orderly transition of GPs for a student you can leave at any time.',
     },
     {
-      title: 'How long does it take to be repaid?',
-      content: 'Default answer about this',
+      title: 'How does Edith screen Fellows?',
+      content: 'We have an application process and interview each prospective Fellow before you \
+      meet them.',
     },
     {
-      title: 'How much do LPs invest?',
-      content: 'Default answer about this',
+      title: 'Do I get to choose who I mentor?',
+      content: 'Yes. Before partnering them with you, we’ll help facilitate an intro call \
+      with the Edith Fellow candidates you’d like to meet.',
     },
     {
       title: 'How does Edith make money?',
-      content: 'Default answer about this',
-    },
-    {
-      title: 'What makes a qualified LP?',
-      content: 'Default answer about this',
+      content: 'Edith takes 10% of the student repayments and charges a 1% service fee on invested \
+      capital.',
     },
   ];
 
@@ -76,7 +81,7 @@ function gp() {
         <div className="columns is-centered" style={{ marginTop: rhythm(5), marginBottom: rhythm(5) }}>
           <div className="column is-four-fifths">
             <h1 className="title is-1">
-              Edith General Partners (GPs) are really important
+              Mentor the next generation.
             </h1>
           </div>
         </div>
@@ -88,7 +93,11 @@ function gp() {
         <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
           <div className="column is-three-quarters" style={{ textAlign: 'center' }}>
             <h1 className="subtitle is-4" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease">
-              One paragraph on what it means to be an Edith General Partner
+              It takes a team to succeed. By lending their experience, Edith General Partners
+              (GPs) are the mentors that take students to the next level. Instead of one off
+              conversations with many students, Edith GPs can build real relationships the Fellows
+              over a longer period of time. This allows GPs to have a large impact on a student's
+              success, and they share in the success of the Fellows.
             </h1>
 
             <GeneralPartnerFormModal />
@@ -106,7 +115,7 @@ function gp() {
         />
       </section>
 
-      <section className="hero is-info">
+      {/* <section className="hero is-info">
 
         <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
           <div className="column is-three-quarters">
@@ -123,10 +132,10 @@ function gp() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="hero" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
-        <div className="columns is-centered">
+      <section className="hero is-info">
+        <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters">
             <h1 className="subtitle is-3">
               FAQ
@@ -139,7 +148,7 @@ function gp() {
 
       </section>
 
-      <section className="hero is-info">
+      <section className="hero">
         <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters" style={{ textAlign: 'center' }}>
             <h1 className="subtitle is-3">

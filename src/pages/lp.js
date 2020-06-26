@@ -16,27 +16,32 @@ function lp() {
     },
     {
       title: 'What does the risk profile look like?',
-      content: 'Default answer about this',
+      content: 'ISAs are still a relatively new financial asset, so any investment is inherently \
+      risky. By investing in a pool of students you reduce your risk, but there is still a chance \
+      your investment can go to zero.',
     },
     {
       title: 'What type of careers are Edith fellows pursuing?',
-      content: 'Default answer about this',
+      content: 'Edith currently supports Fellows pursuing careers in Product Management, \
+      Data Science, Quantitative Finance, Investment Banking, and Consulting.',
     },
     {
       title: 'How long does it take to be repaid?',
-      content: 'Default answer about this',
+      content: 'Standard Edith ISAs last for 60 months, so LPs can expect most of the repayments \
+      to be completed by the sixth year. If students pursue a graduate degree or pause their \
+      career, their repayments may be delayed.',
     },
     {
       title: 'How much do LPs invest?',
-      content: 'Default answer about this',
+      content: 'The minimum LP investment is currently $10,000.',
     },
     {
       title: 'How does Edith make money?',
-      content: 'Default answer about this',
+      content: 'Edith takes 10% of the student repayments and charges a 1% service fee on invested capital.',
     },
     {
       title: 'What makes a qualified LP?',
-      content: 'Default answer about this',
+      content: 'Only accredited investors can become Edith LPs.',
     },
   ];
 
