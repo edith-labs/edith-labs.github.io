@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{"3Dy5":function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),c=n.n(a);t.default=function(e){var t=e.title,n=e.description,a=e.icon;return c.a.createElement("div",{class:"column"},a,c.a.createElement("h3",{class:"title is-size-4"},t),c.a.createElement("p",null,n))}}}]);
+//# sourceMappingURL=component---src-pages-home-product-description-js-646c842f1e2790741aa0.js.map
