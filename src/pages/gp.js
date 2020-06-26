@@ -63,7 +63,7 @@ function gp() {
       title: 'What makes a qualified LP?',
       content: 'Default answer about this',
     },
-  ]
+  ];
 
 
   return (
@@ -97,9 +97,11 @@ function gp() {
 
         <ThreeColumns
           descriptions={[
-            'Something about financing the student for a small amount of capital',
-            'Something about checking in bi-weekly with a student',
-            'Something about checking in bi-weekly with a student',
+            'We find top students eager to partner with mentors in their dream careers. You invest \
+            in their success and build a life-long relationship with them.',
+            'We expect our GPs to check-in with their Fellow on a bi-weekly basis. W',
+            "Once the Edith Fellow graduates and gets a job, you get repaid. You're along for the \
+            ride when the student succeeds.",
           ]}
         />
       </section>

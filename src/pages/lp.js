@@ -38,7 +38,7 @@ function lp() {
       title: 'What makes a qualified LP?',
       content: 'Default answer about this',
     },
-  ]
+  ];
 
   return (
     <Layout>

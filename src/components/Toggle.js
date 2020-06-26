@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaPlus, FaMinus } from 'react-icons/fa'
+import { FaPlus, FaMinus } from 'react-icons/fa';
 import { rhythm } from 'utils/typography';
 
 function Toggle({ title, content }) {
@@ -12,7 +12,7 @@ function Toggle({ title, content }) {
           onClick={() => setVisible(!visible)}
           style={{ marginRight: rhythm(0.5), marginTop: rhythm(0.25), cursor: 'pointer' }}
         >
-          {visible ? <FaMinus /> : <FaPlus  />}
+          {visible ? <FaMinus /> : <FaPlus />}
         </div>
 
         <div>
@@ -23,10 +23,12 @@ function Toggle({ title, content }) {
             <p className="subtitle is-4">{title}</p>
           </div>
 
-          {visible &&
+          {visible
+            && (
             <div>
               <p>{content}</p>
-            </div>}
+            </div>
+            )}
 
         </div>
 
