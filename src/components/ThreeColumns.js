@@ -23,7 +23,7 @@ function ThreeColumns({ descriptions }) {
             data-sal-delay={baseDelay + i * 100}
             data-sal-easing="ease"
           >
-            <p>{description}</p>
+            <p className="subtitle">{description}</p>
           </div>
         ))}
       </div>

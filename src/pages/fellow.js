@@ -10,6 +10,7 @@ import FellowFormModal from 'components/FellowFormModal';
 import sarah from 'images/sarah.jpeg';
 import david from 'images/david.png';
 import cem from 'images/cem.jpeg';
+import Toggle from 'components/Toggle';
 
 function fellow() {
   const gps = [
@@ -32,6 +33,13 @@ function fellow() {
       bio: 'Some stuff about David',
     },
   ];
+
+  const faqs = [
+    {
+      title: 'What are the terms of your ISA?',
+      content: 'Some answer about the terms of the ISA',
+    }
+  ]
 
   return (
     <Layout>
@@ -96,37 +104,11 @@ function fellow() {
             <h1 className="subtitle is-3">
               FAQ
             </h1>
+
+            {faqs.map((faqProps) => (
+              <Toggle {...faqProps} />
+            ))}
           </div>
-        </div>
-
-        <div className="columns is-centered" style={{ marginBottom: rhythm(2) }}>
-          <div className="column is-one-third">
-            <p>
-              How isa works?
-            </p>
-
-            <p>
-              How paying back works
-            </p>
-
-            <p>
-              Who you partner with
-            </p>
-          </div>
-
-          <div className="column is-one-third">
-            <p>
-              Change your career by developing a life-long relationship with an Edith mentor.
-            </p>
-
-            <p>
-              Change your career by developing a life-long relationship with an Edith mentor.
-            </p>
-            <p>
-              Change your career by developing a life-long relationship with an Edith mentor.
-            </p>
-          </div>
-
         </div>
       </section>
 

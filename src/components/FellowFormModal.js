@@ -114,7 +114,7 @@ function LimitPartnerFormModal() {
                       />
                     </div>
 
-                    <div className="field" style={{ margin: rhythm(1.5) }}>
+                    <div className="field">
                       <button className="button is-primary" type="submit">
                         Submit
                       </button>

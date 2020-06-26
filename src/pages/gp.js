@@ -4,6 +4,7 @@ import SEO from 'components/SEO';
 import Layout from 'components/Layout';
 import Navbar from 'components/Navbar';
 import ThreeColumns from 'components/ThreeColumns';
+import Toggle from 'components/Toggle';
 import { rhythm } from 'utils/typography';
 import ProfileTile from 'components/ProfileTile';
 import GeneralPartnerFormModal from 'components/GeneralPartnerFormModal';
@@ -32,6 +33,38 @@ function gp() {
       bio: 'Some stuff about David',
     },
   ];
+
+  const faqs = [
+    {
+      title: 'What kind of returns should LPs look for?',
+      content: 'Default answer about this',
+    },
+    {
+      title: 'What does the risk profile look like?',
+      content: 'Default answer about this',
+    },
+    {
+      title: 'What type of careers are Edith fellows pursuing?',
+      content: 'Default answer about this',
+    },
+    {
+      title: 'How long does it take to be repaid?',
+      content: 'Default answer about this',
+    },
+    {
+      title: 'How much do LPs invest?',
+      content: 'Default answer about this',
+    },
+    {
+      title: 'How does Edith make money?',
+      content: 'Default answer about this',
+    },
+    {
+      title: 'What makes a qualified LP?',
+      content: 'Default answer about this',
+    },
+  ]
+
 
   return (
     <Layout>
@@ -96,38 +129,12 @@ function gp() {
             <h1 className="subtitle is-3">
               FAQ
             </h1>
+            {faqs.map((faqProps) => (
+              <Toggle {...faqProps} />
+            ))}
           </div>
         </div>
 
-        <div className="columns is-centered" style={{ marginBottom: rhythm(2) }}>
-          <div className="column is-one-third">
-            <p>
-              How isa works?
-            </p>
-
-            <p>
-              How paying back works
-            </p>
-
-            <p>
-              Who you partner with
-            </p>
-          </div>
-
-          <div className="column is-one-third">
-            <p>
-              Change your career by developing a life-long relationship with an Edith mentor.
-            </p>
-
-            <p>
-              Change your career by developing a life-long relationship with an Edith mentor.
-            </p>
-            <p>
-              Change your career by developing a life-long relationship with an Edith mentor.
-            </p>
-          </div>
-
-        </div>
       </section>
 
       <section className="hero is-info">
