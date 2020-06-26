@@ -4,7 +4,7 @@ import '../styles.scss';
 import Layout from 'components/Layout';
 import SEO from 'components/SEO';
 import mockup from 'images/mockup.png';
-// import isaMockup from 'images/isa-mockup.png';
+import isaMockup from 'images/isa-mockup.png';
 import { rhythm } from 'utils/typography';
 import StudentInterestInlineForm from 'components/StudentInterestInlineForm/StudentInterestInlineForm';
 import Navbar from 'components/Navbar';
@@ -46,7 +46,7 @@ function Home() {
                 </h1>
               </div>
               <StudentInterestInlineForm />
-              {/* <MentorFormModal /> */}
+              <MentorFormModal />
             </div>
 
           </div>
@@ -95,7 +95,7 @@ function Home() {
 
       </section>
 
-      <section className="hero is-info">
+      {/* <section className="hero is-info">
         <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters" style={{ textAlign: 'center' }}>
             <h1 className="subtitle is-3">
@@ -142,13 +142,13 @@ function Home() {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <MentorWorkSection />
 
       <MentorSchoolSection />
 
-      {/* <section className="hero">
+      <section className="hero">
         <div className="columns is-centered" style={{ minHeight: '500px' }}>
           <div
             className="column is-two-third"
@@ -194,10 +194,10 @@ function Home() {
 
           </div>
         </div>
-      </section> */}
+      </section>
 
 
-      {/* <section className="hero is-info">
+      <section className="hero is-info">
         <div className="columns is-centered" style={{ padding: 0, margin: rhythm(2) }}>
           <div className="column" style={{ overflow: 'hidden', padding: 0 }}>
             <img
@@ -247,11 +247,11 @@ function Home() {
 
           </div>
         </div>
-      </section> */}
+      </section>
 
       <BlogSection />
 
-      <section className="hero is-info">
+      {/* <section className="hero is-info">
         <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters" style={{ textAlign: 'center' }}>
             <h1 className="subtitle is-3">
@@ -265,7 +265,7 @@ function Home() {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
     </Layout>
   );
