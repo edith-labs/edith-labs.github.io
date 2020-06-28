@@ -13,28 +13,51 @@ import david from 'images/david.png';
 import cem from 'images/cem.jpeg';
 
 function gp() {
-  const fellows = [
+  const gps = [
     {
       name: 'Cem Koc',
       company: 'Data Engineer @ Apple',
       profilePic: cem,
-      bio: 'Some stuff about Cem',
+      bio: 'Cem is a Berkeley EECS grad who works on ML problems in the Apple Maps division.',
     },
     {
       name: 'Sarah Choi',
       company: 'Product Manager @ ServiceNow',
       profilePic: sarah,
-      bio: 'Some stuff about Sarah',
+      bio: 'Sarah comes from a finance background at SCU and transitioned in Product Management at ServiceNow after graduating.',
     },
     {
       name: 'David Liu',
-      company: 'Tech Investment Banker @ Morgan Stanley',
+      company: 'Investment Banker @ Morgan Stanley',
       profilePic: david,
-      bio: 'Some stuff about David',
+      bio: 'David is a tech investment banker and former UChicago tennis player where he studied Economics.',
     },
   ];
 
   const faqs = [
+    {
+      title: "What makes a great GP?",
+      content: "A great GP has a few years of work experience and is open to sharing their \
+      experiences with their Edith Fellow. They're also comfortable giving honest and objective \
+      feedback that may be tough for Fellows to hear but is important to help them succeed."
+    },
+    {
+      title: "What types of careers do GPs have?",
+      content: "It's important for our GPs to have worked in the fields that our Fellows \
+      want to enter after college. Currently these fields are: software engineering, product \
+      management, data science, UI/UX, quantitative finance, investment banking, and consulting."
+    },
+    {
+      title: "How many Fellows does each GP help?",
+      content: "We envision each GP focusing on one or two Fellows at most, although we do want \
+      the entire cohort of Fellows and GPs to get to know one another on a personal basis."
+    },
+    {
+      title: "How many GPs are there per Fellow?",
+      content: "We anticipate most Fellows having just one GP, because we think it's important to \
+      have regular interactions with the same student to build a real relationship. However, there \
+      will be some cases where Fellows have more than one GP."
+    },
     {
       title: "What's the time commitment to be an Edith GP?",
       content: "We expect Edith GPs to be available on a bi-weekly basis to meet with their \
@@ -47,6 +70,13 @@ function gp() {
       $500 - $1,000 into the pool, although they're welcome to put in more. Because GPs spend \
       time mentoring students, they get a 10% premium on invested capital. For instance, if the \
       pool of capital was $100 and GPs invested $10, they would receive 11% of the repayments."
+    },
+    {
+      title: "How do I know I'll get my money back?",
+      content: "We vigorously screen each candidate, and for this first cohort we are pooling \
+      the funding and returns to reduce the impact of flight-risk. While regulations do not allow \
+      us to share return projections publicly, please contact us separately and we can share with \
+      you our internal projections.",
     },
     {
       title: 'What happens if I don’t want to be a GP anymore?',
@@ -65,7 +95,7 @@ function gp() {
     },
     {
       title: 'How does Edith make money?',
-      content: 'Edith takes 10% of the student repayments and charges a 1% service fee on invested \
+      content: 'Edith takes 5% of the student repayments and charges a 1% service fee on invested \
       capital.',
     },
   ];
@@ -107,18 +137,18 @@ function gp() {
         <ThreeColumns
           descriptions={[
             'Partner with an Edith Fellow with similar career interests and invest in their success.',
-            "GPs check-in with their Fellow on a bi-weekly basis to build a relationship.",
-            'Share in the success of your Edith Fellow once they graduate.',
+            'Meet with your Fellow on a bi-weekly basis and build a relationship.',
+            'Celebrate and share in the success of your Edith Fellow once they graduate.',
           ]}
         />
       </section>
 
-      {/* <section className="hero is-info">
+      <section className="hero is-info">
 
         <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
           <div className="column is-three-quarters">
             <h1 className="subtitle is-3">
-              Some of Our Edith Fellows
+              Some of Our Edith GPs
             </h1>
           </div>
         </div>
@@ -126,13 +156,13 @@ function gp() {
         <div className="columns is-centered" style={{ marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters">
             <div className="columns">
-              {fellows.map((fellowProps, i) => <ProfileTile {...fellowProps} delay={i * 100} />)}
+              {gps.map((fellowProps, i) => <ProfileTile {...fellowProps} delay={i * 100} />)}
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      <section className="hero is-info">
+      <section className="hero">
         <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters">
             <h1 className="subtitle is-3">
@@ -146,7 +176,7 @@ function gp() {
 
       </section>
 
-      <section className="hero">
+      <section className="hero is-info">
         <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters" style={{ textAlign: 'center' }}>
             <h1 className="subtitle is-3">

@@ -10,10 +10,10 @@ import { rhythm } from 'utils/typography';
 
 function lp() {
   const faqs = [
-    {
-      title: 'What kind of returns should LPs look for?',
-      content: 'Default answer about this',
-    },
+    // {
+    //   title: 'What kind of returns should LPs look for?',
+    //   content: 'Default answer about this',
+    // },
     {
       title: 'What does the risk profile look like?',
       content: 'ISAs are still a relatively new financial asset, so any investment is inherently \
@@ -37,7 +37,7 @@ function lp() {
     },
     {
       title: 'How does Edith make money?',
-      content: 'Edith takes 10% of the student repayments and charges a 1% service fee on invested capital.',
+      content: 'Edith takes 5% of the student repayments and charges a 1% service fee on invested capital.',
     },
     {
       title: 'What makes a qualified LP?',

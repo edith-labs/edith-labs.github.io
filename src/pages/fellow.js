@@ -73,7 +73,7 @@ function fellow() {
     },
     {
       title: 'How does Edith make money?',
-      content: 'Edith takes 10% of the student repayments and charges a 1% service fee on invested \
+      content: 'Edith takes 5% of the student repayments and charges a 1% service fee on invested \
       capital. This aligns us with you as a student and our partners.',
     },
   ];
