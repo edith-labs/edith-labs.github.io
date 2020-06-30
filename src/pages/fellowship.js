@@ -147,7 +147,7 @@ function fellowship() {
 
         <Navbar />
 
-        <div className="columns is-centered" style={{ marginTop: rhythm(5), marginBottom: rhythm(5) }}>
+        <div className="columns is-centered" style={{ marginTop: rhythm(3), marginBottom: rhythm(5) }}>
           <div className="column is-three-quarters">
             <div className="columns">
               <div className="column is-one-third" style={{ padding: 0, marginBottom: rhythm(1) }}>
@@ -163,10 +163,36 @@ function fellowship() {
       </section>
 
       <section className="hero">
-        <div className="columns is-centered" style={{ marginTop: rhythm(3), marginLeft: rhythm(2), marginRight: rhythm(2) }}>
+        <div className="columns is-centered" style={{ margin: rhythm(2), marginTop: rhythm(3) }}>
 
           <div className="column is-one-quarter">
             <h1 className="title is-4">What</h1>
+          </div>
+
+          <div
+            className="column is-three-quarters"
+            data-sal="slide-up"
+            data-sal-delay={200}
+            data-sal-easing="ease"
+          >
+            <h1 className="subtitle is-4">
+              The Edith Fellowship is a multi-year program for students who believe mentorship
+              can take their career to the next level. Edith Fellows can also replace their
+              student loans with <Link to="/isa">income share agreements (ISAs)</Link>
+              funded by Edith Partners.
+            </h1>
+          </div>
+
+        </div>
+      </section>
+
+      <hr />
+
+      <section className="hero">
+        <div className="columns is-centered" style={{ marginTop: rhythm(3), marginLeft: rhythm(2), marginRight: rhythm(2) }}>
+
+          <div className="column is-one-quarter">
+            <h1 className="title is-4">How</h1>
           </div>
 
           <div className="column is-three-quarters">
@@ -247,7 +273,7 @@ function fellowship() {
       <hr />
 
       <section className="hero">
-        <div className="columns is-centered" style={{ margin: rhythm(2) }}>
+        <div className="columns is-centered" style={{ margin: rhythm(2), marginBottom: rhythm(3) }}>
 
           <div className="column is-one-quarter">
             <h1 className="title is-4">Who</h1>

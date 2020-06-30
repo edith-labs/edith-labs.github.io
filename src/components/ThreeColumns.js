@@ -2,23 +2,18 @@ import React from 'react';
 
 import { rhythm } from 'utils/typography';
 
-function ThreeColumns({ descriptions }) {
+function ThreeColumns({ title, descriptions }) {
   const baseDelay = 300;
 
   return (
     <>
-      <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
-        <div className="column is-three-quarters">
-          <h1 className="subtitle is-3">
-            How It Works
-          </h1>
-        </div>
-      </div>
-
-      <div className="columns is-centered" style={{ marginBottom: rhythm(2) }}>
+      <h1 className="subtitle is-3">
+        {title}
+      </h1>
+      <div className="columns is-centered">
         {descriptions.map((description, i) => (
           <div
-            className="column is-one-quarter"
+            className="column is-one-third"
             data-sal="slide-up"
             data-sal-delay={baseDelay + i * 100}
             data-sal-easing="ease"
