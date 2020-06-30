@@ -15,6 +15,26 @@ html {
     scroll-behavior: smooth;
 }
 
+.underscore-title:after {
+  background: none repeat scroll 0 0 black;
+  bottom: -25px;
+  content: "";
+  display: block;
+  height: 10px;
+  position: relative;
+  width: 100px;
+}
+
+.numberCircle {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  border: 2px solid #666;
+}
+
 $primary-gradient: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
 
 .columns {
@@ -93,6 +113,7 @@ $primary-gradient: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
     left: 0px;
     top: -60px;
 }
+
 .anchor {
   position: relative;
   visibility: hidden;

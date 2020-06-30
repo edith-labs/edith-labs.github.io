@@ -17,11 +17,11 @@ Some of Max’s research at the SAND Lab included mobile computing, advanced adv
 
 The Analytics Fellow interview process is almost exactly the same as it is for consultants, except there’s an additional technical interview during the end. The first round is a behavioral interview and case study, and you can expect similar final rounds.
 
-The behavioral interview goes over working through a disagreement with a teammate. The how/why are the most important parts of your answer. There are three points to hit:
+The behavioral interview goes over working through a disagreement with a teammate. The how/why are the most important parts of your answer. Being able to deal with these situations is essential for consultants. There are three points to hit:
 * How did you deal with it?
 * Why did you approach it a certain way?
 * How did it affect your teammate/you?
-Being able to deal with these situations is essential for consultants.
+
 
 In terms of preparation, the classic case books are sufficient. You should practice with friends because talking through your answers is a skill you learn. McKinsey case interviews are known to be straightforward and measure your thinking/clarity of thought – it’s better to pause and gather your thoughts than to ramble without a point.
 
