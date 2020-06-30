@@ -41,7 +41,7 @@ function fellow() {
       questions/big deadlines that we should be aware of. This shouldn't take more than 5 \
       minutes to fill out and helps keep us all on track. You'd also meet with your mentor on a \
       bi-weekly basis. We'll also host community events that will be optional to attend, but we \
-      think we will be really fun for you!"
+      think we will be really fun for you!",
     },
     {
       title: 'What are the terms of your ISA?',
@@ -112,9 +112,9 @@ function fellow() {
         <ThreeColumns
           descriptions={[
             'Receive funding for your education and join our community of Edith Fellows, GPs, and LPs.',
-            "Meet with your mentor on a bi-weekly basis and participate in Fellowship events to \
-            build relationships and advance your career",
-            "After graduation, use what you learned to become a mentor yourself.",
+            'Meet with your mentor on a bi-weekly basis and participate in Fellowship events to \
+            build relationships and advance your career',
+            'After graduation, use what you learned to become a mentor yourself.',
           ]}
         />
 

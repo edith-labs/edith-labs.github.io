@@ -23,8 +23,8 @@ function Navbar({ path }) {
 
         {/* <Link to="/fellow" className={`nav-child nav-link ${path == '/fellow' && 'active'}`}>Students</Link> */}
         {/* <Link to="/gp" className={`nav-child nav-link ${path == '/gp' && 'active'}`}>Mentors</Link> */}
-        <span></span>
-        <span></span>
+        <span />
+        <span />
 
         <a
           href="https://app.edithlabs.com"

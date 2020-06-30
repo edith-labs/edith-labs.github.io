@@ -13,8 +13,17 @@ import mckinsey from 'images/companies/mckinsey.png';
 import morganStanley from 'images/companies/morgan-stanley.png';
 import serviceNow from 'images/companies/service-now.jpeg';
 import berkeley from 'images/schools/berkeley.png';
+import columbia from 'images/schools/columbia.png';
+import cornell from 'images/schools/cornell.png';
 import duke from 'images/schools/duke.png';
-import ucla from 'images/schools/ucla.png';
+import iu from 'images/schools/iu.png';
+import jhu from 'images/schools/jhu.png';
+import middlebury from 'images/schools/middlebury.png';
+import nyu from 'images/schools/nyu.png';
+import usc from 'images/schools/usc.png';
+import ucsd from 'images/schools/ucsd.png';
+import yale from 'images/schools/yale.png';
+
 
 
 function fellowship() {
@@ -25,14 +34,54 @@ function fellowship() {
       link: 'https://www.berkeley.edu',
     },
     {
-      src: duke,
-      alt: 'duke',
-      link: 'https://duke.edu',
+      src: columbia,
+      alt: 'columbia',
+      link: 'https://columbia.edu',
     },
     {
-      src: ucla,
-      alt: 'ucla',
-      link: 'http://www.ucla.edu',
+      src: cornell,
+      alt: 'cornell',
+      link: 'https://cornell.edu',
+    },
+    {
+      src: duke,
+      alt: 'duke',
+      link: 'http://www.duke.edu',
+    },
+    {
+      src: iu,
+      alt: 'iu',
+      link: 'http://www.indiana.edu',
+    },
+    {
+      src: jhu,
+      alt: 'jhu',
+      link: 'http://www.jhu.edu',
+    },
+    {
+      src: middlebury,
+      alt: 'middlebury',
+      link: 'http://www.middlebury.edu',
+    },
+    {
+      src: nyu,
+      alt: 'nyu',
+      link: 'http://www.nyu.edu',
+    },
+    {
+      src: ucsd,
+      alt: 'ucsd',
+      link: 'http://www.usc.edu',
+    },
+    {
+      src: usc,
+      alt: 'usc',
+      link: 'http://www.usc.edu',
+    },
+    {
+      src: yale,
+      alt: 'usc',
+      link: 'http://www.yale.edu',
     },
   ];
   const companies = [
@@ -120,7 +169,9 @@ function fellowship() {
             </div>
 
             <div
-              style={{ display: 'flex', marginTop: rhythm(1), marginBottom: rhythm(1), alignItems: 'middle' }}
+              style={{
+                display: 'flex', marginTop: rhythm(1), marginBottom: rhythm(1), alignItems: 'middle',
+              }}
               data-sal="slide-up"
               data-sal-delay={200}
               data-sal-easing="ease"
@@ -179,9 +230,12 @@ function fellowship() {
               data-sal-delay={200}
               data-sal-easing="ease"
             >
-              <strong>Edith Fellows</strong> are the students in the program. They are partnered
+              <strong>Edith Fellows</strong>
+              {' '}
+              are the students in the program. They are partnered
               with a dedicated mentor and can choose to receive funding to replace their student
-              loans. <br />
+              loans.
+              <br />
               <Link to="/fellow">Learn how to become a Fellow &#8594;</Link>
             </h1>
 
@@ -192,9 +246,12 @@ function fellowship() {
               data-sal-delay={200}
               data-sal-easing="ease"
             >
-              <strong>Edith General Partners (GPs)</strong> are the mentors of the program. They
+              <strong>Edith General Partners (GPs)</strong>
+              {' '}
+              are the mentors of the program. They
               meet with their Fellow bi-weekly and invest smaller amounts of capital to help
-              replace the Fellows' student loans. <br />
+              replace the Fellows' student loans.
+              <br />
               <Link to="/gp">Learn how to become a GP &#8594;</Link>
             </h1>
 
@@ -204,9 +261,12 @@ function fellowship() {
               data-sal-delay={200}
               data-sal-easing="ease"
             >
-              <strong>Edith Limited Partners (LPs)</strong> provide the majority of the funding
+              <strong>Edith Limited Partners (LPs)</strong>
+              {' '}
+              provide the majority of the funding
               for Edith Fellows. While they're always welcome to participate in community events,
-              becoming an Edith LP does not include a time commitment. <br />
+              becoming an Edith LP does not include a time commitment.
+              <br />
               <Link to="/lp">Learn how to become an LP &#8594;</Link>
             </h1>
           </div>

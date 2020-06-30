@@ -2,17 +2,16 @@ import React from 'react';
 
 import { rhythm } from 'utils/typography';
 
-function LogoSection({ title, logos = [], animated = false}) {
-
+function LogoSection({ title, logos = [], animated = false }) {
   const getAnimatedProps = (i) => (
     animated
       ? {
-          "data-sal":"slide-up",
-          "data-sal-delay": i * 100 + 200,
-          "data-sal-easing": "ease",
-        }
+        'data-sal': 'slide-up',
+        'data-sal-delay': i * 50 + 200,
+        'data-sal-easing': 'ease',
+      }
       : {}
-    );
+  );
 
   return (
     <section className="hero is-info">

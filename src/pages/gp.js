@@ -36,27 +36,27 @@ function gp() {
 
   const faqs = [
     {
-      title: "What makes a great GP?",
+      title: 'What makes a great GP?',
       content: "A great GP has a few years of work experience and is open to sharing their \
       experiences with their Edith Fellow. They're also comfortable giving honest and objective \
-      feedback that may be tough for Fellows to hear but is important to help them succeed."
+      feedback that may be tough for Fellows to hear but is important to help them succeed.",
     },
     {
-      title: "What types of careers do GPs have?",
+      title: 'What types of careers do GPs have?',
       content: "It's important for our GPs to have worked in the fields that our Fellows \
       want to enter after college. Currently these fields are: software engineering, product \
-      management, data science, UI/UX, quantitative finance, investment banking, and consulting."
+      management, data science, UI/UX, quantitative finance, investment banking, and consulting.",
     },
     {
-      title: "How many Fellows does each GP help?",
-      content: "We envision each GP focusing on one or two Fellows at most, although we do want \
-      the entire cohort of Fellows and GPs to get to know one another on a personal basis."
+      title: 'How many Fellows does each GP help?',
+      content: 'We envision each GP focusing on one or two Fellows at most, although we do want \
+      the entire cohort of Fellows and GPs to get to know one another on a personal basis.',
     },
     {
-      title: "How many GPs are there per Fellow?",
+      title: 'How many GPs are there per Fellow?',
       content: "We anticipate most Fellows having just one GP, because we think it's important to \
       have regular interactions with the same student to build a real relationship. However, there \
-      will be some cases where Fellows have more than one GP."
+      will be some cases where Fellows have more than one GP.",
     },
     {
       title: "What's the time commitment to be an Edith GP?",
@@ -65,18 +65,18 @@ function gp() {
       cadence is important for building strong relationships.",
     },
     {
-      title: "Does it cost me anything to be a GP?",
+      title: 'Does it cost me anything to be a GP?',
       content: "We want our GPs to be invested along with the LPs and expect them to invest \
       $500 - $1,000 into the pool, although they're welcome to put in more. Because GPs spend \
       time mentoring students, they get a 10% premium on invested capital. For instance, if the \
-      pool of capital was $100 and GPs invested $10, they would receive 11% of the repayments."
+      pool of capital was $100 and GPs invested $10, they would receive 11% of the repayments.",
     },
     {
       title: "How do I know I'll get my money back?",
-      content: "We vigorously screen each candidate, and for this first cohort we are pooling \
+      content: 'We vigorously screen each candidate, and for this first cohort we are pooling \
       the funding and returns to reduce the impact of flight-risk. While regulations do not allow \
       us to share return projections publicly, please contact us separately and we can share with \
-      you our internal projections.",
+      you our internal projections.',
     },
     {
       title: 'What happens if I don’t want to be a GP anymore?',
