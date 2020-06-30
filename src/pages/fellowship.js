@@ -5,6 +5,7 @@ import SEO from 'components/SEO';
 import Layout from 'components/Layout';
 import Navbar from 'components/Navbar';
 import LogoSection from 'components/LogoSection';
+import Toggle from 'components/Toggle';
 import { rhythm } from 'utils/typography';
 import citadel from 'images/companies/citadel.png';
 import sig from 'images/companies/sig.png';
@@ -71,7 +72,7 @@ function fellowship() {
     {
       src: ucsd,
       alt: 'ucsd',
-      link: 'http://www.usc.edu',
+      link: 'http://www.ucsd.edu',
     },
     {
       src: usc,
@@ -80,7 +81,7 @@ function fellowship() {
     },
     {
       src: yale,
-      alt: 'usc',
+      alt: 'yale',
       link: 'http://www.yale.edu',
     },
   ];
@@ -118,6 +119,27 @@ function fellowship() {
     },
   ];
 
+  const faqs = [
+    {
+      title: 'What careers does Edith support?',
+      content: "Right now we are able to partner students pursuing the following careers: " +
+      "product management, software engineering, data science, quantitative finance, " +
+      "investment banking, and consulting."
+    },
+    {
+      title: "What is an income share agreement?",
+      content: "An income share agreement is an agreement between a borrower and a lender " +
+      "where instead of repaying the principal with interest, the borrower repays a portion of " +
+      "their income for a predetermined time.",
+    },
+    {
+      title: "What are the terms of an Edith ISA",
+      content: "For students looking to raise funds for their education on Edith, their " +
+      "ISAs are typically between 2-3% of their **base salary** for every $10,000 raised. The " +
+      "exact percentage depends on the industry and student."
+    },
+  ];
+
   return (
     <Layout>
       <SEO title="Home" />
@@ -141,10 +163,10 @@ function fellowship() {
       </section>
 
       <section className="hero">
-        <div className="columns is-centered" style={{ margin: rhythm(2), marginTop: rhythm(3) }}>
+        <div className="columns is-centered" style={{ marginTop: rhythm(3), marginLeft: rhythm(2), marginRight: rhythm(2) }}>
 
           <div className="column is-one-quarter">
-            <h1 className="subtitle is-4">What</h1>
+            <h1 className="title is-4">What</h1>
           </div>
 
           <div className="column is-three-quarters">
@@ -154,15 +176,17 @@ function fellowship() {
               data-sal-delay={200}
               data-sal-easing="ease"
             >
-              <div className="numberCircle" style={{ marginRight: rhythm(1) }}>1</div>
+              <div className="numberCircle" style={{ marginRight: rhythm(1), flex: '0 0 60px' }}>1</div>
 
               <div>
                 <h1 className="title is-4" style={{ marginBottom: rhythm(1) }}>
-                  Getting the funding
+                  Join the community
                 </h1>
 
                 <h1 className="subtitle" style={{ marginBottom: rhythm(1) }}>
-                  Something longer about how we select students, fund them etc.
+                  Students join the Fellowship, sign an ISA (the exact percentage depends on
+                  industry and amount borrowed), and are partnered with a mentor in a relevant
+                  industry.
                 </h1>
 
               </div>
@@ -176,15 +200,16 @@ function fellowship() {
               data-sal-delay={200}
               data-sal-easing="ease"
             >
-              <div className="numberCircle" style={{ marginRight: rhythm(1) }}>2</div>
+              <div className="numberCircle" style={{ marginRight: rhythm(1), flex: '0 0 60px' }}>2</div>
 
               <div>
                 <h1 className="title is-4" style={{ marginBottom: rhythm(1) }}>
-                  How the partnerships and mentorship works
+                  Build a relationship
                 </h1>
 
                 <h1 className="subtitle" style={{ marginBottom: rhythm(1) }}>
-                  Talk about weekly check in , bi weekly with mentor
+                  Fellows meet with their mentors bi-weekly, Edith hosts community events, and
+                  each Fellow is given the individual help and resources necessary to succeed.
                 </h1>
               </div>
             </div>
@@ -195,21 +220,27 @@ function fellowship() {
               data-sal-delay={200}
               data-sal-easing="ease"
             >
-              <div className="numberCircle" style={{ marginRight: rhythm(1) }}>3</div>
+              <div className="numberCircle" style={{ marginRight: rhythm(1), flex: '0 0 60px' }}>3</div>
 
               <div>
                 <h1 className="title is-4">
-                  Repay and return as a mentor
+                  Give back
                 </h1>
 
                 <h1 className="subtitle">
-                  How repayments work, fellows becoming gps etc.
+                  Our ultimate goal is for our Fellows to be the next generation of mentors.
+                  After graduation, Fellows will repay their ISAs and are invited to become Edith
+                  General Partners.
                 </h1>
               </div>
             </div>
 
           </div>
 
+        </div>
+
+        <div style={{ textAlign: 'center', marginTop: rhythm(1), marginBottom: rhythm(2) }}>
+          <a href="#faq">Take me to the FAQ</a>
         </div>
       </section>
 
@@ -219,7 +250,7 @@ function fellowship() {
         <div className="columns is-centered" style={{ margin: rhythm(2) }}>
 
           <div className="column is-one-quarter">
-            <h1 className="subtitle is-4">Who</h1>
+            <h1 className="title is-4">Who</h1>
           </div>
 
           <div className="column is-three-quarters">
@@ -276,6 +307,22 @@ function fellowship() {
 
       <LogoSection title="Where our Edith Fellows Study" logos={schools} animated />
       <LogoSection title="Where our Edith Partners Work" logos={companies} animated />
+
+      <a name="faq" />
+      <section className="hero">
+        <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
+          <div className="column is-three-quarters">
+            <h1 className="subtitle is-3">
+              FAQ
+            </h1>
+
+            {faqs.map((faqProps) => (
+              <Toggle {...faqProps} />
+            ))}
+          </div>
+        </div>
+
+      </section>
 
     </Layout>
   );

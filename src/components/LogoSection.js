@@ -17,7 +17,7 @@ function LogoSection({ title, logos = [], animated = false }) {
     <section className="hero is-info">
       <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
         <div className="column is-four-fifths" style={{ textAlign: 'center' }}>
-          <h1 className="title is-4">{title}</h1>
+          <h1 className="subtitle is-3">{title}</h1>
 
           <div className="columns is-centered is-multiline">
             {logos.map(({ src, link, alt }, i) => (
