@@ -11,6 +11,17 @@ import sarah from 'images/sarah.jpeg';
 import david from 'images/david.png';
 import cem from 'images/cem.jpeg';
 import Toggle from 'components/Toggle';
+import LogoSection from 'components/LogoSection';
+
+import berkeley from 'images/schools/berkeley.png';
+import uchicago from 'images/schools/uchicago.png';
+import santaClara from 'images/schools/santa-clara.png';
+import citadel from 'images/companies/citadel.png';
+import sig from 'images/companies/sig.png';
+import apple from 'images/companies/apple.png';
+import mckinsey from 'images/companies/mckinsey.png';
+import morganStanley from 'images/companies/morgan-stanley.png';
+import serviceNow from 'images/companies/service-now.jpeg';
 
 function fellow() {
   const gps = [
@@ -37,21 +48,77 @@ function fellow() {
   const steps = [
     {
       number: 1,
+      title: 'Join the Community',
       description: 'Apply to be a Fellow and have an interview with the Edith team',
     },
     {
       number: 2,
-      description: 'Sign your ISA, received funds, and partner with a mentor.',
+      title: 'Partner with a Mentor',
+      description: 'Sign your ISA, receive funds, and partner with a mentor.',
     },
     {
       number: 3,
+      title: 'Build a Relationship',
       description: 'Build a relationship with your mentor by meeting with them on a bi-weekly basis.',
     },
     {
       number: 4,
-      description: 'Graduate ',
+      title: 'Give Back',
+      description: 'Graduate and start repaying your ISAs. Continue to give back as an Edith GP.',
     },
   ]
+
+  const schools = [
+    {
+      src: berkeley,
+      alt: 'berkeley',
+      link: 'https://www.berkeley.edu',
+    },
+    {
+      src: uchicago,
+      alt: 'uchicago',
+      link: 'http://www.uchicago.edu',
+    },
+    {
+      src: santaClara,
+      alt: 'santa clara',
+      link: 'http://www.scu.edu',
+    },
+  ];
+
+  const companies = [
+    {
+      src: apple,
+      link: 'https://www.apple.com',
+      alt: 'apple',
+    },
+    {
+      src: citadel,
+      link: 'https://www.citadel.com',
+      alt: 'citadel',
+    },
+    {
+      src: morganStanley,
+      link: 'https://www.morganstanley.com',
+      alt: 'morgan-stanley',
+
+    },
+    {
+      src: mckinsey,
+      link: 'https://www.mckinsey.com',
+      alt: 'mckinsey',
+    },
+    {
+      src: serviceNow,
+      link: 'https://www.servicenow.com',
+      alt: 'service-now',
+    },
+    {
+      src: sig,
+      link: 'https://www.sig.com',
+      alt: 'sig',
+    },
+  ];
 
   const faqs = [
     {
@@ -124,11 +191,17 @@ function fellow() {
 
         <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters">
+
             <h1 className="subtitle is-3">
               <strong>Edith Fellows</strong> are the students in the Edith Fellowship. They are
               partnered with a dedicated mentor and can choose to receive funding to replace
               their student loans.
             </h1>
+
+            <div style={{ textAlign: 'center' }}>
+              <a href="#faq" style={{ fontSize: '120%'}}>Take me to the FAQ</a>
+            </div>
+
           </div>
         </div>
       </section>
@@ -150,12 +223,12 @@ function fellow() {
       </section>
 
 
-      <section className="hero is-info">
+      <section className="hero">
 
         <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
           <div className="column is-three-quarters">
             <h1 className="subtitle is-3">
-              Some of Our Edith GPs
+              Meet Some of Our Edith GPs
             </h1>
           </div>
         </div>
@@ -169,6 +242,10 @@ function fellow() {
         </div>
       </section>
 
+      <LogoSection title="Where our Edith GPs Work" logos={companies} animated />
+      <LogoSection title="Where our Edith GPs Studied" logos={schools} animated />
+
+      <a name="faq" />
       <section className="hero" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
         <div className="columns is-centered">
           <div className="column is-three-quarters">

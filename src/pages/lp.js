@@ -5,10 +5,35 @@ import Layout from 'components/Layout';
 import Navbar from 'components/Navbar';
 import Toggle from 'components/Toggle';
 import Step from 'components/Step';
+import ProfileTile from 'components/ProfileTile';
 import LimitedPartnerFormModal from 'components/LimitedPartnerFormModal';
 import { rhythm } from 'utils/typography';
+import sarah from 'images/sarah.jpeg';
+import david from 'images/david.png';
+import cem from 'images/cem.jpeg';
 
 function lp() {
+  const gps = [
+    {
+      name: 'Cem Koc',
+      company: 'Data Engineer @ Apple',
+      profilePic: cem,
+      bio: 'Cem is a Berkeley EECS grad who works on ML problems in the Apple Maps division.',
+    },
+    {
+      name: 'Sarah Choi',
+      company: 'Product Manager @ ServiceNow',
+      profilePic: sarah,
+      bio: 'Sarah comes from a finance background at SCU and transitioned in Product Management at ServiceNow after graduating.',
+    },
+    {
+      name: 'David Liu',
+      company: 'Investment Banker @ Morgan Stanley',
+      profilePic: david,
+      bio: 'David is a tech investment banker and former UChicago tennis player where he studied Economics.',
+    },
+  ];
+
   const faqs = [
     // {
     //   title: 'What kind of returns should LPs look for?',
@@ -91,16 +116,19 @@ function lp() {
 
         <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters">
+
             <h1 className="subtitle is-3">
-            <strong>Edith Limited Partners (LPs)</strong>
+              <strong>Edith Limited Partners (LPs)</strong>
               {' '}
               provide the majority of the funding
               for Edith Fellows. While they're always welcome to participate in community events,
               becoming an Edith LP does not include a time commitment.
             </h1>
+
             <div style={{ textAlign: 'center' }}>
-              <a href="#faq">Take me to the FAQ</a>
+              <a href="#faq" style={{ fontSize: '120%'}}>Take me to the FAQ</a>
             </div>
+
           </div>
         </div>
 
@@ -121,8 +149,28 @@ function lp() {
         </div>
       </section>
 
-      <a name="faq" />
       <section className="hero">
+
+        <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
+          <div className="column is-three-quarters">
+            <h1 className="subtitle is-3">
+              Meet Some of Our Edith GPs
+            </h1>
+          </div>
+        </div>
+
+        <div className="columns is-centered" style={{ marginBottom: rhythm(2) }}>
+          <div className="column is-three-quarters">
+            <div className="columns">
+              {gps.map((fellowProps, i) => <ProfileTile {...fellowProps} delay={i * 100} />)}
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <a name="faq" />
+      <section className="hero is-info">
         <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters">
             <h1 className="subtitle is-3">

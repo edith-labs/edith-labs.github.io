@@ -3,7 +3,7 @@ import React from 'react';
 import SEO from 'components/SEO';
 import Layout from 'components/Layout';
 import Navbar from 'components/Navbar';
-import ThreeColumns from 'components/ThreeColumns';
+import LogoSection from 'components/LogoSection';
 import Toggle from 'components/Toggle';
 import { rhythm } from 'utils/typography';
 import ProfileTile from 'components/ProfileTile';
@@ -12,6 +12,16 @@ import sarah from 'images/sarah.jpeg';
 import david from 'images/david.png';
 import cem from 'images/cem.jpeg';
 import Step from 'components/Step';
+
+import berkeley from 'images/schools/berkeley.png';
+import uchicago from 'images/schools/uchicago.png';
+import santaClara from 'images/schools/santa-clara.png';
+import citadel from 'images/companies/citadel.png';
+import sig from 'images/companies/sig.png';
+import apple from 'images/companies/apple.png';
+import mckinsey from 'images/companies/mckinsey.png';
+import morganStanley from 'images/companies/morgan-stanley.png';
+import serviceNow from 'images/companies/service-now.jpeg';
 
 function gp() {
   const gps = [
@@ -38,19 +48,23 @@ function gp() {
   const steps = [
     {
       number: 1,
+      title: 'Join the Community',
       description: 'Apply to be a GP and have a conversation with the Edith team',
     },
     {
       number: 2,
+      title: 'Support the Fellowship',
       description: 'You invest into the Edith Cohort and partner with the student you choose to mentor.',
     },
     {
       number: 3,
-      description: 'Build a relationship with your mentee by meeting with them on a bi-weekly basis.',
+      title: 'Build a Relationship',
+      description: 'Meet with your designated Edith Fellow on a bi-weekly basis and build a relationship.',
     },
     {
       number: 4,
-      description: 'Earn a return on your initial investment once students of the cohort graduate.',
+      title: 'Earn a Return',
+      description: 'Once the students graduate and find a job, they repay through their ISA.',
     },
   ];
 
@@ -120,10 +134,62 @@ function gp() {
     },
   ];
 
+  const schools = [
+    {
+      src: berkeley,
+      alt: 'berkeley',
+      link: 'https://www.berkeley.edu',
+    },
+    {
+      src: uchicago,
+      alt: 'uchicago',
+      link: 'http://www.uchicago.edu',
+    },
+    {
+      src: santaClara,
+      alt: 'santa clara',
+      link: 'http://www.scu.edu',
+    },
+  ];
+
+  const companies = [
+    {
+      src: apple,
+      link: 'https://www.apple.com',
+      alt: 'apple',
+    },
+    {
+      src: citadel,
+      link: 'https://www.citadel.com',
+      alt: 'citadel',
+    },
+    {
+      src: morganStanley,
+      link: 'https://www.morganstanley.com',
+      alt: 'morgan-stanley',
+
+    },
+    {
+      src: mckinsey,
+      link: 'https://www.mckinsey.com',
+      alt: 'mckinsey',
+    },
+    {
+      src: serviceNow,
+      link: 'https://www.servicenow.com',
+      alt: 'service-now',
+    },
+    {
+      src: sig,
+      link: 'https://www.sig.com',
+      alt: 'sig',
+    },
+  ];
+
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="General Partners" />
       <section className="hero is-info" style={{ position: 'relative' }}>
 
         <Navbar path="/gp" />
@@ -148,6 +214,7 @@ function gp() {
 
         <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters">
+
             <h1 className="subtitle is-3">
               <strong>Edith General Partners (GPs)</strong>
               {' '}
@@ -155,6 +222,11 @@ function gp() {
               meet with their Fellow bi-weekly and invest smaller amounts of capital to help
               replace the Fellows' student loans.
             </h1>
+
+            <div style={{ textAlign: 'center' }}>
+              <a href="#faq" style={{ fontSize: '120%'}}>Take me to the FAQ</a>
+            </div>
+
           </div>
         </div>
       </section>
@@ -180,7 +252,7 @@ function gp() {
         <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
           <div className="column is-three-quarters">
             <h1 className="subtitle is-3">
-              Some of Our Edith GPs
+              Meet Some of Our Edith GPs
             </h1>
           </div>
         </div>
@@ -192,8 +264,13 @@ function gp() {
             </div>
           </div>
         </div>
+
       </section>
 
+      <LogoSection title="Where our Edith GPs Work" logos={companies} animated />
+      <LogoSection title="Where our Edith GPs Studied" logos={schools} animated />
+
+      <a name="faq" />
       <section className="hero">
         <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters">

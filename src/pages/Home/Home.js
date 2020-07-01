@@ -126,7 +126,7 @@ function Home() {
               The Edith Fellowship
             </h1>
 
-            <h1 className="title is-4" style={{ marginBottom: rhythm(2) }}>
+            <h1 className="title is-4" style={{ marginBottom: rhythm(2), textAlign: 'center' }}>
               The Edith Fellowship connects talented students to accomplished industry
               mentors. Join our community today.
             </h1>
