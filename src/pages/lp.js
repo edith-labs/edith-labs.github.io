@@ -90,7 +90,7 @@ function lp() {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="LP" />
       <section className="hero is-info" style={{ position: 'relative' }}>
 
         <Navbar />

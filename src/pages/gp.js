@@ -189,7 +189,7 @@ function gp() {
 
   return (
     <Layout>
-      <SEO title="General Partners" />
+      <SEO title="GP" />
       <section className="hero is-info" style={{ position: 'relative' }}>
 
         <Navbar path="/gp" />

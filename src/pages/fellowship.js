@@ -142,7 +142,7 @@ function fellowship() {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Fellowship" />
       <section className="hero is-info" style={{ position: 'relative' }}>
 
         <Navbar />

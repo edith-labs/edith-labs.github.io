@@ -166,7 +166,7 @@ function fellow() {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Fellow" />
       <section className="hero is-info" style={{ position: 'relative' }}>
 
         <Navbar path="/fellow" />

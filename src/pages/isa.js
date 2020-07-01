@@ -1,4 +1,3 @@
-import { Link } from 'gatsby';
 import React from 'react';
 
 import SEO from 'components/SEO';
@@ -58,7 +57,7 @@ function isa() {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="ISA" />
       <section className="hero is-info" style={{ position: 'relative' }}>
 
         <Navbar />
