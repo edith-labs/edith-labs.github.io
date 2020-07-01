@@ -5,7 +5,7 @@ import Layout from 'components/Layout';
 import Navbar from 'components/Navbar';
 import { rhythm } from 'utils/typography';
 import ProfileTile from 'components/ProfileTile';
-import ThreeColumns from 'components/ThreeColumns';
+import Step from 'components/Step';
 import FellowFormModal from 'components/FellowFormModal';
 import sarah from 'images/sarah.jpeg';
 import david from 'images/david.png';
@@ -33,6 +33,25 @@ function fellow() {
       bio: 'David is a tech investment banker and former UChicago tennis player where he studied Economics.',
     },
   ];
+
+  const steps = [
+    {
+      number: 1,
+      description: 'Apply to be a Fellow and have an interview with the Edith team',
+    },
+    {
+      number: 2,
+      description: 'Sign your ISA, received funds, and partner with a mentor.',
+    },
+    {
+      number: 3,
+      description: 'Build a relationship with your mentor by meeting with them on a bi-weekly basis.',
+    },
+    {
+      number: 4,
+      description: 'Graduate ',
+    },
+  ]
 
   const faqs = [
     {
@@ -114,7 +133,22 @@ function fellow() {
         </div>
       </section>
 
-      {/* <FellowFormModal /> */}
+      <section className="hero is-info">
+        <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
+          <div className="column is-three-quarters">
+            <h1 className="subtitle is-3">
+              Become an Edith Fellow
+            </h1>
+
+            {steps.map((stepProps) => <Step {...stepProps} />)}
+
+            <div style={{ textAlign: 'center' }}>
+              <FellowFormModal />
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <section className="hero is-info">
 

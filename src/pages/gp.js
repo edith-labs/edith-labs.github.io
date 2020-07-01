@@ -52,22 +52,7 @@ function gp() {
       number: 4,
       description: 'Earn a return on your initial investment once students of the cohort graduate.',
     },
-  ]
-
-  // const investingSteps = [
-  //   {
-  //     title:
-  //   },
-  //   {
-
-  //   },
-  //   {
-
-  //   },
-  //   'We pool the financial need of the accepted students of the cohort.'
-  //   'Edith LPs and GPs pool their capital to fill the need and students repay after graduation.'
-  //   'Edith GPs get a 10% premium on their invested capital. This means if the total pool was $100 and GPs provided $10, they would receive 11% of the returns.'
-  // ]
+  ];
 
   const faqs = [
     {

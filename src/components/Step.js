@@ -15,10 +15,10 @@ function Step({ number, title, description }) {
       <div className="numberCircle" style={{ marginRight: rhythm(1), flex: '0 0 60px' }}>{number}</div>
 
       <div>
-        <h1 className="title" style={{ marginBottom: rhythm(1) }}>
+        <h1 className="title is-4" style={{ marginBottom: rhythm(1) }}>
           {title}
         </h1>
-        <h1 className="subtitle" style={{ marginBottom: rhythm(1) }}>
+        <h1 className="subtitle is-4" style={{ marginBottom: rhythm(1) }}>
           {description}
         </h1>
       </div>

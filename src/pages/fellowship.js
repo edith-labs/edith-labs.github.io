@@ -178,8 +178,8 @@ function fellowship() {
             <h1 className="subtitle is-4">
               The Edith Fellowship is a multi-year program for students who believe mentorship
               can take their career to the next level. Edith Fellows can also replace their
-              student loans with <Link to="/isa">income share agreements (ISAs)</Link>
-              funded by Edith Partners.
+              student loans with <Link to="/isa">income share agreements (ISAs)</Link> funded by
+              Edith Partners.
             </h1>
           </div>
 

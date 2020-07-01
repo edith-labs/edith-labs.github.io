@@ -4,7 +4,7 @@ import SEO from 'components/SEO';
 import Layout from 'components/Layout';
 import Navbar from 'components/Navbar';
 import Toggle from 'components/Toggle';
-import ThreeColumns from 'components/ThreeColumns';
+import Step from 'components/Step';
 import LimitedPartnerFormModal from 'components/LimitedPartnerFormModal';
 import { rhythm } from 'utils/typography';
 
@@ -45,6 +45,24 @@ function lp() {
     },
   ];
 
+  const steps = [
+    {
+      number: 1,
+      title: 'Join the Community',
+      description: 'Apply to be an LP and have a conversation with the Edith team.',
+    },
+    {
+      number: 2,
+      title: 'Support the Fellowship',
+      description: 'Invest in the Edith Cohort.',
+    },
+    {
+      number: 3,
+      title: 'Earn a Return',
+      description: 'Once the students graduate and find a job, they repay through their ISA.',
+    },
+  ];
+
   return (
     <Layout>
       <SEO title="Home" />
@@ -54,8 +72,15 @@ function lp() {
 
         <div className="columns is-centered" style={{ marginTop: rhythm(3), marginBottom: rhythm(5) }}>
           <div className="column is-three-quarters">
+            <div className="columns">
+              <div className="column is-two-fifths" style={{ padding: 0, marginBottom: rhythm(1) }}>
+                Edith Limited Partners provide the financing necessary for the Fellows to attend
+                college.
+              </div>
+            </div>
+
             <h1 className="title is-1 underscore-title">
-              Support the next generation of students.
+              Know exactly who you're helping. Invest in students and watch them succeed.
             </h1>
           </div>
         </div>
@@ -64,37 +89,40 @@ function lp() {
 
       <section className="hero">
 
-        <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
-          <div className="column is-three-quarters" style={{ textAlign: 'center' }}>
-            <h1
-              className="subtitle is-4"
-              data-sal="slide-up"
-              data-sal-delay="200"
-              data-sal-easing="ease"
-            >
-              While talent may be evenly distributed, capital is not. By funding undercapitalized
-              students that are partnered with successful mentors, Edith Limited Partners (LPs)
-              help talented students reach their full potential. Investing in Edith students
-              isn't like investing in a faceless debt instrument or scholarship, LPs always
-              know exactly who they're helping and receive regular updates on their
-              progress and successes.
+        <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
+          <div className="column is-three-quarters">
+            <h1 className="subtitle is-3">
+            <strong>Edith Limited Partners (LPs)</strong>
+              {' '}
+              provide the majority of the funding
+              for Edith Fellows. While they're always welcome to participate in community events,
+              becoming an Edith LP does not include a time commitment.
             </h1>
-
-            <LimitedPartnerFormModal />
+            <div style={{ textAlign: 'center' }}>
+              <a href="#faq">Take me to the FAQ</a>
+            </div>
           </div>
         </div>
 
-        <ThreeColumns
-          descriptions={[
-            'We find talented and undercapitalized students and partner them with mentors.',
-            'We send you monthly updates on student progress.',
-            'LPs are repaid quarterly through the Edith SPV.',
-          ]}
-        />
+      </section>
+      <section className="hero is-info">
+        <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
+          <div className="column is-three-quarters">
+            <h1 className="subtitle is-3">
+              Becoming an Edith LP
+            </h1>
 
+            {steps.map((stepProps) => <Step {...stepProps} />)}
+
+            <div style={{ textAlign: 'center' }}>
+              <LimitedPartnerFormModal />
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section className="hero is-info">
+      <a name="faq" />
+      <section className="hero">
         <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
           <div className="column is-three-quarters">
             <h1 className="subtitle is-3">
