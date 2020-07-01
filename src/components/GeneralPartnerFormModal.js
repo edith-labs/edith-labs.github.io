@@ -39,7 +39,7 @@ function LimitPartnerFormModal() {
         className="button is-primary"
         onClick={() => setIsVisible(true)}
       >
-        Get In Touch
+        Become an Edith GP
       </span>
       <div className={`modal ${isVisible ? 'is-active' : ''}`}>
         <div

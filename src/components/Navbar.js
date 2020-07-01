@@ -21,10 +21,8 @@ function Navbar({ path }) {
           />
         </Link>
 
-        {/* <Link to="/fellow" className={`nav-child nav-link ${path == '/fellow' && 'active'}`}>Students</Link> */}
-        {/* <Link to="/gp" className={`nav-child nav-link ${path == '/gp' && 'active'}`}>Mentors</Link> */}
-        <span />
-        <span />
+        <Link to="/fellow" className={`nav-child nav-link ${path == '/fellow' && 'active'}`}>Students</Link>
+        <Link to="/gp" className={`nav-child nav-link ${path == '/gp' && 'active'}`}>Mentors</Link>
 
         <a
           href="https://app.edithlabs.com"
@@ -55,9 +53,9 @@ function Navbar({ path }) {
         {isDropdownVisible
           && (
           <div className="nav-dropdown">
-            {/* <Link to="/fellow" className="nav-child nav-link" style={{ margin: '0.5em' }}>Students</Link>
+            <Link to="/fellow" className="nav-child nav-link" style={{ margin: '0.5em' }}>Students</Link>
             <Link to="/gp" className="nav-child nav-link" style={{ margin: '0.5em' }}>Mentors</Link>
- */}
+
             <a
               href="https://app.edithlabs.com"
               className="nav-child nav-link"

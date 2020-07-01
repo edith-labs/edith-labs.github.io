@@ -41,7 +41,7 @@ function fellow() {
       questions/big deadlines that we should be aware of. This shouldn't take more than 5 \
       minutes to fill out and helps keep us all on track. You'd also meet with your mentor on a \
       bi-weekly basis. We'll also host community events that will be optional to attend, but we \
-      think we will be really fun for you!",
+      think will be really fun for you!",
     },
     {
       title: 'What are the terms of your ISA?',
@@ -85,10 +85,16 @@ function fellow() {
 
         <Navbar path="/fellow" />
 
-        <div className="columns is-centered" style={{ marginTop: rhythm(5), marginBottom: rhythm(5) }}>
-          <div className="column is-four-fifths">
-            <h1 className="title is-1">
-              Change your career by developing a life-long relationship with a mentor.
+        <div className="columns is-centered" style={{ marginTop: rhythm(3), marginBottom: rhythm(5) }}>
+          <div className="column is-three-quarters">
+            <div className="columns">
+              <div className="column is-two-fifths" style={{ padding: 0, marginBottom: rhythm(1) }}>
+                Edith Fellows build a relationship with mentor who's been in their shoes.
+              </div>
+            </div>
+
+            <h1 className="title is-1 underscore-title">
+              Partner with a mentor. Invest in your potential. Change your career.
             </h1>
           </div>
         </div>
@@ -97,28 +103,18 @@ function fellow() {
 
       <section className="hero">
 
-        <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
-          <div className="column is-three-quarters" style={{ textAlign: 'center' }}>
-            <h1 className="subtitle is-4" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease">
-              You want a mentor who's walked in your shoes before. The Edith Fellowship is all
-              about partnering you with a mentor (our Edith General Partners) who is already
-              working in the field you want to go into after graduation. In addition to
-              working with one mentor for a longer period of time, as a Fellow, you'll join a
-              community of ambitious students and mentors from diverse backgrounds.
+        <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
+          <div className="column is-three-quarters">
+            <h1 className="subtitle is-3">
+              <strong>Edith Fellows</strong> are the students in the Edith Fellowship. They are
+              partnered with a dedicated mentor and can choose to receive funding to replace
+              their student loans.
             </h1>
-            <FellowFormModal />
           </div>
         </div>
-        <ThreeColumns
-          descriptions={[
-            'Receive funding for your education and join our community of Edith Fellows, GPs, and LPs.',
-            'Meet with your mentor on a bi-weekly basis and participate in Fellowship events to \
-            build relationships and advance your career',
-            'After graduation, use what you learned to become a mentor yourself.',
-          ]}
-        />
-
       </section>
+
+      {/* <FellowFormModal /> */}
 
       <section className="hero is-info">
 

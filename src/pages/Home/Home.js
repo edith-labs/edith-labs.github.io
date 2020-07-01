@@ -46,7 +46,7 @@ function Home() {
                 </h1>
               </div>
               <StudentInterestInlineForm />
-              <MentorFormModal />
+              {/* <MentorFormModal /> */}
             </div>
 
           </div>
@@ -117,34 +117,31 @@ function Home() {
             </a>
           </div>
         </div>
-      </section>
-
-      <section className="hero">
-        <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
-          <div className="column is-three-quarters" style={{ textAlign: 'center' }}>
-            <h1 className="subtitle is-3">
-              We all had help along the way
-            </h1>
-            <p className="subtitle">
-              Edith General Partners (GPs) are the core of Edith. Edith GPs mentor our Edith
-              Fellows one-on-one and develop life-long relationships with the student. They
-              realize that they've had help getting to where they are today and want to help
-              future leaders do the same. We believe there's so much more than mentorship than
-              one off conversations where you have to repeat the same things time and time again,
-              which is why we designed the fellowship so you can get to know and really impact a
-              few students.
-            </p>
-            <a
-              href="/gp"
-              className="button is-primary nav-child"
-            >
-              Become an Edith GP
-            </a>
-          </div>
-        </div>
       </section> */}
 
-      <MentorWorkSection />
+      <section className="hero is-info">
+        <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
+          <div className="column is-three-fifths">
+            <h1 className="title is-3" style={{ textAlign: 'center', marginBottom: rhythm(1) }}>
+              The Edith Fellowship
+            </h1>
+
+            <h1 className="title is-4" style={{ marginBottom: rhythm(2) }}>
+              The Edith Fellowship connects talented students to accomplished industry
+              mentors. Join our community today.
+            </h1>
+
+            <div style={{ textAlign: "center" }}>
+              <a href="/fellowship" className="button is-primary">
+                Learn More
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* <MentorWorkSection />
 
       <MentorSchoolSection />
 
@@ -248,7 +245,7 @@ function Home() {
           </div>
         </div>
       </section>
-
+ */}
       <BlogSection />
 
       {/* <section className="hero is-info">

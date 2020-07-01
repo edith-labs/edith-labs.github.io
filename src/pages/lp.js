@@ -52,9 +52,9 @@ function lp() {
 
         <Navbar />
 
-        <div className="columns is-centered" style={{ marginTop: rhythm(5), marginBottom: rhythm(5) }}>
-          <div className="column is-four-fifths">
-            <h1 className="title is-1">
+        <div className="columns is-centered" style={{ marginTop: rhythm(3), marginBottom: rhythm(5) }}>
+          <div className="column is-three-quarters">
+            <h1 className="title is-1 underscore-title">
               Support the next generation of students.
             </h1>
           </div>

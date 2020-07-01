@@ -11,6 +11,7 @@ import GeneralPartnerFormModal from 'components/GeneralPartnerFormModal';
 import sarah from 'images/sarah.jpeg';
 import david from 'images/david.png';
 import cem from 'images/cem.jpeg';
+import Step from 'components/Step';
 
 function gp() {
   const gps = [
@@ -33,6 +34,29 @@ function gp() {
       bio: 'David is a tech investment banker and former UChicago tennis player where he studied Economics.',
     },
   ];
+
+  const steps = [
+    {
+      number: 1,
+      description: 'Apply to be a GP and have a conversation with the Edith team',
+    },
+    {
+      number: 2,
+      description: 'Meet with potential students to mentor, and choose if you want to move forward',
+    },
+    {
+      number: 3,
+      description: 'Invest into the Edith Cohort',
+    },
+    {
+      number: 4,
+      description: 'Build a relationship with your mentee by meeting with them on a bi-weekly basis',
+    },
+    {
+      number: 5,
+      description: 'Earn a return on your initial investment once students of the cohort graduate',
+    }
+  ]
 
   const faqs = [
     {
@@ -108,10 +132,16 @@ function gp() {
 
         <Navbar path="/gp" />
 
-        <div className="columns is-centered" style={{ marginTop: rhythm(5), marginBottom: rhythm(5) }}>
-          <div className="column is-four-fifths">
-            <h1 className="title is-1">
-              Mentor the next generation.
+        <div className="columns is-centered" style={{ marginTop: rhythm(3), marginBottom: rhythm(5) }}>
+          <div className="column is-three-quarters">
+            <div className="columns">
+              <div className="column is-two-fifths" style={{ padding: 0, marginBottom: rhythm(1) }}>
+                Edith General Partners mentor the next generation of students.
+              </div>
+            </div>
+
+            <h1 className="title is-1 underscore-title">
+              No more one-off conversations. Build real relationships.
             </h1>
           </div>
         </div>
@@ -120,30 +150,36 @@ function gp() {
 
       <section className="hero">
 
-        <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
-          <div className="column is-three-quarters" style={{ textAlign: 'center' }}>
-            <h1 className="subtitle is-4" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease">
-              It takes a team to succeed. By lending their experience, Edith General Partners
-              (GPs) are the mentors that take students to the next level. Instead of one off
-              conversations with many students, Edith GPs can build real relationships the Fellows
-              over a longer period of time. This allows GPs to have a large impact on a student's
-              success, and they share in the success of the Fellows.
+        <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
+          <div className="column is-three-quarters">
+            <h1 className="subtitle is-3">
+              <strong>Edith General Partners (GPs)</strong>
+              {' '}
+              are the mentors of the Edith Fellowship. They
+              meet with their Fellow bi-weekly and invest smaller amounts of capital to help
+              replace the Fellows' student loans.
             </h1>
-
-            <GeneralPartnerFormModal />
           </div>
         </div>
-
-        <ThreeColumns
-          descriptions={[
-            'Partner with an Edith Fellow with similar career interests and invest in their success.',
-            'Meet with your Fellow on a bi-weekly basis and build a relationship.',
-            'Celebrate and share in the success of your Edith Fellow once they graduate.',
-          ]}
-        />
       </section>
 
       <section className="hero is-info">
+        <div className="columns is-centered" style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
+          <div className="column is-three-quarters">
+            <h1 className="subtitle is-3">
+              How to Become an Edith GP
+            </h1>
+
+            {steps.map((stepProps) => <Step {...stepProps} />)}
+
+            <div style={{ textAlign: 'center' }}>
+              <GeneralPartnerFormModal />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="hero">
 
         <div className="columns is-centered" style={{ marginTop: rhythm(2) }}>
           <div className="column is-three-quarters">
