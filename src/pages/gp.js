@@ -42,21 +42,32 @@ function gp() {
     },
     {
       number: 2,
-      description: 'Meet with potential students to mentor, and choose if you want to move forward',
+      description: 'You invest into the Edith Cohort and partner with the student you choose to mentor.',
     },
     {
       number: 3,
-      description: 'Invest into the Edith Cohort',
+      description: 'Build a relationship with your mentee by meeting with them on a bi-weekly basis.',
     },
     {
       number: 4,
-      description: 'Build a relationship with your mentee by meeting with them on a bi-weekly basis',
+      description: 'Earn a return on your initial investment once students of the cohort graduate.',
     },
-    {
-      number: 5,
-      description: 'Earn a return on your initial investment once students of the cohort graduate',
-    }
   ]
+
+  // const investingSteps = [
+  //   {
+  //     title:
+  //   },
+  //   {
+
+  //   },
+  //   {
+
+  //   },
+  //   'We pool the financial need of the accepted students of the cohort.'
+  //   'Edith LPs and GPs pool their capital to fill the need and students repay after graduation.'
+  //   'Edith GPs get a 10% premium on their invested capital. This means if the total pool was $100 and GPs provided $10, they would receive 11% of the returns.'
+  // ]
 
   const faqs = [
     {
