@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{h5Py:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),i=t.n(a),c=t("7oih"),o=t("p3AD");n.default=function(){return i.a.createElement(c.a,null,i.a.createElement("div",{style:{marginTop:Object(o.a)(3)}},"hi"))}}}]);
-//# sourceMappingURL=component---src-pages-test-js-cd8855b23c66340945fd.js.map
